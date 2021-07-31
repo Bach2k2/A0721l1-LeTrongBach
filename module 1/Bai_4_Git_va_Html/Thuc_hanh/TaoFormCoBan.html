@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form cơ bản</title>
+</head>
+<body>
+<form method="get" action="simpleform.html" class="wufoo">
+    <style>
+        .wufoo{
+            font-family: "Lucian Grande","Lucida Sans Unicode",Tahoma,sans-serif;
+        }
+    </style>
+    <h1> Order Form</h1>
+    <h2> What would you like to buy</h2>
+    <select>
+
+        <option value =" ">A</option>
+        <option>B(+0.5$)</option>
+        <option>C(+0.5$)</option>
+    </select>
+    <p> How many would you like to order?</p>
+    <input type="radio" name="rd"/>1-$10 <br>
+    <input type="radio" name="rd"/>2-$20 <br>
+    <input type="radio" name="rd"/> 3-$30<br>
+   <h2> Name</h2>
+    <input type="text" name="Firstname" placeholder="Firstname" size="15"/>
+    <input type="text" name="Lastname" placeholder="Lastname" size="15"/>
+    <h2> Email:</h2><br>
+    <input type="text" name="tx" size="15"/>
+    <h2> Phone number:</h2><br>
+    <input type="number" name="sdt1" size="7"/>-
+    <input type="number" name="sdt2" size="7"/>-
+    <input type="number" name="sdt3" size="7"/><br><br>
+<input type="submit" name="toi day" value="Submit" size="10"/>
+
+</form>
+</body>
+</html>
