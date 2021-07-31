@@ -3,45 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <title>Tạo form cơ bản cùng HTML</title>
+    <style>
+        td{
+          padding: 10px;
+        }
+    </style>
 </head>
 <body>
-<form>
+<form style="font-family: 'Times New Roman'">
     <fieldset>
-<p style="color: white;background: red; font-size: x-large;font-family: 'Times New Roman';text-align: center">SỞ THÍCH CỦA BẠN</p>
-
-
-     <pre style="font-size: 18px;color: blue" >      Họ và tên  <input name="Your Name" type="text"></pre>
-
-    <pre style="color: blue;font-size:18px;margin-left:90px"> Email  <input name="Email" type="text"> </pre>
-
-    <p style="color: blue;font-size: 18px;margin-left:90px "> Sở thích</p>
-    <p style="font-size: 18px;margin-left: 170px;margin-inside: 100px;margin-bottom:10px;color: red"><input name="Hobby" type="checkbox"/> Thể Thao    <input name="Hobby" type="checkbox"/>   Âm nhạc         <input name="Hobby" type="checkbox"/>   Đọc sách </p>
-    <p style="font-size: 18px;margin-left: 170px;margin-inside: 100px;margin-bottom:10px;color: red"><input name="Hobby" type="checkbox"/> Lướt web    <input name="Hobby" type="checkbox" />  Chơi game       <input name="Hobby" type="checkbox"/>   Điện ảnh </p>
-    <p style="font-size: 18px;margin-left: 170px;margin-inside: 100px;margin-bottom:10px;color: red""><input name="Hobby" type="checkbox"> Du lịch</p>
-<p style="margin-left: 170px">
-<input name="Submit" type="submit" value="Gửi thông tin" style="appearance: inherit">
-<input name="reset" type="reset" value="Nhập lại" style="appearance: inherit">
+<h1 style="color: white;background: red; font-size: x-large;;text-align: center">SỞ THÍCH CỦA BẠN</h1>
+<table style="font-size: 18px">
+<tr>
+         <td style="color: blue;text-align: right" >Họ và tên </td> <td><input name="Your Name" type="text"></td>
+</tr>
+    <tr>
+        <td style="color: blue;text-align: right"> Email </td><td> <input name="Email" type="text"> </td>
+    </tr>
+    <td style="color: blue;text-align: right">Sở thích</td>
+    <td style ="color: red"> <input name="Hobby" type="checkbox" />  Thể Thao   </td>
+    <td style ="color: red"> <input name="Hobby" type="checkbox" />  Âm nhạc    </td>
+    <td style ="color: red"> <input name="Hobby" type="checkbox" />  Đọc sách   </td>
+  <tr>
+      <td></td>
+      <td style ="color: red"> <input name="Hobby" type="checkbox" /> Lướt web    </td>
+      <td style ="color: red"> <input name="Hobby" type="checkbox" /> Chơi game   </td>
+      <td style ="color: red"> <input name="Hobby" type="checkbox" /> Điện ảnh    </td>
+    </tr>  
+    <tr>
+    <td></td>
+    <td style="color: red"><input name="Hobby" type="checkbox" > Du lịch</td>
+    </tr>
+<br>
+    <td></td>
+<td><input name="Submit Form" type="submit" value="Gửi thông tin">
+<input name="Reset Form" type="reset" value="Nhập lại"></td>
+</table>
 </p>
     </fieldset>
 </form>
 <hr>
 <form style="background: greenyellow">
     <fieldset>
-    <p style="background: lightblue;color: blue;font-size: 30px">ĐĂNG KÍ HỌC VIÊN</p>
-    <p style="margin-inside: 30px">Họ và tên    <input type="text" size="50" name="Name"/></p>
-        <br><label>Ngày sinh</label> <input type="text" size="30" name="Birth"/>
-        <br><label>Giới tính </label> <input type="radio" name="Gender" value="Nam"/> Nam  <input type="radio" name="Gender" value="Nữ"/> Nữ
-        <br ><label>Địa chỉ</label> <input type="text" name="adress" /> <textarea> </textarea>
-        <br><label> Lớp</label>
-        <select name="class" id="class" >
+    <h2 style="background: lightblue;color: blue;font-size: 30px">ĐĂNG KÍ HỌC VIÊN</h2>
+        <table style="text-align: left">
+        <td>Họ và tên  </td> <td> <input type="text" size="50" name="Name"/></td>
+        <tr>
+        <td><label>Ngày sinh</label> </td> <td><input type="text" size="30" name="Birth"/></td>
+        </tr>
+        <tr>
+           <td><label>Giới tính </label> </td>
+            <td ><input type="radio" name="Gender" value="Nam"/> Nam
+            <input type="radio" name="Gender" value="Nữ"/> Nữ </td>
+        <tr>
+            <td><label>Địa chỉ</label> </td>
+
+            <td><textarea cols="100" rows="10"> </textarea></td>
+        <tr>
+            <td><label> Lớp</label></td>
+        <td>  <select name="class" id="class" >
+            <option value="chọn">- Chọn lớp - </option>
             <option value="Lop 1" >Lớp 1</option>
             <option value="Lop 2"> Lớp 2</option>
 
         </select>
-        <br> Email <input type="text" size="40" name="email"/>
-        <br> Số điện thoại <input type="number" size="40" name="phone"/>
-        <br> <input type="submit" value="Đăng kí"> <input type="reset" value="Nhập lại"/>
-    </p>
+        </td>
+        </tr>
+            <tr>
+                <td> Email</td> <td> <input type="text" size="40" name="email"/></td>
+            </tr>
+        <tr>
+
+            <td>   Số điện thoại</td> <td> <input type="number" size="40" name="phone"/></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Đăng kí"> <input type="reset" value="Nhập lại"/>
+            </td>
+        </tr>
+        </table>
     </fieldset>
 </form>
 </body>
