@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hiển thị đầu ra</title>
+
+</head>
+<body>
+<div id="messageDiv"></div>
+<button type="button" onclick="showMessage();">Click Me!</button>
+</body>
+</html>
+<script>
+    function showMessage(){
+        alert('1.Xin chào')
+        document.getElementById('messageDiv').innerHTML = '2.Xin chào!';
+
+        console.log('4.Xin chào!');
+    }
+    document.writeln('3.Xin chào!');
+</script>

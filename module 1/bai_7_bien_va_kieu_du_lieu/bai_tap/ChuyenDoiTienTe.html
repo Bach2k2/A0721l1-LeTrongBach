@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển Đổi Tiền :</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+    </tr>
+        <tr>
+       <th><input id="amount" type="number" name="amount" ></th>
+            <th><select>
+                <option id="from VN">VietNam</option>
+                <option id="from USA">USD</option>
+            </select></th>
+        <th><select>
+            <option id="To USA">USD</option>
+            <option id="To VN">VietNam</option>
+        </select></th>
+        <th> <input type="button"  placeholder="Convert" style="width: 100px"></th>
+    </tr>
+</table>
+
+</body>
+</html>
+<script>
+var a= document.getElementById("amount").value;
+document.write("Gia tri :"+ a);
+</script>
