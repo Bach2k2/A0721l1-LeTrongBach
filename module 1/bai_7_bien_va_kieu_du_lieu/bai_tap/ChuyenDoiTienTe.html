@@ -3,32 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Chuyển Đổi Tiền :</title>
+    <style>
+        table{
+            padding: 5px;
+
+        }
+        tr,td{
+            width: 4cm; height: 1cm;
+        }
+        tr,th{
+            width: 4cm; height: 1cm;
+        }
+    </style>
 </head>
 <body>
-<table>
+<table align="center" style="font-size: 20px">
     <tr>
         <th>Amount</th>
         <th>From Currency</th>
         <th>To Currency</th>
         <th></th>
     </tr>
-        <tr>
-       <th><input id="amount" type="number" name="amount" ></th>
-            <th><select>
-                <option id="from VN">VietNam</option>
-                <option id="from USA">USD</option>
-            </select></th>
-        <th><select>
-            <option id="To USA">USD</option>
-            <option id="To VN">VietNam</option>
+    <tr>
+        <th><input id="amount1" type="text" name="amount"><!--onchange="dosomething()"--></th>
+        <th><select id="Tien1">
+            <option value="VN">VietNam</option>
+            <option value="USA">USD</option>
         </select></th>
-        <th> <input type="button"  placeholder="Convert" style="width: 100px"></th>
+        <th><select id="Tien2">
+            <option value="USA">USD</option>
+            <option value="VN">VietNam</option>
+        </select></th>
+        <th><input type="button" value="Convert" style="width: 100px;background-color: blue" onclick="dosomething()">
+        </th>
+    </tr>
+    <tr>
+        <td id="result">Result:</td>
     </tr>
 </table>
 
 </body>
-</html>
+
 <script>
-var a= document.getElementById("amount").value;
-document.write("Gia tri :"+ a);
+    let result;
+    let a = document.getElementById("amount1").value;
+    console.log(a);
+    // let b=prompt("Nhap gia tri b");
+    // console.log(b);
+    //alert("Gia tri :"+ a);
+    function dosomething() {
+        var So_tien = document.getElementById("amount1").value;
+        So_tien = parseInt(So_tien);
+//document.getElementById("Giatri").innerText="Giá trị chuyển đổi:"+ _name_1;
+        let select1 = document.getElementById("Tien1").value;
+        let select2 = document.getElementById("Tien2").value;
+        if (select1 == select2) {
+            if (select2 == "USA") result = So_tien + "USD";
+            else result = So_tien + "VND";
+        } else if(select2 != select1)
+        {
+            if (select2 == "USA") result = So_tien/23000 + "USD";
+            else result = So_tien * 23000 + "VND";
+        }
+        alert("Giá trị của tiền cần đổi: " + result);
+        document.getElementById("result").innerHTML = "Result: " + result;
+    }
+
 </script>
+</html>
