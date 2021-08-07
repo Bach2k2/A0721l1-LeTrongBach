@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sử dụng máy tính</title>
+    <style>
+        table{
+            font-family: "Times New Roman";
+            border-width: 1px;
+        }
+        th,td{
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+<td> <h3>CALCULATOR    </h3></td>
+    </tr>
+    <tr>
+        <td colspan="2"> <input type="text" id="input1"/> </td>
+        <td colspan="2"> <input type="text" id="input2"/> </td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="func1()"  value="Addition(+)"/></td>
+        <td><input type="button" onclick="func2()" value="Subtraction(-)"/></td>
+        <td><input type="button" onclick="func3()" value="Multication(x)"/></td>
+        <td><input type="button" onclick="func4()" value="Division(/)"/></td>
+    </tr>
+    <tr>
+       <td  id="result">Result </td>
+    </tr>
+</table>
+</body>
+<script>
+    let a=document.getElementById("input1").value;
+    let b=document.getElementById("input2").value;
+    a=parseInt(a);
+    b=parseInt(b);
+    function func1() {
+    let c=a+b;
+    document.getElementById("result").innerHTML ="Result addition: "+ parseInt(c);
+    }
+</script>
+</html>
