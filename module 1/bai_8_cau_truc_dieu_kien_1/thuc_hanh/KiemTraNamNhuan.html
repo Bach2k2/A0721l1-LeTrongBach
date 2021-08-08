@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra năm nhuận</title>
+</head>
+<body>
+<h4>Mời bạn nhập năm :</h4>
+<input id="year" style="width: 100px" type="number" name="Year"/>
+<br>
+<input type="button" style="width: 50px" onclick="dosth()" value="Check"/>
+<br>
+<input id="result" type="text" style="size: 200px"/>
+</body>
+<script>
+    let year = prompt("Nhập năm: ");
+    year = parseInt(year);
+    if (year % 4 == 0) {
+        if (year % 100 == 0) {
+            if (year % 400 == 0) {
+                alert(year + "is a leap year ");
+                document.getElementsById("result").innerHTML = year + " is a leap year";
+            } else {
+                alert(year + "is not a leap year");
+                document.getElementsById("result").innerHTML = year + " is not a leap year";
+            }
+        } else {
+            alert(year + " is a leap year");
+            document.getElementsById("result").innerHTML = year + " is a leap year";
+        }
+    } else {
+        alert(year + " is not a leap year ");
+        document.getElementsById("result").innerHTML = year + " is not a leap year";
+    }
+
+    function dosth() {
+        let nam = document.getElementById("year").value;
+        nam = parseInt(nam);
+        if (nam % 4 == 0) {
+            if (nam % 100 == 0) {
+                if (nam % 400 == 0) {
+                    alert(nam + "is a leap year ");
+                    document.getElementsById("result").innerHTML = nam + " is a leap year";
+                } else {
+                    alert(nam + "is not a leap year");
+                    document.getElementsById("result").innerHTML = nam + " ...is not a leap year";
+                }
+            } else {
+                alert(nam + " is a leap year");
+                document.getElementsById("result").innerHTML = nam + " is a leap year";
+            }
+        } else {
+            alert(nam + " is not a leap year ");
+            document.getElementsById("result").innerHTML = nam + " is not a leap year";
+        }
+    }
+</script>
+</html>

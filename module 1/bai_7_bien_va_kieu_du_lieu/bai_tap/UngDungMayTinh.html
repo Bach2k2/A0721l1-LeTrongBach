@@ -23,14 +23,14 @@
             <td colspan="4" height="30"><h3>CALCULATOR</h3></td>
         </tr>
         <tr>
-            <td colspan="2" width="50%"><input type="number" id="sothu1" style="width: 100%"/></td>
-            <td colspan="2" width="50%"><input type="number" id="sothu2" style="width: 100%"/></td>
+            <td colspan="2" width="50%"><input type="number" id="number1" style="width: 100%"/></td>
+            <td colspan="2" width="50%"><input type="number" id="number2" style="width: 100%"/></td>
         </tr>
         <tr>
-            <td><input type="button" onclick="func1()" value="Addition(+)"/></td>
-            <td><input type="button" onclick="func2()" value="Subtraction(-)"/></td>
-            <td><input type="button" onclick="func3()" value="Multiplication(x)"/></td>
-            <td><input type="button" onclick="func4()" value="Division(/)"/></td>
+            <td><input type="button" onclick="plus()" value="Addition(+)"/></td>
+            <td><input type="button" onclick="minus()" value="Subtraction(-)"/></td>
+            <td><input type="button" onclick="multiply()" value="Multiplication(x)"/></td>
+            <td><input type="button" onclick="divide()" value="Division(/)"/></td>
         </tr>
         <tr>
             <th colspan="4" id="result">Result</th>
@@ -40,28 +40,28 @@
 
 <script>
 
-    function func1() {
-        var a = document.getElementById("sothu1").value;
-        var b = document.getElementById("sothu2").value;
+    function plus() {
+        let a = document.getElementById("number1").value;
+        let b = document.getElementById("number2").value;
         a = parseFloat(a);
         b = parseFloat(b);
         let c = a + b;
         parseFloat(c);
-        document.getElementById("result").innerText = "Result addition" + c;
+        document.getElementById("result").innerText = "Result addition: " + c;
     }
 
-    function func2() {
-        let a = document.getElementById("sothu1").value;
-        let b = document.getElementById("sothu2").value;
+    function minus() {
+        let a = document.getElementById("number1").value;
+        let b = document.getElementById("number2").value;
         a = parseFloat(a);
         b = parseFloat(b);
         let c = a - b
-        document.getElementById("result").innerHTML = "Result subtraction: " +c;
+        document.getElementById("result").innerHTML = "Result subtraction: " + c;
     }
 
-    function func3() {
-        let a = document.getElementById("sothu1").value;
-        let b = document.getElementById("sothu2").value;
+    function multiply() {
+        let a = document.getElementById("number1").value;
+        let b = document.getElementById("number2").value;
         a = parseFloat(a);
         b = parseFloat(b);
         let c = a * b;
@@ -69,9 +69,9 @@
         document.getElementById("result").innerHTML = "Result multiplication: " +c;
     }
 
-    function func4() {
-        let a = document.getElementById("sothu1").value;
-        let b = document.getElementById("sothu2").value;
+    function divide() {
+        let a = document.getElementById("number1").value;
+        let b = document.getElementById("number2").value;
         a = parseFloat(a);
         b = parseFloat(b);
         let c = a / b;

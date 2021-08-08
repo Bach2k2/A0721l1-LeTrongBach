@@ -14,6 +14,11 @@
         tr,th{
             width: 4cm; height: 1cm;
         }
+        .convert
+        {
+            width: 150px;
+            background-color: blueviolet;
+        }
     </style>
 </head>
 <body>
@@ -25,7 +30,7 @@
         <th></th>
     </tr>
     <tr>
-        <th><input id="amount1" type="text" name="amount"><!--onchange="dosomething()"--></th>
+        <th><input id="amount1" type="text" name="amount"/></th>
         <th><select id="Tien1">
             <option value="VN">VietNam</option>
             <option value="USA">USD</option>
@@ -34,36 +39,30 @@
             <option value="USA">USD</option>
             <option value="VN">VietNam</option>
         </select></th>
-        <th><input type="button" value="Convert" style="width: 100px;background-color: blue" onclick="dosomething()">
+        <th><input type="button" value="Convert" class="convert"  onclick="Convert()"/>
         </th>
     </tr>
     <tr>
-        <td id="result">Result:</td>
+        <td colspan="4" id="result">Result:</td>
     </tr>
 </table>
 
 </body>
 
 <script>
-    let result;
-    let a = document.getElementById("amount1").value;
-    console.log(a);
-    // let b=prompt("Nhap gia tri b");
-    // console.log(b);
-    //alert("Gia tri :"+ a);
-    function dosomething() {
-        var So_tien = document.getElementById("amount1").value;
-        So_tien = parseInt(So_tien);
-//document.getElementById("Giatri").innerText="Giá trị chuyển đổi:"+ _name_1;
+    let result = 1;
+    function Convert() {
+        let money = document.getElementById("amount1").value;
+        money= parseInt(money);
         let select1 = document.getElementById("Tien1").value;
         let select2 = document.getElementById("Tien2").value;
         if (select1 == select2) {
-            if (select2 == "USA") result = So_tien + "USD";
-            else result = So_tien + "VND";
+            if (select2 == "USA") result = money+ " USD";
+            else result = money + "VND";
         } else if(select2 != select1)
         {
-            if (select2 == "USA") result = So_tien/23000 + "USD";
-            else result = So_tien * 23000 + "VND";
+            if (select2 == "USA") result = money/23000 + "USD";
+            else result = money * 23000 + "VND";
         }
         alert("Giá trị của tiền cần đổi: " + result);
         document.getElementById("result").innerHTML = "Result: " + result;
