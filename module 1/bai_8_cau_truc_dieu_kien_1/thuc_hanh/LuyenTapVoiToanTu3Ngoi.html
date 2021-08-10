@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành 4</title>
+</head>
+<body>
+<h1> Bài 1:</h1>
+<input type="button" style="color: red" name="Try" value="Test1" onclick="Try1()"/>
+<hr>
+<h2> Bài 2: </h2>
+<input type="button" style="color: blue" name="Try" value="Test2" onclick="Try2()"/>
+<script>
+    let a= prompt('Nhập giá trị','a');
+    let b =prompt('Nhập giá trị','b');
+    a=parseInt(a);
+    b=parseInt(b);
+    let result;
+    (a+b) >= 4 ? result='Over' : result='Below';
+    function Try1(a,b)
+    {
+        a=prompt("a=",0);
+        b=prompt("b=",0);
+        // let result;
+        (a+b) >= 4 ? result='Over' : result='Below';
+        alert(result);
+    }
+alert(result);
+    confirm("Sang bài 2 ");
+    let message;
+    let login =prompt("Who are you?",'name');
+    (login == 'Employee') ? message='hello':(login=='Director')? message='Greetings': (login == '') ?
+        message = 'No login': message = '';
+    alert(message);
+    function Try2(login,message)
+    {
+        (login == 'Employee') ? message='hello':(login=='Director')? message='Greetings': (login == '') ?
+            message = 'No login': message = '';
+        alert(message);
+    }
+</script>
+</body>
+</html>

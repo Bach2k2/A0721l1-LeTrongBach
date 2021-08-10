@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính bỏ túi</title>
+    <style>
+        td.knot {
+            border: 1px;
+            padding:10px;
+            width: 25%;
+            height:25%;
+        }
+        table{
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+<h3 style= "text-align:center"=> Casio Fx500 </h3>
+<table border="10px" align="center">
+    <tr>
+        <td colspan="4"><input id="result" type="text" style="width: 100%" disabled/></td>
+    </tr>
+    <tr>
+        <td class="knot"><input type="button" value="1" onclick="input(this.value)"/></td>
+        <td class="knot"><input type="button" value="2" onclick="input(this.value)"/></td>
+        <td class="knot"><input type="button" value="3" onclick="input(this.value)"/></td>
+        <td class="knot"><input type="button" value="+" onclick="input(this.value)"/></td>
+    </tr>
+    <tr>
+        <td class="knot"><input type="button" value="4" onclick="input(this.value)"/></td>
+        <td class="knot"><input type="button" value="5" onclick="input(this.value)"/></td>
+        <td class="knot"><input type="button" value="6" onclick="input(this.value)"/></td>
+        <td class="knot"><input type="button" value="-" onclick="input(this.value)"/></td>
+    </tr>
+    <tr>
+        <td class="knot"><input type="button" value="7" onclick="input(this.value)"/></td>
+        <td class="knot"><input type="button" value="8" onclick="input(this.value)"/></td>
+        <td class="knot"><input type="button" value="9" onclick="input(this.value)"/></td>
+        <td class="knot"><input type="button" value="*" onclick="input(this.value)"/></td>
+    </tr>
+    <tr>
+        <td class="knot"><input type="button" value="C" onclick="eraser()"/></td>
+        <td class="knot"><input type="button" value="0" onclick="input(this.value)"/></td>
+        <td class="knot"><input type="button" value="=" onclick="output()"/></td>
+        <td class="knot"><input type="button" value="/" onclick="input(this.value)"/></td>
+    </tr>
+</table>
+<script>
+    function input(a) {
+    document.getElementById("result").value +=a;
+    }
+    function output() {
+        let string=document.getElementById("result").value;
+    document.getElementById("result").value=eval(string);
+    }
+    function eraser(){
+    let string = document.getElementById("result").value ;
+    document.getElementById("result").value= string.slice(0,string.length-1);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Commission</title>
+</head>
+<body>
+<input type="text" id="value" name="amount" style="width: 7cm"/>
+<br>
+<input type="button" name="convert" onclick="convert()" style="width: 4cm" value="Tính tiền hoa hồng"/>
+<script>
+    function convert(){
+    let commission=eval(document.getElementById("value").value*20/100);
+    alert('Tiền hoa hồng: '+ commission+"(VND)");
+    }
+</script>
+</body>
+</html>

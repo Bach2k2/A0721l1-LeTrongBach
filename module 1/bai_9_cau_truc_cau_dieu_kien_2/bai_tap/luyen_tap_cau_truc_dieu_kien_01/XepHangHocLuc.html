@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evalute your study</title>
+</head>
+<body>
+<script>
+    let mark1=parseInt(prompt('Nhập điểm miệng'));
+    let mark2=parseInt(prompt('Nhập điểm giữa kì'));
+    let mark3=parseInt(prompt('Nhập điểm cuối kì'));
+    let average=(mark1*0.2+mark2*0.3+mark3*0.5);
+    if (average>=8.5) alert('Học lực A');
+    else if (average>=7) alert ('Học lực B');
+    else if (average>=6.5) alert ('Học lực C');
+    else if (average>=5) alert("Học lực D");
+    else alert("Học lực F");
+</script>
+</body>
+</html>
