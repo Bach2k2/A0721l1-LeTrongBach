@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="meter" style="width: 7cm" onchange="convert()"/>
+<script>
+    function convert() {
+        let meter = parseFloat(document.getElementById("meter").value)
+        let feet = meter * 3.281;
+        alert(meter + "mét = " + feet + "feet");
+    }
+</script>
+</body>
+</html>
