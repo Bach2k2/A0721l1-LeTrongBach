@@ -6,8 +6,15 @@
 </head>
 <body>
 <script>
+    // Phí thuê bao bắt buộc là 25 nghìn.
+    // 600 đồng cho mỗi gọi của 50 phút đầu tiên.
+    // 400 đồng cho mỗi phút gọi của 150 phút tiếp theo.
+    // 200 đồng cho bất kỳ mỗi phút nào sau 200 phút đầu tiên.
     let time=parseFloat(prompt("Nhập số phút bạn đã dùng"));
-    let fee =time*3300;
+    let fee = 25000;
+    if (time > 200) fee+=(time-200)*600+150*400+50*600;
+    else if (time>=50) fee+=(time-50)*400+50*600;
+    else fee+=time*600;
     alert('Phí cước điện thoại: ' + fee +'VNĐ');
 </script>
 </body>

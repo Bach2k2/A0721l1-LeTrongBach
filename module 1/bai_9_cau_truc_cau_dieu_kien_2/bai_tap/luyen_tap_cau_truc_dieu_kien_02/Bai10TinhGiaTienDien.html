@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Electric Bill</title>
+</head>
+<body>
+<script>
+    let power=parseFloat(prompt("Nhập chữ điện (kWh)"));
+    let fee;
+    if(power>=401) fee=(power-400)*2.927+100*2.834+100*2.536+100*2.014+50*1.734+50*1.678;
+    else if (power>=300) fee=(power-300)*2.834+100*2.536+100*2.014+50*1.734+50*1.678;
+    else if (power>=200) fee=(power-200)*2.536+100*2.014+50*1.734+50*1.678;
+    else if (power>=100) fee=(power-100)*2.014+50*1.734+50*1.678;
+    else if (power>=50) fee=(power-50)*1.734+50*1.678;
+    alert("Giá tiền điện của bạn: "+ fee +"(VNĐ)");
+</script>
+</body>
+</html>

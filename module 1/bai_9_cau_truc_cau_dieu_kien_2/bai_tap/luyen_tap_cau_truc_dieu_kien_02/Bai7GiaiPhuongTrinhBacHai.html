@@ -11,7 +11,20 @@
     let c=parseFloat(prompt("Nhập hệ số c: "));
     let delta;
     if (a!=0)
-    { if (b)
+    { delta=b*b-4*a*c;
+        if (delta > 0){
+            alert("Phương trình có 2 nghiệm");
+        let x1=(-b+Math.sqrt(delta))/(2*a);
+            alert("Nghiệm thứ nhất x1= " + x1 );
+        let x2=(-b-Math.sqrt(delta))/(2*a);
+            alert("Nghiệm thứ nhất x2= " + x2 );
+        }
+        else if (delta==0) {x1=-b/(2*a);
+        alert("Nghiệm kép là: "+ x1);
+        }
+        else alert("Phương trình vô nghiệm");
+    }
+    else ("Phương trình không là dạng bậc 2");
 </script>
 </body>
 </html>

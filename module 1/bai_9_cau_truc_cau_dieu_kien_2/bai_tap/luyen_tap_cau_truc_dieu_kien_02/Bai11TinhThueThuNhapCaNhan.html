@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    confirm("Tiền Thuế thu nhập cá nhân của bạn:");
+    let thuNhap=parseFloat(prompt("Tiền thu nhập hằng tháng của bạn: (triệu)"));
+    let thue;
+    if (thuNhap<0) alert("Mời anh/chị nhập lại");
+    if(thuNhap<= 5) thue=thuNhap*5/100;
+    else if(thuNhap<=10)thue=thuNhap*10/100;
+    else if(thuNhap<=18)thue=thuNhap*15/100;
+    else if(thuNhap<=32)thue=thuNhap*20/100;
+    else if(thuNhap<=52)thue=thuNhap*25/100;
+    else if(thuNhap<=80)thue=thuNhap*30/100;
+    else thue=thuNhap*35/100;
+    alert("Thuế thu nhâp:"+ thue*Math.pow(10,6) + " VNĐ");
+</script>
+</body>
+</html>
