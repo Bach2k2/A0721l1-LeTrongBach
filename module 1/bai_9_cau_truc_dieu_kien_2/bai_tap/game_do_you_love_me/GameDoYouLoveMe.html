@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doyouluvme</title>
+    <style>
+        #Yes {
+            background-color: orange;
+        }
+        #No{
+            background-color: blueviolet;
+        }
+body{
+    background-image: url(image1.jpg);
+    text-align: center
+}
+    </style>
+</head>
+<body>
+<h1> Do you love me?</h1>
+<button id="Yes" onclick="Message()" style="position:absolute; left:550px; top:100px;"> Yes,of course </button>
+<button id="No"  onmouseover="run()" style="position: absolute;left:700px;top:100px" > No, Don't ask me</button>
+<script type="text/javascript">
+function Message() {
+    document.getElementById("Yes").innerText="<3";
+}
+objNo=document.getElementById("No");
+function run(){
+    objNo.style.left =   Math.round(Math.random()*window.innerWidth) + 'px';
+    objNo.style.top =  Math.round(Math.random()*window.innerHeight)+ 'px';
+}
+</script>
+</body>
+</html>
