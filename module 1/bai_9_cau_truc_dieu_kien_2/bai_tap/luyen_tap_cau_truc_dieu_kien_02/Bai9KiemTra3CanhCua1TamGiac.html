@@ -6,11 +6,18 @@
 </head>
 <body>
 <script>
-    let a=parseFloat(prompt("Nhập cạnh thứ nhất"));
-    let b=parseFloat(prompt("Nhập cạnh thứ hai"));
-    let c=parseFloat(prompt("Nhập cạnh thứ ba"));
-    // if (a==b==c==NULL) confirm("Mời bạn nhập lại");
-    if ((a+b>c)&&(b+c>a)&&(a+c>b)) alert("3 cạnh của tam giác đấy!");
+    let canh1 = parseFloat(prompt("Nhập cạnh thứ nhất"));
+    let canh2 = parseFloat(prompt("Nhập cạnh thứ hai"));
+    let canh3 = parseFloat(prompt("Nhập cạnh thứ ba"));
+    if (canh1 <= 0 || canh2 <= 0 || canh3 <= 0)
+    {
+        alert("Cạnh tam giác phải lớn hơn 0");
+        confirm('Mời nhập lại:');
+        canh1 = parseFloat(prompt("Nhập cạnh thứ nhất"));
+        canh2 = parseFloat(prompt("Nhập cạnh thứ hai"));
+        canh3 = parseFloat(prompt("Nhập cạnh thứ ba"));
+    }
+    if ((canh1 + canh2 > canh3) && (canh2 + canh3 > canh1) && (canh1 + canh3 > canh2)) alert("3 cạnh của tam giác đấy!");
     else alert("Không phải là 3 cạnh của một Tam giác !");
 
 </script>

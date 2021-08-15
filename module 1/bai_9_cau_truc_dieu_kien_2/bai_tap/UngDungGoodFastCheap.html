@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>good-fast-cheap</title>
+    <style>
+        input {
+            width: 50px;
+        }
+        #good{
+            background-color: red;
+        }
+        #cheap{
+            background-color:blueviolet;
+        }
+        #fast{
+            background-color:green;
+        }
+        body{
+            background-image: url("https://sohoatailieu.com/Storage/Files/2020/07/06/202007061435291855-71552f7aa188ee88959205f78ef4a31d.jpg");
+        }
+    </style>
+</head>
+<body style="text-align: center">
+<input id="good" min="0" max="1" value="0" type="range" onclick="change(1)" /> GOOD <br>
+<input id="cheap" min="0" max="1" value="0" type="range" onclick="change(2)" /> CHEAP<br>
+<input id="fast" min="0" max="1" value="0" type="range" onclick="change(3)" /> FAST
+</body>
+<script>
+    let objGood = document.getElementById("good");
+    let objCheap = document.getElementById("cheap");
+    let objFast = document.getElementById("fast");
+
+    function change(choose) {
+        switch (choose) {
+            case 1:
+                if (objFast.value == 1) objCheap.value = 0;
+                break;
+            case 2:
+                if (objGood.value == 1) objFast.value = 0;
+                break;
+            case 3:
+                if (objCheap.value == 1) objGood.value = 0;
+                break;
+        }
+    }
+</script>
+</html>

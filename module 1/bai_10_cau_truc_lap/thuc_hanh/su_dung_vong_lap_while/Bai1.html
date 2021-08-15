@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng các số được nhập</title>
+</head>
+<body>
+<script>
+    let number=0;
+    let total=0;
+    while(number != -1)
+    {
+        console.log(number);
+        total+=number;
+        number=parseInt(prompt("Nhập số nguyên:",0));
+    }
+    alert("Tổng tất cả các số vừa nhập: " + total);
+</script>
+</body>
+</html>
