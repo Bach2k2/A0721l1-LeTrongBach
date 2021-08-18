@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TinhTong20SoDau</title>
+</head>
+<body>
+<script>
+    let value,value1=1,value2=1;
+    let count=0,sum=value1+value2;
+    while(count++<=18)
+    {
+        value=value1+value2;
+        value2=value1;
+        value1=value;
+        sum+=value;
+    }
+    document.write("Tổng 20 số đầu của dãy Fibonacci: "+ sum);
+</script>
+</body>
+</html>

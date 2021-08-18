@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim so Fibo dau tien chia het cho 5</title>
+</head>
+<body>
+<script>
+let value1=1,value2=1,value;
+
+while (value%5!=0)
+{
+    value=value1+value2;
+    value2=value1;
+    value1=value;
+
+}
+document.write("Số đầu tiên chia hết cho 5: " + value);
+</script>
+</body>
+</html>

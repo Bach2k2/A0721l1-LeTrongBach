@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20 Số Fibonacci</title>
+</head>
+<body>
+<script>
+    // function Fibo(n) {
+    //     if (n==1) return 1;
+    //     else if (n==2) return 1;
+    //     else return Fibo(n-1) +Fibo(n-2);
+    // }
+    // value1 là giá trị a[i-1], value2 là giá trị a[n-2]
+    let value1=1,value2=1,value; let result=null;
+    result=value1+','+value2+',';
+    let count=1;
+    while (count<=18)
+    {
+        value=value1+value2;
+        value2=value1;
+        console.log(value2);
+        value1=value;
+        console.log(value1);
+        result+=value+',';
+       // result+=Fibo(num) +",";
+        count++;
+    }
+    document.write(result.slice(4,result.length-1));
+</script>
+</body>
+</html>
