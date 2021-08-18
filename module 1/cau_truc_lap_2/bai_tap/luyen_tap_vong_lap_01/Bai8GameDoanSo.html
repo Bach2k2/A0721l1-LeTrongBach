@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="button"  type="button" onclick="start()" style="width: 50px" value="Play">
+<script>
+function start() {
+let count=0;
+confirm("Chọn khoảng mà bạn muốn đoán");
+let min=parseInt(prompt("Chọn khoảng dưới"));
+let max=parseInt(prompt("Chọn khoảng trên"));
+let choice=prompt("Nhập lựa chọn của bạn",0);
+    let thatNumber=Math.round(Math.random()*(max-min)+min);
+    while (count < 3)
+    {
+        if (choice>thatNumber) {
+            alert("Số bạn lớn hơn rồi");
+           choice=prompt("Nhập lựa chọn của bạn");
+        }
+        else if (choice<thatNumber)
+        {
+            alert("Số bạn nhỏ hơn rồi");
+            choice=prompt("Nhập lựa chọn của bạn");
+        }
+        else {
+            alert("Chúc mừng nhé!, Bạn đã đúng");
+            break;
+        }
+        count++;
+    }
+    if (count==3) document.getElementById("button").value="Again?";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In số Fibonacci</title>
+</head>
+<body>
+<script>
+    let limit=prompt("Nhập số lượng muốn in trong dãy Fibo");
+    let giaTri1,giaTri2;
+    giaTri1 = giaTri2 = 1;
+    let num=2;
+    let count=0;
+    let result="Dãy Fibonacci: " +giaTri1+", "+giaTri2+", ";
+    while (count < limit-2)
+    {
+       num=giaTri1+giaTri2;
+       giaTri2=giaTri1;
+       giaTri1=num;
+       result+=num+", "
+       count ++;
+    }
+    document.write(result.slice(0,result.length-1));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let amount=parseFloat(prompt("tiền vay ban đầu của bạn: "));
+    document.write("tiền vay ban đầu của bạn: "+ amount);
+    let rate=parseFloat(prompt("Lãi suất hằng tháng: (%)"));
+    document.write("<br>lãi suất ban đầu của bạn: "+ rate);
+    let interest;
+    let month=parseInt(prompt("số tháng: "));
+    document.write("<br> Tháng: "+month);
+    for(i=1;i<=month;i++)
+    {
+        interest=amount*rate/100;
+        amount+=interest;
+    }
+    document.write("<br>Tổng số tiền sau "+ month + " tháng:"+ amount);
+</script>
+</body>
+</html>

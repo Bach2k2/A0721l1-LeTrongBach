@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tam Giac vuong</title>
+</head>
+<body>
+<script>
+
+    let i, j;
+    //Hinh 1
+    for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= 5; j++) {
+            if (i >= j) document.write("*");
+            else document.write("");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+    // Hinh 2
+    for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= 5; j++) {
+            if (i <= j) document.write("*");
+            else document.write("");
+        }
+        document.write("<br>");
+    }
+    //Hinh 3
+    document.write("<br>");
+
+    for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= 5; j++) {
+            if (i+j>=6) document.write("*");
+            else document.write("&nbsp;&nbsp;");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+    // Hinh 4
+    for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= 5; j++) {
+            if (i <= j) document.write("*");
+            else document.write("&nbsp;&nbsp;");
+        }
+        document.write("<br>");
+    }
+
+</script>
+</body>
+</html>
