@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heart</title>
+</head>
+<body style="text-align: center">
+<script>
+    /*  let n=parseInt(prompt("Nhập só chính phương lớn hơn 5",9));
+      let p=Math.sqrt(n);
+
+      for (i=n;i>=0;i--)
+      {
+              for (k=1;k<=p;k++) {
+                  if (k==p)
+              }
+          }
+          document.write("<br>");
+      }
+      for (i=1;i<=n;i++)
+      {
+          for(j=1;j<=n;j++)
+          {
+              document.write("*");
+          }
+          document.write("<br>");
+      }*/
+    for (i = 1; i <= 6; i++) {
+        for (j = 1; j <= 7; j++) {
+
+            if ((i == 1 && (j == 1 || j == 4 || j == 7))
+                || ((i == 4) && (j == 1 || j == 7))
+                || ((i == 5) && (j <= 2 || j>=6))
+                || (i == 6 && (j <= 3 || j >= 5))) document.write("&nbsp;&nbsp;");
+            else document.write("&nbsp;&nbsp;*&nbsp;&nbsp;");
+        }
+        document.write("<br>")
+    }
+</script>
+</body>
+</html>
