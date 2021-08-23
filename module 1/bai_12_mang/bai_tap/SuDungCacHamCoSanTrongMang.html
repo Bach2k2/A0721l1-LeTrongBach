@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    myColor=["Red","Green","White","Black"];
+    let index,result='"';
+    for(index=0;index<4;index++)
+    {
+        result+=myColor[index]+",";
+    }
+    document.write(result.slice(0,result.length-1)+'"');
+    //Cach 2:
+    console.log(myColor.join())
+    // Bai 2:
+
+</script>
+</body>
+</html>

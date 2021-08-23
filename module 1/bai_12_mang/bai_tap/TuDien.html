@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" style="width=300px" id="input"/>
+<input type="button" style="width: 50px" value="Dịch" onclick="xuat()"/>
+<p id="result"></p>
+<script>
+    let str1;
+    str1=document.getElementById("input").value;
+    console.log(str1);
+    let UPPER='ABCDEFGHIKLMNOPQRSTUVWXYZ'
+    let result=[];
+    tiengAnh=["table","chair","phone","book","calculator"];
+    tiengViet=["cái bàn","cái ghế","điện thoại","quyển sách","máy tính"];
+    for (i=0;i<str1.length;i++) {
+        if (UPPER.indexOf(str1[i]) !== -1) result.push(str1[i].toLowerCase());
+        else result.push(str1[i]);
+    }
+
+    function xuat() {
+        for (i=0;i<tiengAnh.length;i++)
+        {
+            console.log(result);
+            if (tiengAnh[i]==result) document.getElementById("result").innerText=tiengViet[i];
+            else document.getElementById("result").innerText="Không tìm thấy";
+        }
+    }
+</script>
+</body>
+</html>

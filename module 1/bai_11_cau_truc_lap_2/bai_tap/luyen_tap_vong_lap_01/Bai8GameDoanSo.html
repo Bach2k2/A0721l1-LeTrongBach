@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Game đoán số</title>
 </head>
 <body>
 <input id="button"  type="button" onclick="start()" style="width: 50px" value="Play">
@@ -13,9 +13,12 @@ confirm("Chọn khoảng mà bạn muốn đoán");
 let min=parseInt(prompt("Chọn khoảng dưới"));
 let max=parseInt(prompt("Chọn khoảng trên"));
 let choice=prompt("Nhập lựa chọn của bạn",0);
+let check;
     let thatNumber=Math.round(Math.random()*(max-min)+min);
     while (count < 3)
     {
+        // check="Lần "+ count;
+        // alert(check);
         if (choice>thatNumber) {
             alert("Số bạn lớn hơn rồi");
            choice=prompt("Nhập lựa chọn của bạn");
@@ -30,9 +33,15 @@ let choice=prompt("Nhập lựa chọn của bạn",0);
             break;
         }
         count++;
+        if (count==3) {
+            document.getElementById("button").value = "Again?";
+            confirm("Bạn đã hết lượt. Mời bạn chơi lại");
+            break;
     }
-    if (count==3) document.getElementById("button").value="Again?";
+
+    }
 }
+
 </script>
 </body>
 </html>

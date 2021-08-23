@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+<script>
+    var str=prompt("Nhập text vào đây");
+    var UPPER='ABCDEFGHIKLMNOPQRSTUVWXYZ'
+    var LOWER='abcdefghiklmnopqrstuvwxyz'
+    var result=[];
+    for (x=0;x<str.length;x++) {
+        if (UPPER.indexOf(str[x]) !== -1) result.push(str[x].toLowerCase());
+        else if (LOWER.indexOf(str[x]) !== -1) result.push(str[x].toUpperCase());
+        else result.push(str[x]);
+    }
+    document.write(result.join(""));
+</script>
+
+</body>
+</html>

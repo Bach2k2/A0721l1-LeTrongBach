@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm kiếm mảng</title>
+</head>
+<body>
+<script>
+    mang=Array();
+    n=prompt("Nhập số lượng phân tử trong mảng");
+    for (i=1;i<=n;i++)
+    {
+        mang[i]=prompt("Nhập phần tử thứ"+ i);
+    }
+    function xuat() {
+        let result="<hr>";
+        for (i=1;i<=n;i++)
+        {
+            result+=mang[i]+"&ensp;";
+        }
+        document.write(result);
+    }
+let value = prompt("Nhập giá trị cần tìm");
+    for (let i = 1; i <mang.length+1; i++) {
+        if (value == mang[i]) {
+            alert("Value " + mang[i] + "found at " + i);
+        }
+    }
+    xuat();
+</script>
+</body>
+</html>
