@@ -8,27 +8,35 @@
 <script>
     array = Array(10);
     let max = 0;
-
+    let position=0;
     function nhapMang() {
-        for (i = 0; i < 10; i++) {
-            array[i] = parseInt(prompt("Nhập grị trị thứ" + i));
-        }
+        for (i = 0; i < 10; i++)
+            array[i] = parseInt(prompt("Nhập grị trị thứ " + i));
+    }
 
-        function timMax {
-            max = array[0];
-            for (i = 1; i < 10; i++) {
+    //
+    let result = "";
 
-                if (max < array[i]) {
-                    max = array[i];
-                    return i;
-                }
+    function xuatMang() {
+        for (i = 0; i < 10; i++)
+            result += array[i] + ",&emsp;";
+      document.write("Mảng bạn đã nhập: "+ result.slice(0,result.length-1));
+    }
+
+    function timMax() {
+        max = array[0];
+        for (i = 1; i < 10; i++) {
+            if (max < array[i]) {
+                max = array[i];
+               position=i;
             }
-            return 0;
         }
-
-        nhapMang();
-        let check = timMax();
-        document.write("Giá tri lớn nhất của mảng" + max + "tại ví trí" + timMax());
+    }
+    nhapMang();
+    xuatMang();
+    timMax();
+   // let check = timMax();
+    document.write("<br> Giá tri lớn nhất của mảng: " + max + " tại ví trí " + position);
 </script>
 </body>
 </html>

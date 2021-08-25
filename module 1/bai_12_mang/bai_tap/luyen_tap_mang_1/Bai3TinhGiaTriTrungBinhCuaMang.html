@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    array = [5, 6, 7, 12, 10, 13];
+    let average = 0;
+    let max=array[0];
+    for (let i = 0; i < array.length; i++)
+    {
+        if (max <array[i+1]) max=array[i+1];
+        average += array[i];
+    }
+    average = average / array.length;
+   // array[array.length - 1] |> console.log
+    document.write("Giá trị trung bình: " + average);
+    document.write("<br> Giá trị lớn nhất của mảng "+ max);
+</script>
+</body>
+</html>

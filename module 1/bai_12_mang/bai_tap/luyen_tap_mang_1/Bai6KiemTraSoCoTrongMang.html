@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gia tri co trong mang hay khong</title>
+</head>
+<body>
+
+<script>
+    array=[1,5,7,9,11,13,15,17,19,25];
+    let value=parseInt(prompt("Value:"));
+    for(let i=0;i<=array.length;i++) {
+        if (value == array[i]) {
+            alert("Value is in array");
+            break;
+        }
+        if (i==array.length) alert("Value is not in array");
+    }
+</script>
+</body>
+</html>

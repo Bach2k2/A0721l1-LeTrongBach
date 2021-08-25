@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    array=[1,2,3,4,5,4,3,2,1];
+    let value=parseInt(prompt("Gia tri de xoa"));
+    for(let i=0;i<array.length;i++)
+    {
+        if (value ==array[i])
+        {
+            for (j=i;j<array.length-1;j++)
+                array[j]=array[j+1];
+            array[j]=0;
+        }
+    }
+    document.write(array);
+
+</script>
+</body>
+</html>
