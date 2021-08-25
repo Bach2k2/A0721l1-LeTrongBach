@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Mảng có phần tử lơn hơn 10</title>
+</head>
+<body>
+<script>
+array=Array(10);
+let result=""
+function nhapMang() {
+for(i=0;i<10;i++){
+    array[i]=parseInt(prompt("Nhập grị trị thứ" + i));
+    if (array[i] >= 10)result+=array[i]+",";
+}
+document.write("<br>Các số lơn hơn 10: "+ result);
+}
+function xuatMang() {
+    for(i=0;i<10;i++)result+=array[i]+'&emsp;'
+    document.write(result);
+}
+nhapMang();
+result="<br>Giá trị vừa nhập: ";
+xuatMang();
+</script>
+</body>
+</html>
