@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liệt kê</title>
+</head>
+<body>
+
+<script>
+    let array=[
+        [1, 2, 1, 24],
+        [8, 11, 9, 4],
+        [7, 0, 7, 27],
+        [7, 4, 28, 14],
+        [3, 10, 26, 7]
+    ];
+    for (let i=0;i<5;i++)
+    {
+        let result="<br>row"+ i;
+        for (let j=0;j<4;j++)
+            result+="<br>&nbsp;&nbsp;"+array[i][j];
+        document.write(result);
+    }
+</script>
+</body>
+</html>
