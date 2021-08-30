@@ -6,17 +6,15 @@
 </head>
 <body>
 <script>
-    let string=prompt("Nhập một xâu kí tự");
+    let string = prompt("Nhập một xâu kí tự");
     //CHuyển xâu thành một mảng kí tự:
-    let bienDoi=[];
-    for (i=0;i<string.length;i++)
-    {
+    let bienDoi = [];
+    for (i = 0; i < string.length; i++) {
         bienDoi.push(string[i]);
     }
-  console.log (bienDoi.join(","));
-    for (i=0;i<bienDoi.length;i++)
-    {
-        if(bienDoi[i]=="-") bienDoi[i]="_";
+    console.log(bienDoi.join(","));
+    for (i = 0; i < bienDoi.length; i++) {
+        if (bienDoi[i] == "-") bienDoi[i] = "_";
     }
     document.write(bienDoi);
 </script>
