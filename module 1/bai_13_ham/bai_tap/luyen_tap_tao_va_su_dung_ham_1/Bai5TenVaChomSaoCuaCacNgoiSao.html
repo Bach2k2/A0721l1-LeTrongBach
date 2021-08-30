@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai5</title>
+</head>
+<body>
+<input type="button" onclick="show()" id="name" value="write your star">
+<script>
+    let star = ["Polaris", "Aldebaran", " Deneb", "Vega", " Altair", "Dubhe", "Regulus"];
+    let chomSao = ["Ursa Minor", "Tarurus", " Cygnus", " Lyra", "Aquila", "Ursa Major", "Leo"];
+    function show() {
+        let name=prompt('Nhập tên ngôi sao bạn đoán');
+        let result="Không có ngôi sao đó, sorry bạn";
+        for (let i = 0; i < 7; i++) {
+            console.log(name);
+            if (name === star[i]) {
+                result=chomSao[i];
+                break;
+            }
+        }
+        alert(result);
+        return result;
+    }
+    show();
+</script>
+</body>
+</html>

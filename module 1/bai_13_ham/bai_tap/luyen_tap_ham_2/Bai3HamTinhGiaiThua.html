@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai thừa</title>
+</head>
+<body>
+<script>
+    let so=prompt("Nhập 1 số");
+    alert("Giai thừa của "+ so +": "+ giaiThua(so));
+    function giaiThua(num) {
+        let tich = 1;
+        for (let i = 1; i <= num; i++) {
+            tich *= i;
+        }
+        return tich;
+    }
+</script>
+</body>
+</html>

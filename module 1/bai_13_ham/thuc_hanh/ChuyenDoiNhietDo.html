@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change temperature</title>
+</head>
+<body>
+<h1><strong>Temperature Converter</strong></h1>
+<h2>Type a value in he Fahrenheit field to convert the value to Celsius</h2>
+<p><label>Fahrenheit </label>
+    <label for="nhapDoF"></label><input id="nhapDoF" type="number" width="100px" oninput="tempConvert(this.value)"/>
+</p>
+<p>Celsius:<span id="xuatDoC"></span></p>
+<script>
+    function tempConvert(value) {
+        value = parseFloat(value);
+        document.getElementById("xuatDoC").innerHTML = (value - 32) / 1.8;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tăng giá trị</title>
+</head>
+<body>
+<input type="button" value="Up" onclick="increase()">
+<br>
+<input type="button" value="Display" onclick="show()">
+<script>
+    let number = parseFloat(prompt("Nhập giá trị số"));
+    number = increase(number);
+    alert(number);
+    function increase(number) {
+        number++;
+        return number;
+    }
+
+    function show() {
+        number = increase(number);
+        alert(number);
+    }
+</script>
+</body>
+</html>

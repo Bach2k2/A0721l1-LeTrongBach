@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Could you play chess with me?</title>
+</head>
+<body>
+<script>
+    function Question(answer) {
+        let result;
+        if (answer) result="Excellent,let's play together";
+        else result="May be next time";
+        return result;
+    }
+    let answer=confirm("Could you play chess now?");
+    alert(Question(answer));
+
+</script>
+</body>
+</html>

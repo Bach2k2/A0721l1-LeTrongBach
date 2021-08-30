@@ -5,17 +5,20 @@
     <title>Đếm số từ trong 1 chuỗi</title>
 </head>
 <body>
+<input type="button" value="Đếm số từ trong câu" onclick="demSoTu()"/>
+<p id="result"></p>
 <script>
+    function demSoTu(){
     let string = prompt("Nhập một chuỗi kí tự bất kì");
-    let count=1 ;
+    let count = 1;
     let check = true;
-    let i=0;
-    if (string==null)  check =false;
+    let i = 0;
+    if (string == null) check = false;
     for (i = 0; i < string.length; i++)
-        if (string.charCodeAt(i)==32&&string.charCodeAt(i+1)!=32) count++;
+        if (string.charCodeAt(i) === 32 && string.charCodeAt(i + 1) !== 32) count++;
 
-    if(check=true) document.write("Có "+ count +" từ")
-    else document.write("Có 0 từ");
+        document.getElementById("result").innerHTML="Có tất cả "+ count+" từ";
+    }
 </script>
 </body>
 </html>

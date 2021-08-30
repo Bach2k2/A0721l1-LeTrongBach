@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Có phải kí tự số?</title>
+</head>
+<body>
+<script>
+    let input = prompt("Nhập 1 kí tự  bất kì: ");
+    function kiTuSo(input) {
+        return input.charCodeAt(0) > 47 && input.charCodeAt(0) < 58;
+    }
+        if (kiTuSo(input)) alert("là kí tự số");
+        else alert("Ko phải kí tự số");
+</script>
+</body>
+</html>

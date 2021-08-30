@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chu vi và diện tích hình tròn</title>
+</head>
+<body>
+<script>
+    let banKinh = parseFloat(prompt("Vui lòng nhập bán kính:"));
+    alert("Chuvi:" + chuVi(banKinh));
+    alert("Diện tích: " + dienTich(banKinh));
+
+    function chuVi(banKinh) {
+        return banKinh * 2 * 3.14;
+    }
+
+    function dienTich(banKinh) {
+        return banKinh * banKinh * 3.14;
+    }
+</script>
+</body>
+</html>

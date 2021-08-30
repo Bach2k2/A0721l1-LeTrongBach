@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi đơn vị giữa mét và feet</title>
+</head>
+<body>
+<h3>Đổi đơn vị feet sang mét</h3>
+<label for="inputFoot"></label><input type="number" id="inputFoot" oninput="footToMeter(this.value)"/>
+<p><strong>Kết quả :</strong></p>
+<p id="outputMeter"></p>
+<h3>Đổi đơn vị mét sang feet</h3>
+<label for="inputMeter"></label><input type="number" id="inputMeter" oninput="meterToFoot(this.value)"/>
+<p><strong>Kết quả:</strong></p>
+<p id="outputFoot"></p>
+<script>
+    function footToMeter(foot) {
+        let meter = foot * 0.305;
+        document.getElementById("outputMeter").innerHTML = meter +" mét";
+        // return meter;
+    }
+
+    function meterToFoot(meter) {
+        let foot = meter * 3.279;
+        document.getElementById("outputFoot").innerHTML = foot +" feet";
+        // return feet;
+    }
+</script>
+</body>
+</html>
