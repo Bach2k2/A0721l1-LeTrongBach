@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lí ứng dụng</title>
+</head>
+<body>
+<form>
+    <h3>Add New Product </h3>
+    <fieldset style="color: #dddddd">
+        <input id="newproduct" type="text" width="200px" name="new_product" placeholder="New Product"/>
+        <input id="add1" type="button" style="background-color:green;color: white" value="add" onclick="Add()"/>
+    </fieldset>
+</form>
+<form>
+    <p>Tổng số lượng sản phẩm:<span id="total" style="text-align: right"> </span></p>
+    <p id="result"></p>
+</form>
+<script>
+    let array = ["Sony Xperia", "Samsung Galaxy", "Nokia 6"];
+
+    function display() {
+        let build = "<table border='1px'>";
+        build += "<tr>";
+        build += "<td>Stt</td>"
+        build += "<td>Tên sản phẩm</td>";
+        build += "<td>Sửa</td>"
+        build += "<td>Xóa</td>"
+        build += "</tr>";
+        for (let i = 0; i < array.length; i++) {
+            build += "<tr>";
+            build += "<td>" + (i + 1) + "</td>";
+            build += "<td>" + array[i] + "</td>";
+            build += "<td> " + "<input type='button' style='background-color: limegreen' onclick='edit(" + i + ")' value='edit'/></td>"
+            build += "<td> " + "<input type='button' style='background-color: limegreen' value='remove' onclick='remove(" + i + ")'/></td>"
+            build += "</tr>";
+        }
+        build += "</table>";
+        document.getElementById("result").innerHTML = build;
+        document.getElementById("total").innerHTML = array.length;
+    }
+
+    display();
+
+    function Add() {
+        let newProduct = document.getElementById("newproduct").value;
+        if (newProduct == "") alert("Bạn cần nhập tên sản phẩm");
+        else {
+            array.push(newProduct);
+            document.getElementById("newproduct").value = "";
+        }
+        display();
+    }
+
+    function edit(id) {
+        let editOne = prompt("Nhập tên cần sửa");
+        if (editOne == "") alert("Mời bạn nhập lại");
+        else if (editOne == null) alert("Bạn không cần sửa phải không?");
+        else {
+            array[id] = editOne;
+            display();
+            alert("Bạn đã sửa thành công");
+        }
+    }
+
+    function remove(id) {
+        let deleteOne = confirm("Bạn có chắc xóa đi sản phẩm này ");
+        if (!deleteOne) {
+            alert("Bạn đã hủy,cảm ơn");
+        } else {
+            array.splice(id, 1);
+            display();
+            alert("Bạn đã xóa thành công");
+        }
+    }
+</script>
+</body>
+</html>

@@ -6,18 +6,33 @@
 </head>
 <body>
 <script>
-    let string=prompt("Nhập chuỗi ");
-    function IsPalindrome(s) {
-        let first=0;let final=s.length-1;
+    let string = prompt("Nhập chuỗi ");
+    /* cách 1: Vòng lặp
+    function IsPalindrome(str) {
+        let first=0;let final=str.length-1;
         while(first<final)
         {
-            if(s[first]!==s[final]) return false;
+            if(str[first]!==str[final]) return false;
             first++;final--;
         }
         return true;
     }
     if(IsPalindrome(string)) alert("Chuỗi này đối xứng");
     else alert("Chuỗi này không đối xứng");
+    */
+    /*Cách 2: Đệ quy*/
+    function IsPalinedrome(str) {
+
+        let head = 0;
+        let tail = str.length - 1;
+        if (str[head] != str[tail]) {
+            return false;
+        } else {return true;}
+        IsPalinedrome(str.slice(head + 1, tail));
+    }
+
+    if (IsPalinedrome(string) == true) alert("chuỗi đối xứng");
+    else alert("chuỗi này không đối xứng");
 </script>
 </body>
 </html>
