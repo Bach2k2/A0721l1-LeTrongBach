@@ -25,13 +25,16 @@
 
         let head = 0;
         let tail = str.length - 1;
-        if (str[head] != str[tail]) {
+        if (head >= tail) {
+            return true;
+        } else if (str[head] != str[tail]) {
             return false;
-        } else {return true;}
-        IsPalinedrome(str.slice(head + 1, tail));
+        } else
+            str=str.slice(head + 1, tail);
+            return IsPalinedrome(str);
     }
 
-    if (IsPalinedrome(string) == true) alert("chuỗi đối xứng");
+    if (IsPalinedrome(string)) alert("chuỗi đối xứng");
     else alert("chuỗi này không đối xứng");
 </script>
 </body>

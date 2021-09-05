@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class aCircle {
+        constructor(radius,color) {
+            this.radius=radius;
+            this.color=color;
+        }
+        circle=function()
+        {
+            this.radius=parseFloat(prompt("radius:"))
+        }
+        getRadius=function () {
+        return this.radius;
+        }
+        getArea=function () {
+            return this.radius * this.radius * Math.PI;
+        }
+    }
+    let circle1 = new aCircle(32,"pink");
+    let radius1 = circle1.getRadius();
+    let area1= circle1.getArea();
+    alert("bán kính: "+radius1+"; diện tích: "+ area1);
+    let circle2 = new aCircle(12,"green");
+    let radius2 = circle2.getRadius();
+    let area2= circle2.getArea();
+    alert("bán kính: "+radius2+"; diện tích: "+ area2);
+    let circle3 = new aCircle(10,"blue");
+    let radius3 = circle3.getRadius();
+    let area3= circle3.getArea();
+    alert("bán kính: "+radius3+"; diện tích: "+ area3);
+</script>
+</body>
+</html>
