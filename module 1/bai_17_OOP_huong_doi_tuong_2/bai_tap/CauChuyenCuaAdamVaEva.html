@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mô phỏng câu chuyện adam và eva</title>
+</head>
+<body>
+<p id="Adam"></p>
+<p id="Eva"></p>
+<script>
+    class Apple {
+
+        constructor(weight) {
+            this.weight = weight;
+        }
+
+        decrease = function (weight) {
+            weight--;
+            return weight;
+        }
+        isEmpty = function (weight) {
+            if (weight == 0) return true;
+            else return false
+        }
+
+        getWeight() {
+            return this.weight
+        }
+    }
+
+    //Low
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        isMale = function (gender) {
+            if (gender === "male") return true;
+            else return false;
+        }
+        setGender = function (check) {
+
+            if (check) this.gender = "male";
+            else this.gender = "female";
+        }
+
+        checkApple = function (Apple) {
+            if (!Apple.isEmpty()) return true;
+            else return false;
+        }
+
+        eat = function (Apple) {
+            Apple.decrease();
+            this.weight++;
+        }
+        say = function () {
+            console.log(this.name + " says: Hello");
+        }
+        getName = function () {
+            return this.name;
+        }
+        setName = function (string) {
+            this.name = string;
+        }
+        getWeight = function () {
+            return this.weight;
+        }
+        setWeight = function (weight) {
+            this.weight = weight;
+        }
+    }
+
+    let apple = new Apple(10);
+    let person = new Human();// tạo một đối tượng khác là 1 trong Adam hoặc Eva - Đối tượng chỉ dùng để gọi
+    let people1 = new Human();
+    people1.setName("Adam");
+    people1.setGender(true);
+    people1.setWeight(60);
+    people1.say();
+    let people2 = new Human();
+    people2.setName("Eva");
+    people2.setGender(false);
+    people2.setWeight(50);
+    people2.say();
+    let appleWeight = apple.getWeight();
+    alert(appleWeight);
+    let AdamWeight = people1.getWeight();
+    let EvaWeight = people2.getWeight();
+    let gender = person.setGender(true);
+  do
+    {
+    console.log(appleWeight);
+    if (person.isMale(gender) && person.checkApple(apple)) {
+        people1.eat(apple);
+        appleWeight = apple.decrease(appleWeight);
+        AdamWeight++;
+        gender = "female"
+    } else if (!person.isMale(gender) && person.checkApple(apple)) {
+        people2.eat(apple);
+        appleWeight = apple.decrease(appleWeight)
+        EvaWeight++;
+        gender = "male";
+    }
+    else
+    {
+    }
+    }  while(!apple.isEmpty(appleWeight));
+    alert("Táo đã hết");
+    document.getElementById("Adam").innerHTML="\nCân nặng hiện tại của Adam: " + AdamWeight;
+    document.getElementById("Eva").innerHTML="\nCân nặng hiện tại của Eva: " + EvaWeight;
+</script>
+</body>
+</html>

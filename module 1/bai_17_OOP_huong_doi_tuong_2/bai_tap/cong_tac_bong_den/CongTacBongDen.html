@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mô phđ điều khiển bóng đèn</title>
+</head>
+<body>
+<img id="theLamp" src="images.png"/>
+<br><br>
+<input type="button" id="SwitchButton" onclick="turnOn_turnOff()" value="Turn On"/>
+<script>
+    let ElectricLamp = function (status) {
+        this.status = status;
+        //
+        this.Lamp = function () {
+            this.status = confirm("On/yes or off/no");
+        }
+        this.turnOn = function () {
+            this.status = true;
+        }
+        this.turnOff = function () {
+            this.status = false;
+        }
+    }
+    let SwitchButton = function (buttonStatus, ElectricLamp) {
+        this.status = buttonStatus;
+        this.lamp = ElectricLamp;
+        this.SwitchButton = function () {
+            this.status = confirm("On/Yes or off/no");
+        }
+        this.connectToLamp = function () {
+            return this.status;
+        }
+        this.switchOff = function () {
+            this.status = false;
+        }
+        this.switchOn = function () {
+            this.status = true;
+        }
+    }
+    let myLamp = new ElectricLamp(false);
+    let mySwitchButton = new SwitchButton(false, ElectricLamp);
+    //cho đèn tắt:
+    function turnOn_turnOff() {
+        if (!myLamp.status) {
+            mySwitchButton.switchOn();
+            myLamp.status = mySwitchButton.connectToLamp();
+            document.getElementById("theLamp").src = "images.jfif";
+            document.getElementById("SwitchButton").value = "Turn off";
+            alert("Đèn sẽ bật");
+        } else {
+            mySwitchButton.switchOff();
+            myLamp.status = mySwitchButton.connectToLamp();
+            document.getElementById("theLamp").src = "images.png";
+            document.getElementById("SwitchButton").value = "Turn on";
+            alert("Đèn sẽ tắt");
+        }
+    }
+</script>
+</body>
+</html>
