@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo lớp điện thoại</title>
+</head>
+<body>
+<script>
+    class Phone {
+        constructor(name) {
+            this.name = name;
+            this.status = true
+            this.battery = 100;
+            this.mesComing= "";
+            //bộ nhớ lưu tin nhắn đang soạn
+            this.memoryUsing = [];
+            //bộ nhớ dùng để lưu tin nhắn đã gửi
+            this.memorySended = [];
+            // bộ nhớ dùng để lưu tin nhắn trong hộp thư đến
+            this.memoryInbox = []
+        }
+
+        checkStatus = function () {
+            return this.status;
+        }
+        turnOn_Off = function () {
+            let decide = confirm("Bạn muốn bật hay là tắt: "+this.name+ "");
+            if (decide) this.status = true;
+            else this.status = false;
+            this.battery--;
+        }
+
+        chargeBattery = function () {
+            this.battery++;
+        }
+
+        writeMes = function () {
+            if (this.checkStatus()) {
+                let message = prompt("Nhập tin nhắn từ " + this.name);
+                this.memoryUsing.push(message);
+                this.battery--;
+                let draft=message;
+                return draft;
+            } else {
+                alert("Hãy bật điện thoại!");
+                this.turnOn_Off();
+            }
+        }
+
+        receiveMes = function (message) {
+            if (this.checkStatus()) {
+                this.memoryInbox.push(message);
+                this.battery--;
+            } else {
+                alert("hãy bật điện thoại lên trước");
+                this.turnOn_Off();
+            }
+        }
+
+        sendMes = function (name, message) {
+            this.mesComing = message;
+            if (this.checkStatus()) {
+                this.memorySended.push(message);
+                console.log(this.name + ' send to "' + name +'": '+ message);
+                this.battery--;
+            } else {
+                alert("hãy bật điện thoại lên trước");
+                this.turnOn_Off();
+            }
+        }
+        showInbox = function () {
+            if (this.checkStatus()) {
+                console.log(this.name+" 's memoryInbox: \n");
+                for(let i=0;i<this.memoryInbox.length;i++)
+                console.log(this.memoryInbox[i]);
+                this.battery--;
+            } else {
+                alert("hãy bật điện thoại lên trước");
+                this.turnOn_Off();
+            }
+        }
+        //Xem tin đã gửi
+        showMesSended = function () {
+            if (this.checkStatus()) {
+                console.log(this.name+" 's memorySended: \n");
+                for(let i=0;i<this.memorySended.length;i++)
+                    console.log(this.memorySended[i]);
+                this.battery--;
+            } else {
+                alert("hãy bật điện thoại lên trước");
+                this.turnOn_Off();
+            }
+        }
+    }
+    let nokia=new Phone("Nokia");
+    nokia.status=false;
+    nokia.turnOn_Off();
+    let iphone=new Phone("Iphone 9s");
+    iphone.status=false;
+    iphone.turnOn_Off();
+    nokia.sendMes("Iphone",nokia.writeMes());
+    iphone.receiveMes(nokia.mesComing);
+    iphone.sendMes("Nokia","Sao cậu khó vỡ vậy?");
+    nokia.receiveMes(iphone.mesComing);
+    // Show bộ nhớ sau khi nhắn tin:
+    nokia.showInbox();
+    iphone.showInbox();
+    nokia.showMesSended();
+    iphone.showMesSended();
+    //
+    console.log("Pin hiện tại của Nokia:" +nokia.battery);
+    console.log("Pin hiện tại của Iphone:" +iphone.battery);
+    if(nokia.battery<20||iphone.battery<20)
+    {
+        alert("Hãy sạc điện thoại");
+        nokia.chargeBattery();
+        iphone.chargeBattery();
+    }
+</script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Đối tượng temperature</title>
+    <title>Tạo đối tượng nhiệt độ</title>
 </head>
 <body>
 <script>
@@ -11,18 +11,17 @@
             this.celcius=celcius;
         }
         convertToF=function () {
-        let fahhanreit=9/5*this.celcius+32;
-        return fahhanreit
+            let fahhanreit=9/5*this.celcius+32;
+            return fahhanreit
         }
         convertToK=function () {
-            let ekvin=this.celcius+(-273);
-            return ekvin;
+            let kevin=this.celcius+(-273);
+            return kevin;
         }
     }
     let nhietDo=new Temperature(parseInt(prompt("Nhập nhiệt độ")))
     alert("Nhiệt độ -> F: "+ nhietDo.convertToF())
     alert("Nhiệt độ -> K: "+ nhietDo.convertToK())
 </script>
-
 </body>
 </html>

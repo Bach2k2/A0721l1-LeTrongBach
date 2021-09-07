@@ -9,6 +9,7 @@
 <br><br>
 <input type="button" id="SwitchButton" onclick="turnOn_turnOff()" value="Turn On"/>
 <script>
+    // class đèn
     let ElectricLamp = function (status) {
         this.status = status;
         //
@@ -22,6 +23,7 @@
             this.status = false;
         }
     }
+    //class button:
     let SwitchButton = function (buttonStatus, ElectricLamp) {
         this.status = buttonStatus;
         this.lamp = ElectricLamp;
