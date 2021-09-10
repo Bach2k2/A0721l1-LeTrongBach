@@ -5,6 +5,9 @@
     <title>Mô phỏng câu chuyện adam và eva</title>
 </head>
 <body>
+<pre style="font-family: 'Times New Roman'">Có một trái táo trong vườn cấm, Adam và Eva quyết định chia cho mỗi người một miếng cho đến khi táo hết sạch.
+Táo rất ngon nhưng tiếc chỉ có 10 miếng cho mỗi người 5 miếng.</pre>
+<div id="conversation"></div>
 <p id="Adam"></p>
 <p id="Eva"></p>
 <script>
@@ -55,8 +58,8 @@
             Apple.decrease();
             this.weight++;
         }
-        say = function () {
-            console.log(this.name + " says: Hello");
+        say = function (speech) {
+            document.getElementById("conversation").innerHTML += this.name + ' nói: "' + speech + '"<br>'
         }
         getName = function () {
             return this.name;
@@ -74,42 +77,40 @@
 
     let apple = new Apple(10);
     let person = new Human();// tạo một đối tượng khác là 1 trong Adam hoặc Eva - Đối tượng chỉ dùng để gọi
-    let people1 = new Human();
-    people1.setName("Adam");
-    people1.setGender(true);
-    people1.setWeight(60);
-    people1.say();
-    let people2 = new Human();
-    people2.setName("Eva");
-    people2.setGender(false);
-    people2.setWeight(50);
-    people2.say();
+    let adam = new Human();
+    adam.setName("Adam");
+    adam.setGender(true);
+    adam.setWeight(60);
+    adam.say("Em hãy ăn đi.");
+    let eva = new Human();
+    eva.setName("Eva");
+    eva.setGender(false);
+    eva.setWeight(50);
+    eva.say("Anh ăn trước đi, nãy giờ chạy anh cũng mệt rồi");
+    adam.say("Cảm ơn em. Vậy anh ăn trước nhé!");
     let appleWeight = apple.getWeight();
-    alert(appleWeight);
-    let AdamWeight = people1.getWeight();
-    let EvaWeight = people2.getWeight();
+    alert("Khối lượng táo ban đầu: "+ appleWeight);
+    let AdamWeight = adam.getWeight();
+    let EvaWeight = eva.getWeight();
     let gender = person.setGender(true);
-  do
-    {
-    console.log(appleWeight);
-    if (person.isMale(gender) && person.checkApple(apple)) {
-        people1.eat(apple);
-        appleWeight = apple.decrease(appleWeight);
-        AdamWeight++;
-        gender = "female"
-    } else if (!person.isMale(gender) && person.checkApple(apple)) {
-        people2.eat(apple);
-        appleWeight = apple.decrease(appleWeight)
-        EvaWeight++;
-        gender = "male";
-    }
-    else
-    {
-    }
-    }  while(!apple.isEmpty(appleWeight));
-    alert("Táo đã hết");
-    document.getElementById("Adam").innerHTML="\nCân nặng hiện tại của Adam: " + AdamWeight;
-    document.getElementById("Eva").innerHTML="\nCân nặng hiện tại của Eva: " + EvaWeight;
+    do {
+        console.log(appleWeight);
+        if (person.isMale(gender) && person.checkApple(apple)) {
+            adam.eat(apple);
+            appleWeight = apple.decrease(appleWeight);
+            AdamWeight++;
+            gender = "female";
+        } else if (!person.isMale(gender) && person.checkApple(apple)) {
+            eva.eat(apple);
+            appleWeight = apple.decrease(appleWeight);
+            EvaWeight++;
+            gender = "male";
+        } else {
+        }
+    } while (!apple.isEmpty(appleWeight));
+    alert("Câu chuyện: Chương táo đã hết");
+    document.getElementById("Adam").innerHTML = "\nCân nặng của Adam sau khi ăn táo: " + AdamWeight+" kg";
+    document.getElementById("Eva").innerHTML = "\nCân nặng của Eva sau khi ăn táo: " + EvaWeight+" kg";
 </script>
 </body>
 </html>

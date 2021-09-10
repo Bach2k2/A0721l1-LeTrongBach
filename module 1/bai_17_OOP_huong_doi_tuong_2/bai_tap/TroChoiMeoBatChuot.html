@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quá trình mèo bắt chuột</title>
+</head>
+<body>
+<pre style="font-family: 'Times New Roman'"> Hiện tại mèo đang bắt chuột nhưng: Tốc độ của mèo là 5m/s và của chuột lại nhanh hơn :6m/s
+Hãy đoán xem mèo sẽ bắt được chuột ?</pre>
+<input type="button" value="Start" onclick="start()"/>
+<p id="conversation"></p>
+<p id="cat"></p>
+<p id="rat"></p>
+<script>
+    class Characters{
+        constructor(name,weight,speed) {
+            this.name=name;
+            this.weight=weight;
+        }
+        talk=function()
+        {
+
+        }
+    }
+    class Rat extends Characters{
+        constructor(name, weight, speed, status) {
+            super(name,weight,speed);
+            this.status = status;
+        }
+        Talk(speech)
+        {
+            document.getElementById("conversation").innerHTML+=
+        }
+        setWeight = function () {
+            let weight = parseInt(prompt("Nhập khối lượng"));
+            return weight;
+        }
+        setSpeed = function () {
+            let speed = parseInt(prompt("Nhập tốc độ"));
+            return speed;
+        }
+        getStatus = function (status) {
+            return status;
+        }
+    }
+
+    class Cat {
+        constructor(name, weight, speed, status, action) {
+            this.name = name;
+            this.weight = weight;
+            this.speed = speed;
+            this.action = action;
+        }
+
+        setWeight = function () {
+            let weight = parseInt(prompt("Nhập khối lượng"));
+            return weight;
+        }
+        setSpeed = function () {
+            let speed = parseInt(prompt("Nhập tốc độ"));
+            return speed;
+        }
+        getStatus = function (status) {
+            return status;
+        }
+        canCatch = function (Rat) {
+            if (this.speed > Rat.speed) return true;
+            else return false;
+        }
+        eat = function (Rat) {
+            let decide = confirm("Mèo sẽ ăn chuột ?");
+            if (decide) {
+                this.weight += Rat.weight;
+                document.getElementById("cat").innerHTML = "Mèo đã no.Ban đầu chỉ 10kg nhưng khi ăn xong nó lên cân: " + cat1.weight;
+                Rat.status = false;
+            } else {
+                alert("Mèo tha cho chuột");
+            }
+        }
+    }
+
+
+    let rat1 = new Rat("Rat", 3, 6, true, "chít chít");
+    console.log(rat1.action);
+    let cat1 = new Cat("Cat", 10, 5, true, "meow meow");
+    console.log(cat1.action);
+
+    function start() {
+        if (cat1.canCatch(rat1)) {
+            alert("Mèo bắt được chuột");
+        } else alert("Mèo không bắt được chuột. Vì chuột quá nhanh");
+        //Thay đổi tốc độ
+        rat1.speed = rat1.setSpeed();
+        if (cat1.canCatch(rat1)) {
+            alert("Mèo bắt được chuột");
+            cat1.eat(rat1);
+            if (rat1.status) document.getElementById("rat").innerHTML = "Chuột đã chạy thoát";
+            else document.getElementById("rat").innerHTML = "Chuột ngủm rồi";
+        } else alert("Mèo không bắt được chuột.Vì chuột quá nhanh");
+    }
+let arr=[];
+
+    arr.push(2,3,4,5);console.log(arr);
+
+</script>
+</body>
+</html>

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Quản lí ứng dụng</title>
+    <style>
+
+    </style>
 </head>
 <body>
 <form>
@@ -54,7 +57,9 @@
 
     function edit(id) {
         let editOne = prompt("Nhập tên cần sửa");
-        if (editOne == "") alert("Mời bạn nhập lại");
+        if (editOne == "") {alert("Mời bạn nhập lại");
+            edit(id);
+        }
         else if (editOne == null) alert("Bạn không cần sửa phải không?");
         else {
             array[id] = editOne;
