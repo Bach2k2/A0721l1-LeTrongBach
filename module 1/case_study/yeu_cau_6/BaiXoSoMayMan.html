@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chơi sổ xố:</title>
+    <style>
+        .ticket {
+            padding: 10px;
+            width: 40px;
+            height: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<h3> Xổ số codegym</h3>
+<p id="customer"></p>
+<input type="button" value="Mua vé" onclick="buyTicket()">
+<input type="button" value="Xem kết quả" onclick="showResult()">
+<p id="result"></p>
+<script>
+    let tableString = "<table border='1px solid black'>";
+
+    class Customer {
+        constructor() {
+            this.choice = 0;
+            this.times = 0;
+            this.ticket = Array(0);
+            for (let i = 0; i < 4; i++) {
+                this.ticket[i] = Array(0);
+            }
+        }
+
+        buyTicket = function () {
+            tableString += "<tr>";
+            if (this.times < 4) {
+                this.choice = parseInt(prompt("Bạn có 2 lựa chọn:" + "\n" + "1. Bạn muốn tự chọn số" + "\n" + "2. Hệ thông tụ random"));
+                console.log(this.choice);
+                if (this.choice == 1) {
+                    for (let i = 0; i < 6; i++) {
+                        let number = parseInt(prompt("Nhập số lần thứ " + (i + 1)));
+                        if (number >= 0 && number <= 99) {
+                            this.ticket[this.times].push(number);
+                            tableString += "<td>" + "<input disabled type='text' value='" + number + "' class='ticket' >" + "</td>";
+                        } else {
+                            alert("Nhập số từ 0->99");
+                        }
+
+                    }
+                } else if (this.choice == 2) {
+                    for (let i = 0; i < 6; i++) {
+                        let number = Math.round(Math.random() * 100);
+                        this.ticket[this.times].push(number);
+
+                        tableString += "<td>" + "<input disabled type='text' value='" + number + "' class='ticket' >" + "</td>";
+
+                    }
+                    console.log(this.ticket);
+                }
+            } else {
+                alert("Bạn hết lượt mua vé rồi, Hẹn gặp lại");
+            }
+
+            this.times++;
+            tableString += "</tr>";
+
+            document.getElementById("customer").innerHTML = tableString;
+        };
+    }
+
+    class VietLot {
+        constructor() {
+            this.result = [];
+            this.check = [];
+            this.turn = true;
+        }
+
+        showResult = function () {
+            if(this.turn=true){
+                for (let i = 0; i < 6; i++) {
+                    let number = Math.round(Math.random() * 100);
+                    this.result.push(number);
+                    tableString += " </table>";
+                }
+                document.getElementById("result").innerHTML += this.result.join(",");
+                this.afterShow();
+            }
+        }
+        getPrize = function (customer) {
+            let count = 0;
+            for (let j = 0; j < customer.times; j++) {
+                count = 0;
+                for (let i = 0; i < 6; i++) {
+                    if (this.result[i] == customer.ticket[j][i]) {
+                        count++;
+                        this.check.push(true);
+                    } else {
+                        this.check.push(false);
+                    }
+                }
+                if (count == 6) alert("Bạn đạt giải nhất");
+                else if (count == 5 && !this.check[0]) alert("Bạn đạt giải nhì");
+                else if (count == 3 && this.check[3] && this.check[4] && this.check[5]) alert("Bạn đạt giải khuyến khích");
+                else {
+                    alert("Chúc bạn may mắn lần sau");
+                }
+            }
+            console.log(count+"?");
+        }
+        afterShow = function () {
+            this.turn = false;
+        }
+    }
+
+    let customer1 = new Customer();
+
+    function buyTicket() {
+        customer1.buyTicket();
+    }
+
+    let vietLot = new VietLot();
+
+    function showResult() {
+        vietLot.showResult();
+        vietLot.getPrize(customer1);
+    }
+</script>
+</body>
+</html>

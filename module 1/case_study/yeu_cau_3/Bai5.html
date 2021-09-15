@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+
+<h3 style="text-align: center">Menu giải khát</h3>
+<ol>
+    <li>Cafe____25000</li>
+    <li>Cam vắt______15000</li>
+    <li>Nước ép cà rốt_____15000</li>
+    <li>Nước ép cà chua_____10000</li>
+    <li>Nước lọc____7000</li>
+    <li>Nước dừa____20000</li>
+    <li>Thoát menu</li>
+</ol>
+<button onclick="buy()">Buy !</button>
+<p id="hoadon"></p>
+<p id="total"></p>
+<script>
+    let menu = ["Cafe", "Cam vắt", "Nước ép cà rốt", "nước ép cà chua", "Nước lọc", "Nước dừa"];
+    let pricePerOne = [25000, 15000, 15000, 10000, 7000, 20000];
+    let soLuong, total = 0;
+
+    function buy() {
+        while (true) {
+            let choice = prompt("Hãy chọn lựa chọn của bạn");
+            if (choice == 1) {
+                if (confirm("Bạn muốn mua cafe?")) {
+                    alert("Sản phẩm này có giá: " + pricePerOne[0]);
+                    soLuong = parseInt(prompt("Bạn mua bao nhiêu ly?"));
+                    total += soLuong * pricePerOne[0];
+                    document.getElementById("hoadon").innerHTML += "<br> Cà phê " + " số lượng: " + soLuong;
+                }
+            } else if (choice == 2) {
+
+                alert("Cam vắt có giá: " + pricePerOne[1]);
+                soLuong = parseInt(prompt("Bạn mua bao nhiêu ly?"));
+                total += soLuong * pricePerOne[1];
+                document.getElementById("hoadon").innerHTML += "<br> Cam vắt " + " số lượng: " + soLuong;
+            } else if (choice == 3) {
+
+                alert("Nước ép cà rốt có giá: " + pricePerOne[2]);
+                soLuong = parseInt(prompt("Bạn mua bao nhiêu ly?"));
+                total += soLuong * pricePerOne[2];
+                document.getElementById("hoadon").innerHTML += "<br> Nước ép cà rốt " + " số lượng: " + soLuong;
+
+            } else if (choice == 4) {
+
+                alert("nước ép cà chua này có giá: " + pricePerOne[3]);
+                soLuong = parseInt(prompt("Bạn mua bao nhiêu ly?"));
+                total += soLuong * pricePerOne[3];
+                document.getElementById("hoadon").innerHTML += "<br> Nước ép cà chua " + " số lượng: " + soLuong;
+
+            } else if (choice == 5) {
+
+                alert("Nước lọc có giá: " + pricePerOne[4]);
+                soLuong = parseInt(prompt("Bạn mua bao nhiêu ly?"));
+                total += soLuong * pricePerOne[4];
+                document.getElementById("hoadon").innerHTML += "<br> Nước lọc " + " số lượng: " + soLuong;
+
+            } else if (choice == 6) {
+
+                alert("Sản phẩm này có giá: " + pricePerOne[5]);
+                soLuong = parseInt(prompt("Bạn mua bao nhiêu ly?"));
+                total += soLuong * pricePerOne[5];
+                document.getElementById("hoadon").innerHTML += "<br> Nước dừa " + " số lượng: " + soLuong;
+
+            } else if (choice == 7) {
+                break;
+            }
+            document.getElementById("total").innerHTML = "<br> Tổng đơn giá: " + total;
+        }
+    }
+
+</script>
+</body>
+</html>

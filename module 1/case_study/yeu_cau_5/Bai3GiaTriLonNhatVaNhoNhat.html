@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị lớn nhất và nhỏ nhất trong mảng 2 chiều:</title>
+</head>
+<body>
+<p id="matrix"></p>
+<script>
+    let hang= parseInt(prompt("nhập số hàng: "));
+    let cot=parseInt(prompt("nhập số cột"));
+    document.getElementById("matrix").innerHTML+="Ma trận " + hang +"x"+ cot +" có dạng là: <br>"
+    let array=Array(hang);
+    for( let i=0;i<hang;i++)
+    {
+        array[i]=Array(0);
+    }
+    function matrix(array) {
+        for ( let i = 0; i < hang; i++) {
+            for ( let j = 0; j < cot; j++) {
+                let numbers = parseInt(prompt("Nhập số tại Array [" + i + "][" + j + "]:"));
+                array[i].push(numbers);
+                document.getElementById("matrix").innerHTML += numbers + "&nbsp;&nbsp;";
+            }
+            document.getElementById("matrix").innerHTML+="<br>";
+        }
+    }
+    matrix(array)
+    function maxMin(array) {
+        let max=array[0][0],min=array[0][0];
+           for(let i=0;i<hang;i++)
+           {
+               for (let j=0;j<cot;j++)
+               {
+                   if(max< array[i][j]) max=array[i][j];
+                   if(min>array[i][j]) min=array[i][j];
+               }
+           }
+           document.getElementById("matrix").innerHTML+="Số lớn nhất trong mảng: "+ max +", số nhỏ nhất trong mảng: "+min;
+    }
+    maxMin(array);
+</script>
+</body>
+</html>

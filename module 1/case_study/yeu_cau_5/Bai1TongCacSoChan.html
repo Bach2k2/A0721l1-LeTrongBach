@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng các số chẵn trong 1 ma trận mxn</title>
+</head>
+<body>
+<p> Cho một ma trận mxn: </p>
+<p id="matrix"></p>
+<script>
+    let columns = parseInt(prompt("Nhập số hàng"));
+    let rows = parseInt(prompt("Nhập số cột"));
+    let array = Array(0);
+    for (let i = 0; i < columns; i++) {
+        array[i] = Array(0);
+    }
+    for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < columns; j++) {
+            let number = parseInt(prompt("Nhập vị trí: Array"+ "["+i+"]["+j+"]= "));
+            array[i].push(number);
+            document.getElementById("matrix").innerHTML += number + "&nbsp;&nbsp;";
+        }
+        document.getElementById("matrix").innerHTML += "<br>";
+    }
+    console.log(array);
+
+    function sumEvenNum(array) {
+        let sum = 0;
+        for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < columns; j++) {
+                if (array[i][j] % 2 == 0) sum += array[i][j];
+            }
+
+        }
+        return sum;
+    }
+
+    document.getElementById("matrix").innerHTML += "<br>Tống các số chẵn trong ma trận: " + sumEvenNum(array);
+</script>
+</body>
+</html>

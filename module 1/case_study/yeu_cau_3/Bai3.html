@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let numerators=[4,7,9,5];
+    let denominators=[6,3,8,2];
+    function maxFraction(numerators,denominators) {
+        let max,index;
+        if(denominators[0] != 0) {
+           max = numerators[0] / denominators[0];
+           index=0;
+        }
+        else return -1;
+        for (let i=1;i<numerators.length;i++)
+        {
+            if (denominators[i]!==0)
+            {
+                let result=numerators[i]/denominators[i]
+                if (max < result) {
+                    max = result;
+                    index=i;
+                }
+                else continue;
+            }
+        }
+        return index;
+    }
+    if(maxFraction(numerators,denominators)>0) alert("Vị trí phân số lớn nhất: "+ maxFraction(numerators,denominators));
+    else {
+        alert("Phân số ko có mẫu =0");
+    }
+</script>
+</body>
+</html>

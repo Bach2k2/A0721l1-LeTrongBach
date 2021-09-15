@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    arrayA=[1,2,3,4,5];
+    arrayB=Array(5);
+    let i,j;//Các biến đếm
+    for(i=0;i<5;i++)
+    {
+        arrayB[i]=arrayA[0];
+        for (j=1;j<=i;j++)
+        {
+            arrayB[i]+=arrayA[j];
+        }
+    }
+       console.log(arrayB);
+</script>
+</body>
+</html>

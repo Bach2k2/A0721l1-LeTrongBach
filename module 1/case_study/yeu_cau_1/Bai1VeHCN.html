@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vẽ hình chữ nhật</title>
+</head>
+<body>
+<p id="rectangle"></p>
+<script>
+   let width=parseInt(prompt("Nhập chiều dài"));
+   let height=parseInt(prompt("Nhập chiều rộng"));
+    let i,j;
+    for(i=0;i<height;i++)
+    {
+        for(j=0;j<width;j++)
+        {
+            if (i==0||j==0||i==height-1||j==width-1)
+            {
+                document.getElementById("rectangle").innerText+="*";
+            }
+            else document.getElementById("rectangle").innerHTML+=("&nbsp;&nbsp;");
+        }
+        document.getElementById("rectangle").innerHTML+=("<br>");
+    }
+</script>
+</body>
+</html>

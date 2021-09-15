@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Duyệt mảng a và b</title>
+</head>
+<body>
+<script>
+    let arrayA=[2,3,7,8,10,1];
+    let arrayB=[2,3,5,7,8,10,1,100];
+    let arrayC=Array(0)
+    let flag=true;
+    for (let i=0;i<8;i++)
+    {   let check=arrayB[i];
+        for(j=0;j<6;j++) {
+            if (check==arrayA[j]) flag=false;
+        }
+        if(flag) {
+            arrayC.push(check);
+        }
+        flag=true;
+    }
+    console.log(arrayC);
+
+</script>
+</body>
+</html>

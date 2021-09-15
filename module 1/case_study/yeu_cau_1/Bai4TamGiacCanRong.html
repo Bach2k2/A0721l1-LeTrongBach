@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hình tam giác cân rỗng</title>
+</head>
+<body>
+<script>
+    let i,j;
+    let width = parseInt(prompt("nhập độ rộng (Số lẻ mới hợp lí)"));
+    console.log(width);
+    for (i = 1; i <= parseInt(width / 2 + 1); i++) {
+        console.log(width/2+1);
+        for (j = 1; j <= width; j++) {
+            if ((j == Math.round(width / 2 + 1 - i)) || (j == parseInt(width / 2 + 1 + (i - 1))) || (i == parseInt(width / 2 + 1))) {
+                console.log(width / 2 + 1 - i);
+                console.log(width / 2 + 1 + (i - 1))
+                document.write("*");
+            } else document.write("&nbsp;&nbsp;");
+        }
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thuế thu nhập theo mức lương</title>
+</head>
+<body>
+<script>
+    let salary=parseInt(prompt("Nhập lương nhân viên:"));
+    let tax=0;
+    let luongRong;
+    if(salary>15000000)
+    {
+        tax=salary*0.2;
+    }
+    else if(salary>7000000)
+    {
+        tax=salary*0.1;
+    }
+    else if(salary>5000000)
+    {
+        tax=salary*0.05;
+    }
+    else {tax=0;}
+    luongRong=salary-tax;
+    alert("Lương ròng: "+luongRong);
+</script>
+</body>
+</html>

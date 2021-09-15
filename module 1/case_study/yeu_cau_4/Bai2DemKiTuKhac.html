@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số kí tự khác nhau</title>
+</head>
+<body>
+<script>
+    let string1 = prompt("Nhập một chuỗi");
+    let result = Array(0);
+
+    function differentSymbolsNaive(string1) {
+        let check = true;
+        result.push(string1[0]);
+        let count =1;
+        let i, j;
+        for (i = 1; i < string1.length; i++) {
+            for (j = 0; j <= i; j++) {
+                if (string1[i] == result[j]) {
+                    check = false;
+                    break;
+                } else {
+                    continue;
+                }
+            }
+            if (check) {
+                result.push(string1[i]);
+                count++;
+            }
+            check = true;
+        }
+        console.log("Các kí tự khác nhau: "+ result.join(","));
+        return count;
+    }
+document.write("Số kí tự khác nhau: " + differentSymbolsNaive(string1));
+
+</script>
+</body>
+</html>

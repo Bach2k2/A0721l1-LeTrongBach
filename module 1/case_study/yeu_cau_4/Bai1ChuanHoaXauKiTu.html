@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuẩn hóa xâu kí tự</title>
+</head>
+<body>
+<script>
+    let yourString = prompt("nhập xâu kí tự:");
+    console.log("Xâu ban đầu: " + yourString);
+    let UPPER = "ABCDEFGHIKLMNOPQRSTUVWXYZ"
+    let LOWER = 'abcdefghiklmnopqrstuvwxyz';
+    let result = [];
+    if (LOWER.indexOf(yourString[0]) !== -1) {
+        result.push(yourString[0].toUpperCase());
+    }
+    else
+    {
+        result.push(yourString[0])
+    }
+    for (let i = 1; i < yourString.length; i++) {
+        if (yourString[i] == " " && yourString[i + 1] == " ") {
+            continue;
+        } else if (yourString[i - 1] == " " && LOWER.indexOf(yourString[i]) !== -1) {
+            result.push(yourString[i].toUpperCase());
+        } else if (yourString[i - 1] != " " && UPPER.indexOf(yourString[i] !== -1)) {
+            result.push(yourString[i].toLowerCase())
+        } else {
+            result.push(yourString[i]);
+        }
+    }
+
+    myString = result.join("");
+console.log(myString);
+    function longestWord(myString) {
+        let before ="", after = "";
+        let index1;
+        for (let i = 0; i < myString.length; i++) {
+            if (myString[i] == " "|| i==myString.length-1) {
+                if (before == "") {
+                    before = myString.substring(0, i+1);
+                    console.log(before);
+                    index1 = i;
+                } else {
+                    after = myString.substring(index1+1, i+1);
+                    index1=i;
+                    console.log(after);
+                    if (before.length < after.length) {
+                        before = after;
+                    }
+                }
+            }
+
+        }
+        return before;
+    }
+
+    console.log("Từ dài nhất: "+ longestWord(myString))
+</script>
+</body>
+</html>

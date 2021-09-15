@@ -7,28 +7,32 @@
 <body>
 <canvas id="myCanvas" height="500" width="500" style="border: 1px solid black"></canvas>
 <script>
-    let Rectangle= function(width,height) {
-        this.width = width;
-        this.height = height;
-        this.getArea = function () {
+    class Rectangle {
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+        }
+
+        getArea = function () {
             return this.height * this.width;
         }
 
-        this.getPerimeter=function () {
+        getPerimeter = function () {
             return (this.height + this.width) * 2;
         }
     }
-    let chieuDai=parseFloat(prompt("Nhập cd:"));
-    let chieuRong=parseFloat(prompt("Nhập cr:"));
-    let hcn1=new Rectangle(chieuDai,chieuRong);
 
-    let chuVi=hcn1.getPerimeter();
-    let dienTich=hcn1.getArea();
-    alert("HCN có diện tích: "+ dienTich + "; chu vi: "+ chuVi);
+    let chieuDai = parseFloat(prompt("Nhập cd:"));
+    let chieuRong = parseFloat(prompt("Nhập cr:"));
+    let hcn1 = new Rectangle(chieuDai, chieuRong);
+
+    let chuVi = hcn1.getPerimeter();
+    let dienTich = hcn1.getArea();
+    alert("HCN có diện tích: " + dienTich + "; chu vi: " + chuVi);
     let canvas = document.getElementById("myCanvas");
-    canvas=canvas.getContext("2d");
-    canvas.fillStyle="red";
-    canvas.fillRect(0,0,chieuDai,chieuRong);
+    canvas = canvas.getContext("2d");
+    canvas.fillStyle = "red";
+    canvas.fillRect(250-chieuDai/2,250-chieuRong/2, chieuDai, chieuRong);
 </script>
 </body>
 </html>

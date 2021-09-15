@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra nguyên âm hay phu âm</title>
+</head>
+<body>
+<script>
+    let chuCai = prompt("Nhập vào 1 kí tự: ");
+    let nguyenAm = ["u", "e", "o", "a", "i", "U", "E", "O", "A", "I"];
+
+    function check(chuCai) {
+        for (let i = 0; i <= 10; i++) {
+            console.log(nguyenAm[i]);
+            if (chuCai == nguyenAm[i]) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    if (check(chuCai)) {
+        alert("Nguyên âm");
+    } else if (chuCai.charCodeAt(0) >= 48 && chuCai.charCodeAt(0) <= 57)
+        alert("Không phải chữ cái");
+    else if(chuCai=="") alert("Mời bạn nhập lại");
+    else{
+        alert("Phụ âm");
+    }
+</script>
+</body>
+</html>
