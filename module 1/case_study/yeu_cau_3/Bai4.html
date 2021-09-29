@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title></title>
 </head>
 <body>
 <p id="print"></p>
 <script>
-    let numbers=[0,1,2,3,4,5,6,7,8,9];
-    let nameNumber=["không","một","hai","ba","bốn","năm","sáu","bảy","tám","chín"];
-    let choice=prompt("Nhập vào một số");
-    for (let i=0;i<choice.length;i++)
-    {
-        for(j=0;j<10;j++){
-            if(choice[i]==numbers[j]) document.getElementById("print").innerHTML+= nameNumber[j]+"&nbsp;&nbsp;";
+    let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let nameNumber = ["không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"];
+    let choice = prompt("Nhập vào một số");
+    for (let i = 0; i < choice.length; i++) {
+        for (let j = 0; j < 10; j++) {
+            if (choice[i] == numbers[j]) document.getElementById("print").innerHTML += nameNumber[j] + "&nbsp;&nbsp;";
         }
     }
+    //ctrl+alt+L
 </script>
 </body>
 </html>

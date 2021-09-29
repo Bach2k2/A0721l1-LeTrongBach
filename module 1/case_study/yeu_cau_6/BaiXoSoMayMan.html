@@ -22,6 +22,7 @@
 <input type="button" value="Xem kết quả" onclick="showResult()">
 <p id="result"></p>
 <script>
+
     let tableString = "<table border='1px solid black'>";
 
     class Customer {
@@ -35,9 +36,10 @@
         }
 
         buyTicket = function () {
+
             tableString += "<tr>";
             if (this.times < 4) {
-                this.choice = parseInt(prompt("Bạn có 2 lựa chọn:" + "\n" + "1. Bạn muốn tự chọn số" + "\n" + "2. Hệ thông tụ random"));
+                this.choice = parseInt(prompt("Bạn có 2 lựa chọn:" + "\n" + "1. Bạn muốn tự chọn số" + "\n" + "2. Hệ thống tự random"));
                 console.log(this.choice);
                 if (this.choice == 1) {
                     for (let i = 0; i < 6; i++) {
@@ -52,7 +54,7 @@
                     }
                 } else if (this.choice == 2) {
                     for (let i = 0; i < 6; i++) {
-                        let number = Math.round(Math.random() * 100);
+                        let number = Math.round(Math.random() * 99);
                         this.ticket[this.times].push(number);
 
                         tableString += "<td>" + "<input disabled type='text' value='" + number + "' class='ticket' >" + "</td>";
@@ -66,7 +68,6 @@
 
             this.times++;
             tableString += "</tr>";
-
             document.getElementById("customer").innerHTML = tableString;
         };
     }
@@ -74,58 +75,66 @@
     class VietLot {
         constructor() {
             this.result = [];
-            this.check = [];
-            this.turn = true;
+            this.isOver= false;
         }
 
-        showResult = function () {
-            if(this.turn=true){
+        showResult = function (customer) {
+            document.getElementById("result").innerHTML+="<hr>Kết quả xổ số: <br>"
+            if (this.isOver) {
+                return;
+            }else {
                 for (let i = 0; i < 6; i++) {
-                    let number = Math.round(Math.random() * 100);
+                     let number = Math.round(Math.random() * 100);
                     this.result.push(number);
-                    tableString += " </table>";
                 }
                 document.getElementById("result").innerHTML += this.result.join(",");
-                this.afterShow();
+                this.getPrize(customer);
+                this.theEnd();
             }
         }
         getPrize = function (customer) {
-            let count = 0;
-            for (let j = 0; j < customer.times; j++) {
-                count = 0;
-                for (let i = 0; i < 6; i++) {
-                    if (this.result[i] == customer.ticket[j][i]) {
-                        count++;
-                        this.check.push(true);
-                    } else {
-                        this.check.push(false);
+                this.check = [];
+                let count = 0;
+                for (let j = 0; j < customer.times; j++) {
+                    count = 0;
+                    for (let i = 0; i < 6; i++) {
+                        if (this.result[i] == customer.ticket[j][i]) {
+                            count++;
+                            this.check.push(true);
+                        } else {
+                            this.check.push(false);
+                        }
                     }
+                    this.reward(count);
                 }
-                if (count == 6) alert("Bạn đạt giải nhất");
-                else if (count == 5 && !this.check[0]) alert("Bạn đạt giải nhì");
-                else if (count == 3 && this.check[3] && this.check[4] && this.check[5]) alert("Bạn đạt giải khuyến khích");
-                else {
-                    alert("Chúc bạn may mắn lần sau");
-                }
+                console.log(count + "?");
             }
-            console.log(count+"?");
+        theEnd = function () {
+            this.isOver=true;
         }
-        afterShow = function () {
-            this.turn = false;
+        reward = function (count) {
+            if (count == 6) {
+                alert("Bạn đạt giải nhất --- Số tiền thưởng sẽ là $1000");
+            } else if (count == 5 && !this.check[0]) {
+                alert("Bạn đạt giải nhì --- Số tiền thưởng là $200");
+            } else if (count == 3 && this.check[3] && this.check[4] && this.check[5]) {
+                alert("Bạn đạt giải khuyến khích --- Số tiền thưởng là $50");
+            }
+            else
+            {
+                alert("Chúc bạn may mắn lần sau");
+            }
         }
     }
 
     let customer1 = new Customer();
-
+    let vietLot = new VietLot();
     function buyTicket() {
         customer1.buyTicket();
+        document.getElementById("customer").innerHTML += " </table>";
     }
-
-    let vietLot = new VietLot();
-
     function showResult() {
-        vietLot.showResult();
-        vietLot.getPrize(customer1);
+        vietLot.showResult(customer1);
     }
 </script>
 </body>
