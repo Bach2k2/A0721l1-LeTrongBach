@@ -1,5 +1,7 @@
 package ss3_array.bai_tap;
 
+import java.sql.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class XoaPhanTutrongMang {
@@ -27,6 +29,7 @@ public class XoaPhanTutrongMang {
         deleteEle(array,delOne);
         System.out.print("Mảng sau khi xóa đi các phần tử: ");
         printArray(array);
+       // System.out.println(Arrays.toString(array));
     }
     public static void printArray(int[] array)
     {
