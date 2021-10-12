@@ -1,7 +1,5 @@
 package ss3_array.bai_tap;
 
-import java.sql.Array;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class XoaPhanTutrongMang {
@@ -22,7 +20,6 @@ public class XoaPhanTutrongMang {
         }
         System.out.print("Mảng sau khi nhập: ");
         printArray(array);
-
         int delOne;
         System.out.print("\nEnter delete element: ");
         delOne=input.nextInt();
