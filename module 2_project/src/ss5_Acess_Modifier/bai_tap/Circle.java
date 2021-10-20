@@ -13,7 +13,7 @@ public class Circle {
         {
             this.radius=r;
         }
-        double getRadius() {
+        protected double getRadius() {
             return radius;
         }
         double getArea()
