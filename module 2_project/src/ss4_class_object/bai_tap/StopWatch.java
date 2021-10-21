@@ -38,6 +38,14 @@ public class StopWatch {
         this.elapsedTime = elapsedTime;
     }
 
+    public void endWatch() {
+        setEndTime(System.currentTimeMillis());
+    }
+
+    public void startWatch() {
+        setStartTime(System.currentTimeMillis());
+    }
+
 }
 
 
