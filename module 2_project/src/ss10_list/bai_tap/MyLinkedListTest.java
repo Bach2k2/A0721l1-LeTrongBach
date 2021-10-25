@@ -4,10 +4,18 @@ import java.util.Scanner;
 
 public class MyLinkedListTest {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+      //  Scanner scanner = new Scanner(System.in);
         MyLinkedList<Student> studentList = new MyLinkedList<>();
+        Student std1=new Student("Bach","20");
+        studentList.addFirst(std1);
+        Student std2=new Student("Bach2","202");
+        studentList.addFirst(std2);
+        Student std3= studentList.get(0);
+        Student std4= studentList.get(1);
+        System.out.println(std3.getName());
+        System.out.println(std4.getName());
+        printList(studentList);
         menu(studentList);
-
     }
 
     public static void menu(MyLinkedList list) {
@@ -16,7 +24,7 @@ public class MyLinkedListTest {
         System.out.println("1.Thêm sinh viên ");
         System.out.println("2.Xóa sinh viên");
         System.out.println("3.In danh sách");
-        System.out.println("4.Thoát");
+        System.out.println("0.Thoát");
         int choice;
         do {
             System.out.print("Nhập lựa chọn: ");
@@ -34,6 +42,7 @@ public class MyLinkedListTest {
                 int index = scanner.nextInt();
                 list.remove(index);
             } else if (choice == 3) {
+                System.out.println("In danh sách sinh viên: ");
                 printList(list);
             } else if (choice == 0) {
                 break;
@@ -44,10 +53,10 @@ public class MyLinkedListTest {
     }
 
     public static void printList(MyLinkedList<Student> list) {
-        for (int i = 1; i < list.numNodes; i++) {
+        for (int i = 0; i <list.numNodes; i++) {
             Student student = new Student();
             student= list.get(i);
-            System.out.println("Học sinh " + (i + 1) +
+            System.out.println("Sinh viên " + (i+1) +
                     " có tên: "+student.getName() +
                     ", lớp: " + student.getClasses());
         }

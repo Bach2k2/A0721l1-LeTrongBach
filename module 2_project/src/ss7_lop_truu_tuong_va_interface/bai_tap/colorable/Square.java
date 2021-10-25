@@ -1,10 +1,14 @@
-package ss7_lop_truu_tuong_va_interface.bai_tap.resizeable;
+package ss7_lop_truu_tuong_va_interface.bai_tap.colorable;
 
-import ss7_lop_truu_tuong_va_interface.bai_tap.colorable.Shape;
+import ss7_lop_truu_tuong_va_interface.bai_tap.resizeable.Resizeable;
 
-public class Square extends Shape implements Resizeable{
+public class Square extends Shape implements Resizeable, Colorable {
     private double side;
 
+    public Square()
+    {
+        this.side=Math.round(Math.random()*10);
+    }
     public void setSide(double side) {
         this.side = side;
     }
@@ -22,5 +26,13 @@ public class Square extends Shape implements Resizeable{
     public void resize(double percent)
     {
         this.side+=this.side*percent/100;
+    }
+    @Override
+    public void howToColor()
+    {
+        if(isFilled())
+        {
+            System.out.println("Color with 4 sides");
+        }
     }
 }

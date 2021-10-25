@@ -1,5 +1,8 @@
 package ss7_lop_truu_tuong_va_interface.bai_tap.resizeable;
 
+
+import ss7_lop_truu_tuong_va_interface.bai_tap.colorable.Square;
+
 public class SquareTest {
     public static void main(String[] args) {
         Square[] squares=new Square[10];

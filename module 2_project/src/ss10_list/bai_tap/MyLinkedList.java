@@ -2,7 +2,7 @@ package ss10_list.bai_tap;
 
 public class MyLinkedList<E> {
     public Node head;
-    public static int numNodes=0;
+    public static int numNodes = 0;
 
     private class Node {
         Node next;
@@ -18,7 +18,7 @@ public class MyLinkedList<E> {
     }
 
     public MyLinkedList() {
-        head=null;
+        head = null;
     }
 
     public void add(int index, E element) {
@@ -28,20 +28,21 @@ public class MyLinkedList<E> {
         }
         Node hold = temp.next;
         temp.next = new Node(element);
+        temp.next.next = hold;
         numNodes++;
     }
 
     public void addFirst(E e) {
         Node temp = new Node(e);
-        if(head==null)
-        {
-            head=temp;
-        }
-        else{
-            temp.next = head;
+        if (head == null) {
             head = temp;
-            numNodes++;
+            temp.next=null;
+        } else {
+            Node hold =head;
+            temp.next = hold;
+            head = temp;
         }
+        numNodes++;
     }
 
     public void addLast(E e) {
@@ -49,19 +50,16 @@ public class MyLinkedList<E> {
         while (temp != null) {
             temp = temp.next;
         }
-        temp.next=new Node(e);
+        temp.next = new Node(e);
         numNodes++;
     }
 
     public void remove(int index) {
         Node temp = head;
-        if(index>=numNodes|| index<0)
-        {
+        if (index >= numNodes || index < 0) {
             System.out.println("Nằm ngoài danh sách");
             return;
-        }
-        else
-        {
+        } else {
             for (int i = 0; i < index - 1; i++) temp = temp.next;
             Node hold = temp.next.next;
             temp.next = hold;
@@ -95,7 +93,7 @@ public class MyLinkedList<E> {
     public boolean contains(E o) {
         Node temp = head;
         while (temp != null) {
-            if (temp.getData() ==  o) {
+            if (temp.getData() == o) {
                 return true;
             }
             temp = temp.next;
@@ -118,25 +116,24 @@ public class MyLinkedList<E> {
         else addLast(e);
         return true;
     }
-   public void printList()
-   {
-       Node temp=head;
-       while(temp!=null)
-       {
-           System.out.print(temp.data.toString()+"\t");
-           temp=temp.next;
-       }
-   }
-   public E get(int index)
-   {
-       if(index==0) return (E) head.data;
-       else {
-           Node temp=head;
-           for (int i = 0; i <= index; i++) {
-               temp = temp.next;
-           }
-           return (E) temp.data;
-       }
-   }
+
+    public void printList() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data.toString() + "\t");
+            temp = temp.next;
+        }
+    }
+
+    public E get(int index) {
+        if (index == 0) return (E) head.data;
+        else {
+            Node temp = head;
+            for (int i = 1; i <= index; i++) {
+                temp = temp.next;
+            }
+            return (E) temp.data;
+        }
+    }
 
 }
