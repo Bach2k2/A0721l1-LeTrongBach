@@ -1,7 +1,8 @@
-package ss5_Acess_Modifier.thuc_hanh;
+package ss5_acess_modifier.thuc_hanh;
 
 public class TestStaticMethod {
-    public static void main(String args[]) {
+
+    public static void main(String[] args) {
         Student.change(); //calling change method
 
         //creating objects
@@ -13,5 +14,7 @@ public class TestStaticMethod {
         s1.display();
         s2.display();
         s3.display();
-    }
+
 }
+
+    }

@@ -1,4 +1,4 @@
-package ss5_Acess_Modifier.thuc_hanh;
+package ss5_acess_modifier.thuc_hanh;
 
 public class Student {
         private int rollno;
@@ -17,7 +17,7 @@ public class Student {
         }
 
         //method to display values
-        void display() {
+       public void display() {
             System.out.println(rollno + " " + name + " " + college);
         }
 }
