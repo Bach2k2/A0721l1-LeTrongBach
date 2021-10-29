@@ -28,6 +28,8 @@ public class PalindromeString {
         while (!myQueue.isEmpty()) {
             string2 += myQueue.remove();
         }
+        System.out.println("chuỗi từ Stack: "+string1);
+        System.out.println("chuỗi từ Queue: "+string2);
         if(string1.compareTo(string2)!=0) System.out.println("Không phải chuỗi đối xứng");
         else System.out.println("Chuỗi đối xứng!");
     }
