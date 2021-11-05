@@ -34,8 +34,9 @@ public class readFileExample {
         Scanner scanner=new Scanner(System.in);
         String path=scanner.nextLine();
 
-        readFileExample example =new readFileExample();
+        readFileExample example = new readFileExample();
         example.readFileText(path);
+        System.out.println("End!");
     }
 }
 

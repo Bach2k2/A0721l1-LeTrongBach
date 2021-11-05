@@ -25,12 +25,12 @@ public class Triangle {
     }
     public static void  checkTriangle( double a,double b,double c) throws IllegalTriangleException
     {
-        if(a<0||b<0||c<0) {
-            throw new IllegalTriangleException("The length mustn't be negative!");
+        if(a<=0||b<=0||c<=0) {
+            throw (new IllegalTriangleException("Độ dài của tam giác phai lớn hơn 0"));
         }
         else if (a+b<c||b+c<a||a+c<b)
         {
-            throw new IllegalTriangleException("It's not a triangle!");
+            throw new IllegalTriangleException("Không phải là 1 tam giác!");
         }
         else {
             System.out.println("Legal triangle");
