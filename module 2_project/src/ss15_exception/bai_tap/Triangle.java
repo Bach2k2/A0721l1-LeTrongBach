@@ -20,17 +20,17 @@ public class Triangle {
         }
         catch (IllegalTriangleException e)
         {
-            System.out.println(e);
+            System.err.println(e.getMessage());
         }
     }
     public static void  checkTriangle( double a,double b,double c) throws IllegalTriangleException
     {
         if(a<0||b<0||c<0) {
-            new IllegalTriangleException("The length mustn't be negative!");
+            throw new IllegalTriangleException("The length mustn't be negative!");
         }
         else if (a+b<c||b+c<a||a+c<b)
         {
-            new IllegalTriangleException("It's not a triangle!");
+            throw new IllegalTriangleException("It's not a triangle!");
         }
         else {
             System.out.println("Legal triangle");
