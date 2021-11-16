@@ -1,21 +1,22 @@
 package ss10_list.bai_tap;
 
+class Node {
+    Node next;
+    Object data;
+
+    public Node(Object data) {
+        this.data = data;
+    }
+
+    public Object getData() {
+        return data;
+    }
+}
 public class MyLinkedList<E> {
     public Node head;
     public static int numNodes = 0;
 
-    private class Node {
-        Node next;
-        Object data;
 
-        public Node(Object data) {
-            this.data = data;
-        }
-
-        public Object getData() {
-            return data;
-        }
-    }
 
     public MyLinkedList() {
         head = null;

@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class MyLinkedListTest {
     public static void main(String[] args) {
       //  Scanner scanner = new Scanner(System.in);
-        MyLinkedList<Student> studentList = new MyLinkedList<>();
-        Student std1=new Student("Bach","20");
+        MyLinkedList<StudentSS10> studentList = new MyLinkedList<>();
+        StudentSS10 std1=new StudentSS10("Bach","20");
         studentList.addFirst(std1);
-        Student std2=new Student("Bach2","202");
+        StudentSS10 std2=new StudentSS10("Bach2","202");
         studentList.addFirst(std2);
-        Student std3= studentList.get(0);
-        Student std4= studentList.get(1);
+        StudentSS10 std3= studentList.get(0);
+        StudentSS10 std4= studentList.get(1);
         System.out.println(std3.getName());
         System.out.println(std4.getName());
         printList(studentList);
@@ -35,8 +35,8 @@ public class MyLinkedListTest {
                 String name = scanner.nextLine();
                 System.out.println("Lớp:");
                 String classes = scanner.nextLine();
-                Student addStudent = new Student(name, classes);
-                list.addFirst(addStudent);
+                StudentSS10 addStudentSS10 = new StudentSS10(name, classes);
+                list.addFirst(addStudentSS10);
             } else if (choice == 2) {
                 System.out.println("Nhập vị trí cần xóa");
                 int index = scanner.nextInt();
@@ -52,13 +52,13 @@ public class MyLinkedListTest {
         } while (true);
     }
 
-    public static void printList(MyLinkedList<Student> list) {
+    public static void printList(MyLinkedList<StudentSS10> list) {
         for (int i = 0; i <list.numNodes; i++) {
-            Student student = new Student();
-            student= list.get(i);
+            StudentSS10 studentSS10 = new StudentSS10();
+            studentSS10 = list.get(i);
             System.out.println("Sinh viên " + (i+1) +
-                    " có tên: "+student.getName() +
-                    ", lớp: " + student.getClasses());
+                    " có tên: "+ studentSS10.getName() +
+                    ", lớp: " + studentSS10.getClasses());
         }
     }
 }

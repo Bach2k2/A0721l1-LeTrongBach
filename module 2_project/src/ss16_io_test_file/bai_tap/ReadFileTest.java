@@ -18,6 +18,7 @@ public class ReadFileTest {
             buffer = new BufferedReader(new FileReader(inputFile));
 
             String line;
+
             while((line =buffer.readLine())!=null)
             {
                print(parseCsvLine(line));
@@ -49,10 +50,9 @@ public class ReadFileTest {
         }
         return result;
     }
-    public static void print(List<String> country)
-    {
-        System.out.println("Country [id= " + country.get(0)+
-                ",code: "+country.get(1)+
-                ",name: "+country.get(2)+" ]");
+    public static void print(List<String> country) {
+        System.out.println("Country [id= " + country.get(0) +
+                ",code: " + country.get(1) +
+                ",name: " + country.get(2) + " ]");
     }
 }

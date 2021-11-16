@@ -1,1 +1,4 @@
-Hello!Đọc/Ghi file văn bản
+Hello!
+Đọc/Ghi file văn bản
+Chung ta la anh em
+Number of characters: 44

@@ -1,4 +1,4 @@
 Hello!
 Đọc/Ghi file văn bản
 Chung ta la anh em
-Number of characters: 44
+Number of characters: 37
