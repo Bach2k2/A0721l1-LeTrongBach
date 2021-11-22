@@ -3,6 +3,7 @@ package ss16_io_test_file.thuc_hanh;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class MaxNumber {
     public List<Integer> readFile(String filePath){
@@ -27,7 +28,7 @@ public class MaxNumber {
     }
     public void writeFile(String filePath, int max){
         try {
-            FileWriter writer = new FileWriter(filePath, true);
+            FileWriter writer = new FileWriter(filePath, false);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
             bufferedWriter.write("Giá trị lớn nhất là: " + max);
             bufferedWriter.close();
@@ -46,8 +47,13 @@ public class MaxNumber {
     }
     public static void main(String[] args) {
         MaxNumber readAndWriteFile = new MaxNumber();
-        List<Integer> numbers = readAndWriteFile.readFile("D:\\A0721l1-LeTrongBach\\module 2_project\\src\\ss16_io_test_file\\thuc_hanh\\Numbers.txt");
+        Scanner scanner =new Scanner(System.in);
+        System.out.println(" Nhập đường dẫn file nhập: ");
+        String pathInput= scanner.nextLine();
+        List<Integer> numbers = readAndWriteFile.readFile(pathInput);
         int maxValue = findMax(numbers);
-        readAndWriteFile.writeFile("D:\\A0721l1-LeTrongBach\\module 2_project\\src\\ss16_io_test_file\\thuc_hanh\\result.txt", maxValue);
+        System.out.println(" Nhập đường dẫn file nhập: ");
+        String pathOutput= scanner.nextLine();
+        readAndWriteFile.writeFile(pathOutput,maxValue);
     }
 }
