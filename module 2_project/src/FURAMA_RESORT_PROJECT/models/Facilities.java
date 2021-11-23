@@ -5,28 +5,18 @@ public class Facilities {
     protected int area;
     protected double price;
     protected int maxAmount;
-
+    protected String rentType;
     public Facilities()
     {}
-    public Facilities(String serviceName, int area, double price, int maxAmount) {
+    public Facilities(String serviceName, int area, double price, int maxAmount,String rentType) {
         this.serviceName = serviceName;
         this.area = area;
         this.price = price;
         this.maxAmount = maxAmount;
+        this.rentType= rentType;
     }
 
-    public void rent(int choice) {
-        System.out.println("Function: rent");
-        switch (choice)
-        {
-         case 1-> System.out.println("Rent by year");
-         case 2-> System.out.println("Rent by month");
-         case 3-> System.out.println("Rent by day");
-         case 4-> System.out.println("Rent by hour");
-         default -> System.out.println("No choice");
-        }
 
-    }
 
     public String getServiceName() {
         return serviceName;
@@ -45,5 +35,13 @@ public class Facilities {
     @Override
     public boolean equals(Object obj) {
         return super.equals(obj);
+    }
+
+    public String getRentType() {
+        return rentType;
+    }
+
+    public void setRentType(String rentType) {
+        this.rentType = rentType;
     }
 }

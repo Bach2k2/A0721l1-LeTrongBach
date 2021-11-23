@@ -66,17 +66,17 @@ public class FuramaController {
                                     addFacChoice = scanner.nextInt();
                                     switch (addFacChoice) {
                                         case 1: {
-                                            Villa villa = new Villa("Villa", 200, 400, 5, "Very Good", 100, 3);
+                                            Villa villa = new Villa("Villa", 200, 400, 5, "year","Very Good", 100, 3);
                                             facilityService.addVilla(villa);
                                             break;
                                         }
                                         case 2: {
-                                            House house = new House("House", 100, 200, 5, "good");
+                                            House house = new House("House", 100, 200, 5,"year", "good");
                                             facilityService.addHouse(house);
                                             break;
                                         }
                                         case 3: {
-                                            Room room = new Room("Room", 75, 150, 16, "Breakfast");
+                                            Room room = new Room("Room", 75, 150, 16,"year", "Breakfast");
                                             facilityService.addRoom(room);
                                             break;
                                         }
@@ -91,7 +91,7 @@ public class FuramaController {
                                 } while (addFacChoice != 4);
                             }
                             case 3: {
-                                facilityService.mainternanceList();
+                               // facilityService.mainternanceList();
                                 break;
                             }
                             case 4:
@@ -117,7 +117,7 @@ public class FuramaController {
                                 String beginDate = scanner.nextLine();
                                 System.out.println("Enter the end date: ");
                                 String endDate = scanner.nextLine();
-                                Booking booking = new Booking(beginDate, endDate, "villa", "Villa 1");
+                                Booking booking = new Booking(beginDate, endDate, 2, "Villa 1","villa");
                                 bookingService.addBooking(booking);
                                 break;
                             }

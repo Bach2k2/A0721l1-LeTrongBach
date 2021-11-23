@@ -3,19 +3,23 @@ package FURAMA_RESORT_PROJECT.models;
 import java.util.Objects;
 
 public class Booking implements Comparable<Booking> {
-    static int increseValue=1000;
-    int bookingCode;
-    String beginDate;
-    String endDate;
-    String typeService;
-    String nameService;
+    public static int increseValue=1000;
+    private int bookingCode;
+    private String beginDate;
+    private String endDate;
+    private int MKH;
+    private String typeService;
+    private String nameService;
+    private String typeRent;
 
-    public Booking(String beginDate, String endDate, String typeService, String nameService) {
+    public Booking(String beginDate, String endDate, int MKH,String typeService, String nameService) {
         this.bookingCode =increseValue++;
         this.beginDate = beginDate;
         this.endDate = endDate;
+        this.MKH=MKH;
         this.typeService = typeService;
         this.nameService = nameService;
+
     }
 
     @Override
@@ -63,5 +67,29 @@ public class Booking implements Comparable<Booking> {
 
     public void setEndDate(String endDate) {
         this.endDate = endDate;
+    }
+
+    public int getMKH() {
+        return MKH;
+    }
+
+    public void setMKH(int MKH) {
+        this.MKH = MKH;
+    }
+
+    public String getTypeService() {
+        return typeService;
+    }
+
+    public void setTypeService(String typeService) {
+        this.typeService = typeService;
+    }
+
+    public String getNameService() {
+        return nameService;
+    }
+
+    public void setNameService(String nameService) {
+        this.nameService = nameService;
     }
 }

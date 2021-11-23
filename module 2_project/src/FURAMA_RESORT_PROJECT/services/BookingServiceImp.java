@@ -8,8 +8,8 @@ import java.util.Queue;
 import java.util.TreeSet;
 
 public class BookingServiceImp implements BookingService,ContractService {
-    public static TreeSet<Booking> bookinglist= new TreeSet<>();
-    public static TreeSet<Contract> contractList= new TreeSet<>();
+    public TreeSet<Booking> bookinglist= new TreeSet<>();
+    public TreeSet<Contract> contractList= new TreeSet<>();
     public static Queue<Booking> bookings=new ArrayDeque<>();
     public static int amount=0;
     public void addBooking(Booking e)
@@ -46,8 +46,6 @@ public class BookingServiceImp implements BookingService,ContractService {
         }
 
     }
-
-
     @Override
     public void displayList() {
         for(Contract contract:contractList)
@@ -55,4 +53,5 @@ public class BookingServiceImp implements BookingService,ContractService {
             System.out.println(contract.toString());
         }
     }
+
 }

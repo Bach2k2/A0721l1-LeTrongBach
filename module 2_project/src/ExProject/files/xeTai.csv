@@ -1,0 +1,4 @@
+Truck{weight=170.0, ctrlSignal='43-ABCD', productLabel='Mescedes', yearProduct=2000, owner='Ben'}
+ Truck{weight=150.0, ctrlSignal='43A', productLabel='Toyota', yearProduct=1999, owner='Bach'}
+ Truck{weight=200.0, ctrlSignal='49B', productLabel='Toyota', yearProduct=2000, owner='Bach1'}
+ 

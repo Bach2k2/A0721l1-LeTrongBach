@@ -5,12 +5,12 @@ public class Room extends Facilities{
 
    public Room(){
    }
-   public Room(String serviceName, int area, double price, int maxAmount) {
-      super(serviceName, area, price, maxAmount);
+   public Room(String serviceName, int area, double price, int maxAmount,String rentType) {
+      super(serviceName, area, price, maxAmount,rentType);
    }
 
-   public Room(String serviceName, int area, double price, int maxAmount, String freeService) {
-      super(serviceName, area, price, maxAmount);
+   public Room(String serviceName, int area, double price, int maxAmount,String rentType,String freeService) {
+      super(serviceName, area, price, maxAmount,rentType);
       this.freeService = freeService;
    }
 

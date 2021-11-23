@@ -49,7 +49,7 @@ public class FacilityServiceImpl implements FacilityService {
         }
     }
 
-    public void mainternanceList() {
+    public void maintainService() {
         System.out.println("Danh sách bảo trì: ");
         Set<Villa> emptyVilla = villaService.keySet();
         for (Villa villa : emptyVilla) {
@@ -65,8 +65,8 @@ public class FacilityServiceImpl implements FacilityService {
         }
     }
 
+    @Override
+    public void mainternanceList() {
 
-//
-
-
+    }
 }

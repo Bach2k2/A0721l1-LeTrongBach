@@ -66,7 +66,4 @@ public class Contract {
                 '}';
     }
 
-    public void setMKH(int MKH) {
-        this.MKH = MKH;
-    }
 }
