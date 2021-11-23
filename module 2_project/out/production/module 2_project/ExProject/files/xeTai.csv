@@ -1,2 +1,3 @@
-Truck{weight=170.0, ctrlSignal='43-ABCD', productLabel='Mescedes', yearProduct=2000, owner='Ben'}
+Truck{weight=700.0, ctrlSignal='43C-987.76', productLabel='youtube', yearProduct=1388, owner='yogurt'}
+Truck{weight=130.0, ctrlSignal='43C-987.75', productLabel='Toyota', yearProduct=4000, owner='Bach'}
  

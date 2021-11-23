@@ -8,9 +8,12 @@ import ExProject.models.Oto;
 import ExProject.models.Truck;
 
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class VehicleController {
     static Scanner scanner = new Scanner(System.in);
+
 
     public static void main(String[] args) {
         menu();
@@ -19,6 +22,10 @@ public class VehicleController {
 
     public static void menu() {
         int choice;
+        Pattern truckPattern=Pattern.compile("^[0-9]{2}[C]\\-[0-9]{3}\\.[0-9]{2}$");
+        Pattern otoPattern = Pattern.compile("^[0-9]{2}[A-B]\\-[0-9]{3}\\.[0-9]{2}$");
+        Pattern motorPattern =Pattern.compile("^[0-9]{2}\\-[A-Z][A-Z0-9]-[0-9]{3}\\.[0-9]{2}$");
+
         TruckManage truckService = new TruckManage();
         OtoManage otoService = new OtoManage();
         MotorManage motorService = new MotorManage();
@@ -42,9 +49,16 @@ public class VehicleController {
                     choice1 = scanner.nextInt();
                     switch (choice1) {
                         case 1: {
+                            Matcher matcher;
+                            String ctrlSignal;
                             scanner.nextLine();
-                            System.out.println("Nhập biển số xe: ");
-                            String ctrlSignal = scanner.nextLine();
+                            do {
+                                System.out.println("Nhập biển số xe: ");
+                                ctrlSignal = scanner.nextLine();
+                                matcher= truckPattern.matcher(ctrlSignal);
+                                System.out.println("Biển số không đúng mời nhập lại");
+                            }while(!matcher.matches());
+
                             System.out.println("Nhập hãng xe: ");
                             String productLabel = scanner.nextLine();
                             System.out.println("Nhập năm sản xuất xe: ");
@@ -59,9 +73,15 @@ public class VehicleController {
                             break;
                         }
                         case 2: {
+                            Matcher matcher;
+                            String ctrlSignal;
                             scanner.nextLine();
-                            System.out.println("Nhập biển số xe: ");
-                            String ctrlSignal = scanner.nextLine();
+                            do {
+                                System.out.println("Nhập biển số xe: ");
+                                ctrlSignal = scanner.nextLine();
+                                matcher= otoPattern.matcher(ctrlSignal);
+                                System.out.println("Biển số không đúng mời nhập lại");
+                            }while(!matcher.matches());
                             System.out.println("Nhập hãng xe: ");
                             String productLabel = scanner.nextLine();
                             System.out.println("Nhập năm sản xuất xe: ");
@@ -79,10 +99,15 @@ public class VehicleController {
                         }
 
                         case 3: {
-
+                            Matcher matcher;
+                            String ctrlSignal;
                             scanner.nextLine();
-                            System.out.println("Nhập biển số xe: ");
-                            String ctrlSignal = scanner.nextLine();
+                            do {
+                                System.out.println("Nhập biển số xe: ");
+                                ctrlSignal = scanner.nextLine();
+                                matcher= motorPattern.matcher(ctrlSignal);
+                                System.out.println("Biển số không đúng mời nhập lại");
+                            }while(!matcher.matches());
                             System.out.println("Nhập hãng xe: ");
                             String productLabel = scanner.nextLine();
                             System.out.println("Nhập năm sản xuất xe: ");
