@@ -23,6 +23,7 @@ public class Truck extends Vehicle{
     }
 
     public Truck(String ctrlSignal, String productLabel, int yearProduct, String owner, float weight) {
+
         super(ctrlSignal, productLabel, yearProduct, owner);
         this.weight = weight;
     }

@@ -1,7 +1,6 @@
 package ExProject.Services;
 
 import ExProject.models.Truck;
-
 import java.io.*;
 import java.util.LinkedList;
 
@@ -15,12 +14,20 @@ public class TruckManage implements TransService<Truck> {
         amount++;
         try
         {
+            String plate= truck.getCtrlSignal();
+            String label=truck.getProductLabel();
+            String year= Integer.toString(truck.getYearProduct());
+            String owner= truck.getOwner();
+            String weight= String.valueOf(truck.getWeight());
+            String []data={plate,label,year,owner,weight};
 
-            String data=truck.toString();
             File file=new File("src/ExProject/files/xeTai.csv");
             FileWriter fileWriter=new FileWriter(file,true);
             BufferedWriter writer=new BufferedWriter(fileWriter);
-            writer.write(data);
+        //
+            for (int i = 0; i < data.length; i++) {
+                writer.write(data[i]+", ");
+            }
             writer.write("\n ");
             writer.close();
         }
@@ -82,6 +89,13 @@ public class TruckManage implements TransService<Truck> {
                 System.out.println(truck.toString());
             }
         }
-
+    }
+    public int getSize()
+    {
+        return amount;
+    }
+    public Truck getVehicle(int index)
+    {
+        return truckList.get(index);
     }
 }

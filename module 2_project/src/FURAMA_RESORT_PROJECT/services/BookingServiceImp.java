@@ -44,7 +44,6 @@ public class BookingServiceImp implements BookingService,ContractService {
                 contract.setTotal(total);
             }
         }
-
     }
     @Override
     public void displayList() {

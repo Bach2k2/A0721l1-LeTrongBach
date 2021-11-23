@@ -22,9 +22,9 @@ public class VehicleController {
 
     public static void menu() {
         int choice;
-        Pattern truckPattern=Pattern.compile("^[0-9]{2}[C]\\-[0-9]{3}\\.[0-9]{2}$");
-        Pattern otoPattern = Pattern.compile("^[0-9]{2}[A-B]\\-[0-9]{3}\\.[0-9]{2}$");
-        Pattern motorPattern =Pattern.compile("^[0-9]{2}\\-[A-Z][A-Z0-9]-[0-9]{3}\\.[0-9]{2}$");
+        Pattern truckPattern=Pattern.compile("^[0-9]{2}[C]-[0-9]{3}.[0-9]{2}$");
+        Pattern otoPattern = Pattern.compile("^[0-9]{2}[A-B]-[0-9]{3}.[0-9]{2}$");
+        Pattern motorPattern =Pattern.compile("^[0-9]{2}-[A-Z][A-Z0-9]-[0-9]{3}.[0-9]{2}$");
 
         TruckManage truckService = new TruckManage();
         OtoManage otoService = new OtoManage();
@@ -51,13 +51,23 @@ public class VehicleController {
                         case 1: {
                             Matcher matcher;
                             String ctrlSignal;
+                            boolean check=true;
                             scanner.nextLine();
                             do {
                                 System.out.println("Nhập biển số xe: ");
                                 ctrlSignal = scanner.nextLine();
                                 matcher= truckPattern.matcher(ctrlSignal);
-                                System.out.println("Biển số không đúng mời nhập lại");
-                            }while(!matcher.matches());
+                                for(int i=0;i<otoService.getSize();i++)
+                                {
+                                    if(otoService.getVehicle(i).getCtrlSignal().equals(ctrlSignal))
+                                    {
+                                        System.out.println("Đã trùng với biển số trước ");
+                                        check=false;
+                                        break;
+                                    }
+                                }
+                               if(!matcher.matches())System.out.println("Biển số không đúng mời nhập lại");
+                            }while(!matcher.matches()&&!check);
 
                             System.out.println("Nhập hãng xe: ");
                             String productLabel = scanner.nextLine();
@@ -75,13 +85,23 @@ public class VehicleController {
                         case 2: {
                             Matcher matcher;
                             String ctrlSignal;
+                            boolean check=true;
                             scanner.nextLine();
                             do {
                                 System.out.println("Nhập biển số xe: ");
                                 ctrlSignal = scanner.nextLine();
                                 matcher= otoPattern.matcher(ctrlSignal);
-                                System.out.println("Biển số không đúng mời nhập lại");
-                            }while(!matcher.matches());
+                                for(int i=0;i<otoService.getSize();i++)
+                                {
+                                    if(otoService.getVehicle(i).getCtrlSignal().equals(ctrlSignal))
+                                    {
+                                        System.out.println("Đã trùng với biển số trước ");
+                                        check=false;
+                                        break;
+                                    }
+                                }
+                                if(!matcher.matches())System.out.println("Biển số không đúng mời nhập lại");
+                            }while(!matcher.matches()&&!check);
                             System.out.println("Nhập hãng xe: ");
                             String productLabel = scanner.nextLine();
                             System.out.println("Nhập năm sản xuất xe: ");

@@ -22,6 +22,14 @@ public class Oto extends Vehicle{
                 '}';
     }
 
+    public int getSeat() {
+        return seat;
+    }
+
+    public void setSeat(int seat) {
+        this.seat = seat;
+    }
+
     public String getType() {
         return type;
     }

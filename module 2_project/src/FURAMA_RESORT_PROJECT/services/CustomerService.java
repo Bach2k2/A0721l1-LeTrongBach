@@ -1,10 +1,10 @@
 package FURAMA_RESORT_PROJECT.services;
 
 public interface CustomerService  extends Service {
-    public void updateObj(String name, int choice);
-    public boolean searchObj(String name);
+    void updateObj(String name, int choice);
+    boolean searchObj(String name);
 
-    public void deleteObj(String name);
+    void deleteObj(String name);
 
-    public int indexObj(String name);
+    int indexObj(String name);
 }

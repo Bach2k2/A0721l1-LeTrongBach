@@ -1,7 +1,11 @@
 package ExProject.Services;
 
+import ExProject.VehicleException;
 import ExProject.models.Oto;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,6 +18,14 @@ public class OtoManage implements TransService<Oto> {
     public void add(Oto o) {
         otoLists.add(o);
         amount++;
+        try
+        {
+            String path="src/ExProject/files/xeOto.csv";
+            writeInFile(path);
+        }catch (IOException e)
+        {
+            System.err.println(e.getMessage());
+        }
     }
 
     @Override
@@ -45,9 +57,12 @@ public class OtoManage implements TransService<Oto> {
                 }
             }
             else {
-
+                try {
+                    throw new VehicleException("Không có biển số phù hợp");
+                } catch (VehicleException e) {
+                    e.printStackTrace();
+                }
             }
-
         }
     }
 
@@ -76,6 +91,34 @@ public class OtoManage implements TransService<Oto> {
             System.out.println(o.toString());
         }
     }
+    public void writeInFile(String path) throws IOException
+    {
+        FileWriter file=new FileWriter(path);
+        BufferedWriter bfw=new BufferedWriter(file);
+        for (Oto oto:otoLists)
+        {
+            String plate= oto.getCtrlSignal();
+            String label=oto.getProductLabel();
+            String year= Integer.toString(oto.getYearProduct());
+            String owner= oto.getOwner();
+            String seat =Integer.toString(oto.getSeat());
+            String type= oto.getType();
+            String []data={plate,label,year,owner,seat,type};
+            for (int i = 0; i < data.length; i++) {
+                bfw.write(data[i]+", ");
+            }
+            bfw.write("\n ");
+        }
 
+        bfw.close();
+    }
+    public int getSize()
+    {
+        return amount;
+    }
+    public Oto getVehicle(int index)
+    {
+        return otoLists.get(index);
+    }
 
 }
