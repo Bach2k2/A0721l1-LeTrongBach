@@ -48,6 +48,7 @@ public class Student {
     public String toString() {
         return "Student@name=" + name + ",age=" + age + ",address=" + address;
     }
+
 }
 class Main
 {

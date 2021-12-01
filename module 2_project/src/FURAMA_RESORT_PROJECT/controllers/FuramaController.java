@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class FuramaController {
     public static FacilityServiceImpl facilityService = new FacilityServiceImpl();
     public static BookingServiceImp bookingService = new BookingServiceImp();
-
+//Dài.
     public void displayMainMenu() {
         Scanner scanner = new Scanner(System.in);
         //System.out.println(flush());

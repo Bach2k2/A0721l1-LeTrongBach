@@ -100,8 +100,12 @@ public class VehicleController {
                                         break;
                                     }
                                 }
-                                if(!matcher.matches())System.out.println("Biển số không đúng mời nhập lại");
-                            }while(!matcher.matches()&&!check);
+                                if(!matcher.matches())
+                                {
+                                    System.out.println("Biển số không đúng mời nhập lại");
+                                    check=false;
+                                }
+                            }while(!check);
                             System.out.println("Nhập hãng xe: ");
                             String productLabel = scanner.nextLine();
                             System.out.println("Nhập năm sản xuất xe: ");

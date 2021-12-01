@@ -8,7 +8,7 @@ public class Person {
     protected String email;
     protected String phoneNum;
 
-    Person(String name, String dateOfBirth, boolean gender, String CMND, String email, String phoneNum) {
+    public Person(String name, String dateOfBirth, boolean gender, String CMND, String email, String phoneNum) {
         this.name = name;
         this.dateOfBirth = dateOfBirth;
         this.gender = gender;
