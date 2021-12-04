@@ -35,8 +35,8 @@ where orderdetail.oId in (select oId from `Order`)
 group by pId;
 -- Yeu cau 3:
 select cName from Customer
-where cId not in (select cId from 	`order`); 
-
+where cId not in (select cId from `order`); 
+-- Yeu cau 4:
 select `order`.oId,oDate,odQTY * pPrice as `oTotalPrice` from `Order`
 join Orderdetail on `order`.oId=Orderdetail.oId
 join Product on Orderdetail.pId=Product.pId;
