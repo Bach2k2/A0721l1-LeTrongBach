@@ -92,6 +92,14 @@ insert into giang_vien_day_lop_hoc values
 ('T02','A0921i2'),
 ('T03','B012345');
 
+select * from lop_hoc;
+select ten_hoc_vien,ten_lop,ten_giang_vien from hoc_vien
+ join lop_hoc on lop_hoc.ma_lop_hoc=hoc_vien.ma_lop_hoc
+ join giang_vien_day_lop_hoc on giang_vien_day_lop_hoc.ma_lop_hoc=lop_hoc.ma_lop_hoc
+join giang_vien on giang_vien_day_lop_hoc.ma_giang_vien=giang_vien.ma_giang_vien;
+
+
+
 
 
 
