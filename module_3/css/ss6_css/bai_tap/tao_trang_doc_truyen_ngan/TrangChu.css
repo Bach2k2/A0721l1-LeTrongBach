@@ -1,0 +1,12 @@
+p{
+    font-size: 30px;
+    font-family: "Times New Roman";
+    width: 500px;
+    border: 5px solid red;
+    padding: 50px;
+    position: absolute;
+}
+a{
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
