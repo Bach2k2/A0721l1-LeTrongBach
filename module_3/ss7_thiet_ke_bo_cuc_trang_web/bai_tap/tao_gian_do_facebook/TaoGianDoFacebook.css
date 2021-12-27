@@ -1,0 +1,121 @@
+#body{
+    font-family: "Agency FB";
+    font-size: 13px;
+    width: 1000px;
+    margin: 0px auto;
+}
+/*Dang tien hanh position fixed*/
+#Menu_top{
+    height: 50px;
+    background-color: #141414;
+    border: 1px solid black ;
+    color : white;
+}
+
+#Main #Menu_left{
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    background-color: red;
+    float:left;
+}
+
+#Main #Content{
+    margin: 0px;
+    padding: 0px;
+    width: 800px;
+    background-color: blue;
+    float: left;
+}
+
+#Main #Menu_right
+{
+    margin: 0px;
+    padding: 0px;
+    width: 250px;
+    background-color: yellow;
+    float:left;
+}
+/* Mô tả bên trong menu top*/
+#Menu_top img {
+    position: relative;
+    width: 30px;
+    hegiht: 30px;
+    left: 0px;
+}
+#Menu_top ul
+{
+    padding:0;
+    margin:0;
+}
+
+#Menu_top ul li{
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+#Menu_top li a{
+    width: 100px;
+    height: 30px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    background-color: black;
+    color: white;
+}
+#Menu_top ul ul li a{
+    width: 200px;
+    text-align: left;
+    padding-left: 10px;
+    background-color: yellow;
+    color: black
+}
+#Menu_top li a:hover{
+    background-color: aliceblue;
+}
+/* Chu y */
+#Menu_top ul ul{
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    visibility: hidden;
+}
+#Menu_top ul li:hover li{
+    visibility: visible;
+}
+#Menu_top i{
+    font-size: 30px;
+    color: red;
+}
+#Menu_top input{
+    type:text;
+    width: 150px;
+    placeholder:"Tim kiem tren Facebook";
+}
+
+#Menu_left ul, #Menu_left li
+{
+    font-family: Arial;
+    padding :0px;
+    margin :0px;
+}
+#Menu_left li{
+    background-color: white;
+    list-style: none;
+    position: relative;
+    width: 150px;
+    height: 30px;
+    padding:0 20px;
+    line-height: 30px;
+    cursor: pointer;
+    border: 1px dotted black;
+}
+#Menu_left li a{
+    text-decoration: none;
+    color: aqua;
+    background-color: red;
+}
+
