@@ -1,35 +1,29 @@
-img{
+img {
     position: relative;
     width: 30px;
-    hegiht:30px;
+    hegiht: 30px;
     left: 0px;
-    padding-left: 0px;
 }
-body{
-    font-family: Arial;
-}
-header{
-    height: 30px;
-    padding:10px;
-    margin:0;
-    background-color: #000000;
-    border: 1px solid #CDCDCD;
-}
-header ul, header li{
+#Horizon ul,#Horizon li
+{
     padding:0;
     margin:0;
 }
-header li{
+#Horizon{
+    height: 50px;
+    padding:0;
+    margin:0;
+    border: 5px solid black;
+    color : white;
+}
+#Horizon li{
     position: relative;
     float: left;
     list-style: none;
     margin: 0;
     padding:0;
 }
-header ul li{
-    list-style: none;
-}
-header li a {
+#Horizon li a{
     width: 100px;
     height: 30px;
     display: block;
@@ -39,70 +33,22 @@ header li a {
     background-color: black;
     color: white;
 }
-header ul ul li a {
+#Horizon ul ul li a{
     width: 200px;
     text-align: left;
     padding-left: 10px;
+    background-color: yellow;
+    color: black
 }
-header li a:hover{
+#Horizon li a:hover{
     background-color: red;
 }
-header ul ul{
+#Horizon ul ul li{
     position: absolute;
     top: 30px;
     left: 15px;
-    visibility: hidden;
+
 }
-header ul li:hover ul {
+#Horizon ul li:hover ul{
     visibility: visible;
-}
-aside{
-    height: 30px;
-    padding:10px;
-    margin:0;
-    background-color: blueviolet;
-    border: 1px solid #CDCDCD;
-}
-aside li{
-    list-style: none;
-    position: relative;
-    width:100px;
-    height: 30px;
-    padding:0 20px;
-    background-color: black;
-    line-height: 30px;
-    cursor:pointer;
-}
-aside li a{
-    text-decoration:none;
-    color: white;
-}
-
-aside li:hover{
-    background-color:red;
-}
-
-aside ul ul{
-    position: absolute;
-    top:0;
-    left:140px;
-    visibility:hidden;
-}
-
-aside ul li:hover ul{
-    visibility:visible;
-}
-section {
-    left: 20px;
-    margin: 5px;
-    padding: 10px;
-    background-color: lightgrey;
-    border: yellow solid 1px;
-}
-article {
-    left: 20px;
-    margin: 5px;
-    padding: 10px;
-    background-color: white;
-    border: blueviolet solid 1px;
 }
