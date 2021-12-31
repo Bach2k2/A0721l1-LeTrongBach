@@ -12,14 +12,12 @@ public class test {
         Student std2 = new Student("NVC", 22, "NHS");
 
         stdList.put(1, std);
-        stdList.put(1, std1);
-        stdList.put(2, std2);
+        stdList.put(2, std1);
+        stdList.put(3, std2);
 
         Set<Map.Entry<Integer, Student>> list = stdList.entrySet();
         for ( Map.Entry<Integer, Student> i: list) {
             System.out.println(stdList.get(i).toString());
         }
-        Math.max(x,y);
     }
-
 }
