@@ -8,8 +8,7 @@ body{
     position: relative;
     color: white;
     background-color: #0dcaf0;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    margin-bottom: 5px;
     border-bottom: 1px solid black;
 
 }
@@ -27,13 +26,12 @@ nav{
     background-color: #0dcaf0;
     color: white;
     padding-top: 2px;
-    margin-block: 40px;
+    margin-bottom: 5px;
 }
 
 nav ul{
     padding: 0px;
     margin: 0px;
-    float:left;
     list-style: none;
 
 }
@@ -41,35 +39,39 @@ nav ul{
 nav ul li{
     float:left;
     display: block;
+    float:left;
     margin-left: 10px;
     margin-top: 0px;
+    height: 30px;
     border-right: 1px solid black;
 }
 
 nav ul li a{
     text-decoration: none;
+    margin-inside: 3px;
 }
 
 #main{
     width: 1200px;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 #main #left_list{
     width: 400px;
-    background-color: purple;
     float:left;
 }
 
 #main #left_list ul{
     margin:0px;
     padding:0px;
-
-    display: block
 }
 
 #main #left_list ul li{
     list-style: none;
     border: 1px solid black;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 #main #left_list ul li a{
