@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.util.Date" %><%--
   Created by IntelliJ IDEA.
   User: DE
   Date: 6/1/2022
@@ -8,9 +8,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>Index</title>
   </head>
   <body>
-  $END$
+    <h1> Hello </h1>
+    <%
+      Date date = new Date();
+      System.out.println(date.toString());
+    %>
+  <script>
+    document.writeln("Hi Bach");
+  </script>
   </body>
 </html>
