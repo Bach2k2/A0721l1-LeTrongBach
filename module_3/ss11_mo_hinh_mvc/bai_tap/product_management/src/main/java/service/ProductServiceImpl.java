@@ -44,4 +44,14 @@ public class ProductServiceImpl implements ProductService {
     public void remove(int id) {
         products.remove(id);
     }
+
+    @Override
+    public Product searchByName(String name)
+    {
+        for(Product product : products.values())
+        {
+            if(product.getName().equals(name)) return product;
+        }
+        return null;
+    }
 }

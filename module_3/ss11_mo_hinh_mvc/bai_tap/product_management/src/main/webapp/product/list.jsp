@@ -10,27 +10,52 @@
 <html>
 <head>
     <title>Product List</title>
+    <style>
+        table{
+            border: 1px solid red;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th{
+            text-align: center;
+        }
+        tr,td {
+            border: 0.5px dotted blue;
+            padding: 5px;
+        }
+        tr:nth-child(odd)
+        {
+            background-color: aqua;
+        }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="list.css">
 </head>
 <body>
+<h1 style="text-align: center">Product List</h1>
+<p>
+    <a href="/products?action=create"> Create new product</a>
+</p>
+<p>
+    <a href="/products?action=search"> Search product by name</a>
+</p>
 <table>
     <tr>
-        <td>ID</td>
-        <td>Name</td>
-        <td>Amount</td>
-        <td>Price (Thousand Dong) </td>
-        <td>Description</td>
-        <td colspan="2">Action</td>
+        <th>Name</th>
+        <th>Amount</th>
+        <th>Price (Thousand Dong) </th>
+        <th>Description</th>
+        <th colspan="2">Action</th>
     </tr>
 
-    <c:forEach var="product" items="products">
+    <c:forEach var="product" items="${products}">
         <tr>
-            <td>${product.getId()}</td>
-            <td>${product.getName()}</td>
+            <td><a href="/products?action=view&id=${product.getId()}">${product.getName()}</a></td>
             <td>${product.getAmount()}</td>
             <td>${product.getPrice()}</td>
             <td>${product.getDescript()}</td>
-            <td><a>Update</a></td>
-            <td><a>Delete</a></td>
+            <td><a href="/products?action=update&id=${product.getId()}">Update</a></td>
+            <td><a href="/products?action=delete&id=${product.getId()}">Delete</a></td>
         </tr>
     </c:forEach>
 </table>

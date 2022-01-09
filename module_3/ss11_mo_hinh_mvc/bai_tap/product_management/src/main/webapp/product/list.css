@@ -1,0 +1,12 @@
+table{
+    border: 1px solid red;
+    border-collapse: collapse;
+    width: 100%;
+}
+tr,td {
+    padding: 5px;
+}
+tr:nth-child(odd)
+{
+    background-color: aqua;
+}

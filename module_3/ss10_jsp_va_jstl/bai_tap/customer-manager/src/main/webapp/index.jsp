@@ -6,9 +6,11 @@
   Time: 2:57 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>Customer List</title>
   <style>
     body{
@@ -26,15 +28,6 @@
     <td>Địa chỉ</td>
     <td>Ảnh</td>
   </tr>
-  <% CustomerRepos customerRepos = new CustomerRepos();
-    for (Customer customer : customerRepos.findAll()) {%>
-  <tr>
-    <td><%=customer.getName()%></td>
-    <td><%=customer.getBirth()%>></td>
-    <td><%=customer.getAddress()%>/td>
-    <td><%=customer.getImage()%></td>
-  </tr>
-  <%}%>
 </table>
 </body>
 </html>
