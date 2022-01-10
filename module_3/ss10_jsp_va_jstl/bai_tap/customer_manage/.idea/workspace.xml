@@ -20,101 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3e17f20-a753-44a1-94f8-4bb0d1eb573e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.idea/customer_manage.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.gradle/6.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.gradle/6.1/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.gradle/6.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/.idea/webContexts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/build/classes/java/main/controller/CustomerManageServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/build/classes/java/main/controller/CustomerServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/build/classes/java/main/model/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/build/classes/java/main/repos/CustomerRepos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/build/classes/java/main/repos/ICustomerRepos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/build/libs/customer-manager-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/lib/javax.annotation.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/lib/javax.ejb.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/lib/javax.jms.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/lib/javax.persistence.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/lib/javax.resource.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/lib/javax.servlet.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/lib/javax.servlet.jsp.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/lib/javax.transaction.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/src/main/java/controller/CustomerManageServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/src/main/java/model/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/src/main/java/repos/CustomerRepos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/src/main/java/repos/ICustomerRepos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/src/main/webapp/customer_list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-manager/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.gradle/6.1/fileChanges/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.gradle/6.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.gradle/6.1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/gc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.gradle/vcs-1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/build/classes/java/main/controller/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/CustomerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/build/classes/java/main/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/build/classes/java/main/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/service/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/build/classes/java/main/service/ICustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/service/ICustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/build/libs/customer_manage-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/customer_manage-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/build/tmp/war/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/src/main/java/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/src/main/java/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/src/main/java/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/src/main/java/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ICustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/src/main/webapp/customer_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customer_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mo_hinh_mvc/bai_tap/customer_manage/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/thuc_hanh/user-manager/src/main/java/controller/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/thuc_hanh/user-manager/src/main/java/dao/IUserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/thuc_hanh/user-manager/src/main/java/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/thuc_hanh/user-manager/src/main/java/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/thuc_hanh/user-manager/src/main/webapp/user/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/thuc_hanh/user-manager/src/main/webapp/user/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/thuc_hanh/user-manager/src/main/webapp/user/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study/basic_queries/Cau1-5.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/basic_queries/Cau1-5.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/customer_manage-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/customer_manage-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/customer_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customer_list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,6 +164,7 @@
       <option name="presentableId" value="Default" />
       <updated>1641738085934</updated>
       <workItem from="1641738096021" duration="1962000" />
+      <workItem from="1641782168822" duration="3553000" />
     </task>
     <servers />
   </component>
@@ -258,6 +181,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641739607392">
@@ -268,53 +192,61 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1641739091079" />
-    <state width="905" height="179" key="GridCell.Tab.0.bottom" timestamp="1641740181554">
+    <state x="462" y="119" key="FileChooserDialogImpl" timestamp="1641802288856">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641740181554" />
-    <state width="905" height="179" key="GridCell.Tab.0.center" timestamp="1641740181554">
+    <state x="462" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641802288856" />
+    <state width="905" height="179" key="GridCell.Tab.0.bottom" timestamp="1641804306859">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1641740181554" />
-    <state width="905" height="179" key="GridCell.Tab.0.left" timestamp="1641740181554">
+    <state width="905" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641804306859" />
+    <state width="905" height="179" key="GridCell.Tab.0.center" timestamp="1641804306858">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1641740181554" />
-    <state width="905" height="179" key="GridCell.Tab.0.right" timestamp="1641740181554">
+    <state width="905" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1641804306858" />
+    <state width="905" height="179" key="GridCell.Tab.0.left" timestamp="1641804306858">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1641740181554" />
-    <state width="905" height="179" key="GridCell.Tab.1.bottom" timestamp="1641740181555">
+    <state width="905" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1641804306858" />
+    <state width="905" height="179" key="GridCell.Tab.0.right" timestamp="1641804306859">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641740181555" />
-    <state width="905" height="179" key="GridCell.Tab.1.center" timestamp="1641740181555">
+    <state width="905" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1641804306859" />
+    <state width="905" height="179" key="GridCell.Tab.1.bottom" timestamp="1641804306859">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1641740181555" />
-    <state width="905" height="179" key="GridCell.Tab.1.left" timestamp="1641740181554">
+    <state width="905" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641804306859" />
+    <state width="905" height="179" key="GridCell.Tab.1.center" timestamp="1641804306859">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1641740181554" />
-    <state width="905" height="179" key="GridCell.Tab.1.right" timestamp="1641740181555">
+    <state width="905" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1641804306859" />
+    <state width="905" height="179" key="GridCell.Tab.1.left" timestamp="1641804306859">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1641740181555" />
-    <state width="905" height="179" key="GridCell.Tab.2.bottom" timestamp="1641740181555">
+    <state width="905" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1641804306859" />
+    <state width="905" height="179" key="GridCell.Tab.1.right" timestamp="1641804306859">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="179" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641740181555" />
-    <state width="905" height="179" key="GridCell.Tab.2.center" timestamp="1641740181555">
+    <state width="905" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1641804306859" />
+    <state width="905" height="179" key="GridCell.Tab.2.bottom" timestamp="1641804306860">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="179" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1641740181555" />
-    <state width="905" height="179" key="GridCell.Tab.2.left" timestamp="1641740181555">
+    <state width="905" height="179" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641804306860" />
+    <state width="905" height="179" key="GridCell.Tab.2.center" timestamp="1641804306860">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="179" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1641740181555" />
-    <state width="905" height="179" key="GridCell.Tab.2.right" timestamp="1641740181555">
+    <state width="905" height="179" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1641804306860" />
+    <state width="905" height="179" key="GridCell.Tab.2.left" timestamp="1641804306860">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="179" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1641740181555" />
+    <state width="905" height="179" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1641804306860" />
+    <state width="905" height="179" key="GridCell.Tab.2.right" timestamp="1641804306860">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1641804306860" />
+    <state x="65" y="0" key="new project wizard" timestamp="1641802294803">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1641802294803" />
   </component>
 </project>

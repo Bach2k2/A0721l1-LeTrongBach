@@ -16,7 +16,7 @@ and (dia_chi like "%Quang Tri" or dia_chi like "%Da Nang");
     
     -- Yeu cau 5:
     select khach_hang.ma_khach_hang, ho_ten, ten_loai_khach,hop_dong.ma_hop_dong, ten_dich_vu, ngay_lam_hop_dong, ngay_ket_thuc,
-    sum(dich_vu.chi_phi_thue+hop_dong_chi_tiet.so_luong*dich_vu_di_kem.gia) as tong_tien
+    sum(dich_vu.chi_phi_thue+(hop_dong_chi_tiet.so_luong*dich_vu_di_kem.gia)) as tong_tien
     from khach_hang left join hop_dong on khach_hang.ma_khach_hang=hop_dong.ma_khach_hang
 	left join loai_khach on loai_khach.ma_loai_khach=khach_hang.ma_loai_khach
     left join dich_vu on hop_dong.ma_dich_vu=dich_vu.ma_dich_vu

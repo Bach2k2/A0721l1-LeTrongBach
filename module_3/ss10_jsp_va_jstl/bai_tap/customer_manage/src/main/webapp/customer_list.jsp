@@ -9,24 +9,32 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Customers</title>
+    <title>Hiển thị danh sách khách hàng</title>
+    <style>
+        h1,th,td{
+            text-align: center;
+        }
+        th,td{
+            border-bottom: 1px solid gray;
+        }
+    </style>
 </head>
 <body>
-<h1>Customers</h1>
+<h1Danh sách khách hàng</h1>
 
-<table border="1" width="100%">
+<table width="100%">
     <tr>
-        <td>Name</td>
-        <td>Date of birth</td>
-        <td>Address</td>
-        <td> Image </td>
+        <th>Name</th>
+        <th>Date of birth</th>
+        <th>Address</th>
+        <th> Image </th>
     </tr>
     <c:forEach items='${requestScope["customers"]}' var="customer">
         <tr>
             <td>${customer.getName()}</td>
             <td>${customer.getDateOfBirth()}</td>
             <td>${customer.getAddress()}</td>
-            <td><img src="${customer.getImage()}" width="250px "height="170px"></td>
+            <td><img src="${customer.getImage()}" width="250px "height="170px" alt="Avatar"></td>
         </tr>
     </c:forEach>
 </table>
