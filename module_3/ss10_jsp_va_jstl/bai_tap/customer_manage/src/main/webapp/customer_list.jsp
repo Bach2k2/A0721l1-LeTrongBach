@@ -20,7 +20,7 @@
     </style>
 </head>
 <body>
-<h1Danh sách khách hàng</h1>
+<h1>Danh sách khách hàng</h1>
 
 <table width="100%">
     <tr>
