@@ -126,8 +126,49 @@ public class UserDAO implements IUserDAO{
         return rowUpdate;
     }
 
+    @Override
+    public List<User> selectByCountry(String country) throws SQLException {
+        List<User> userList=new ArrayList<>();
+        try{
+            Connection connection=getConnection();
+            PreparedStatement preparedStatement=connection.prepareStatement("select id,name,email,country from users where country=?");
+            preparedStatement.setString(1,country);
+            ResultSet rs=preparedStatement.executeQuery();
+            while(rs.next())
+            {
+                int id=rs.getInt("id");
+                String name= rs.getString("name");
+                String email=rs.getString("email");
+                User user=new User(id,name,email,country);
+                userList.add(user);
+            }
+        }catch (SQLException ex)
+        {
+            ex.printStackTrace();
+        }
+       return userList;
+    }
+    @Override
+    public List<User> sortByName() throws SQLException {
+        List<User> userList =new ArrayList<>();
+        Connection connection=getConnection();
+        PreparedStatement preparedStatement=connection.prepareStatement("select * from users order by name asc;");
+        ResultSet rs=preparedStatement.executeQuery();
+        while (rs.next())
+        {
+           int id = rs.getInt("id");
+           String name=rs.getString("name");
+           String email=rs.getString("email");
+           String country=rs.getString("country");
+           User user=new User(id,name,email,country);
+           userList.add(user);
+        }
+        return userList;
+    }
+
     public int getAmount()
     {
         return amount;
     }
+
 }

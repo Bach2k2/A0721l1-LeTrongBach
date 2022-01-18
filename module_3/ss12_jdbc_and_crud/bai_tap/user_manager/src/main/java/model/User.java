@@ -45,4 +45,9 @@ public class User {
     public void setCountry(String country) {
         this.country = country;
     }
+
+    public boolean compareTo(User user) {
+        if (this.getName().compareTo(user.getName())>0) return true;
+        else return false;
+    }
 }

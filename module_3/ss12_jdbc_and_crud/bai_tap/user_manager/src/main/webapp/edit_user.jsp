@@ -18,20 +18,19 @@
     <table>
         <tr>
             <td>Name </td>
-            <td>${product.getName()}</td>
+            <td><input type="text" value="${user.getName()}" name="name"></td>
 
         </tr>
         <tr>
             <td>Email </td>
-            <td>${product.getEmail()}</td>
-
+            <td><input type="text" value="${user.getEmail()}" name="email"></td>
         </tr>
         <tr>
             <td>Country</td>
-            <td>${product.getCountry()}</td>
+            <td><input value="${user.getCountry()}" name="country" /></td>
         </tr>
         <tr>
-            <td>go to ->>>> </td>
+            <td><a href="/users">Back to users list</a></td>
             <td><input type="submit" value="Update"/></td>
         </tr>
     </table>
