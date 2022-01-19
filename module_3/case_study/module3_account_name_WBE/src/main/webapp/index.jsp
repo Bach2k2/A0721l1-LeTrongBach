@@ -10,8 +10,6 @@
   <link>
     <title>Project Manager</title>
       <link rel="stylesheet" type="text/css" href="style.css"/>
-
-
   </head>
   <body>
  <div class="header">
@@ -30,9 +28,9 @@
           <li style="float: right"><input type="text" placeholder="search" name="search"></li>
       </ul>
   </div>
-  <div class="content" >
-      <div class="left_side">Hello</div>
-      <div class="right_side">hi</div>
+  <div class="main">
+      <div class="left_side">hi</div>
+      <div class="right_side">Hello</div>
   </div>
   <div class="footer">Footer</div>
   </body>

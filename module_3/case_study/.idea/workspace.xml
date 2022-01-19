@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="84f18f62-a5a1-47a7-b69d-ab1da612a34f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../New folder/CreateAllTable.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/InsertValueIntoTable.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/basic_queries/Cau1-5.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/basic_queries/Cau11-15.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/basic_queries/Cau16-20.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/basic_queries/Cau6-10.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.gradle/6.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.gradle/6.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.gradle/6.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/build/libs/Module3_AccountName_WBE-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/module3_account_name_WBE/src/main/webapp/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/test.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="23tgeKOJOMiKuFwSga3MP8FzL1U" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../New folder/module3_account_name_WBE" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84f18f62-a5a1-47a7-b69d-ab1da612a34f" name="Default Changelist" comment="" />
+      <created>1642558893549</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642558893549</updated>
+      <workItem from="1642558902357" duration="672000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="469" y="119" width="434" height="490" key="FileChooserDialogImpl" timestamp="1642558987911">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="469" y="119" width="434" height="490" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1642558987911" />
+    <state x="65" y="0" key="new project wizard" timestamp="1642558936098">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1642558936098" />
+  </component>
+</project>
