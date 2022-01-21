@@ -5,13 +5,13 @@ public class Customer {
     private int typeId;
     private String name;
     private String birthday;
-    private Boolean gender;
+    private int gender;
     private String idCard;
     private String phone;
     private String email;
     private String address;
 
- public Customer(int id, int typeId, String name, String birthday, Boolean gender, String idCard, String phone, String email, String address) {
+ public Customer(int id, int typeId, String name, String birthday, int gender, String idCard, String phone, String email, String address) {
   this.id = id;
   this.typeId = typeId;
   this.name = name;
@@ -21,6 +21,12 @@ public class Customer {
   this.phone = phone;
   this.email = email;
   this.address = address;
+ }
+
+ public Customer(int id,int typeId, String name) {
+  this.id = id;
+  this.typeId=typeId;
+  this.name = name;
  }
 
  public int getId() {
@@ -55,11 +61,11 @@ public class Customer {
   this.birthday = birthday;
  }
 
- public Boolean getGender() {
+ public int getGender() {
   return gender;
  }
 
- public void setGender(Boolean gender) {
+ public void setGender(int gender) {
   this.gender = gender;
  }
 

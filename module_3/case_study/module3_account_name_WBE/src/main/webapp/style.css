@@ -33,7 +33,6 @@ body{
 .nav{
     border: 1px solid blue;
     height: 50px;
-    padding:30px;
 }
 
 .nav ul{
@@ -43,23 +42,25 @@ body{
 
 }
 .nav ul li{
-    padding-right: 20px;
+    padding-top: 10px;
+    padding-right:100px;
     float: left;
+    border-right: 1px solid black;
 }
 .nav ul li a{
     text-decoration: none;
 }
 
 .left_side{
-    width: 30%;
+    width: 25%;
     background-color: aqua;
     float:left;
-    padding: 30px;
+    padding: 15px;
     min-height: 500px;
 }
 
 .right_side{
-    width: 70%;
+    width: 75%;
     background-color: darkgrey;
     float:left;
     padding: 20px;
