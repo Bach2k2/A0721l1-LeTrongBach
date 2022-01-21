@@ -1,7 +1,6 @@
 package controller;
 
 import model.Customer;
-import repository.CusRepository;
 import service.ICustomerManagement;
 import service.CustomerManageImpl;
 
@@ -12,7 +11,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.SQLException;
 import java.util.List;
 
 @WebServlet(name = "CustomerManageController", urlPatterns = "/customers")
@@ -30,7 +28,7 @@ public class CustomerManageController extends HttpServlet {
                     createCustomer(request, response);
                     break;
                 case "update":
-                   // updateCustomer(request,response);
+                    updateCustomer(request,response);
                     break;
                 case "delete":
                     deleteCustomer(request,response);
@@ -97,7 +95,12 @@ public class CustomerManageController extends HttpServlet {
         request.setAttribute("customer", customer);
         request.getRequestDispatcher("/customer/update_customer.jsp").forward(request, response);
     }
-
+    private void showDeleteForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        int id = Integer.parseInt(request.getParameter("id"));
+        Customer customer = customerManagement.getCusById(id);
+        request.setAttribute("customer", customer);
+        request.getRequestDispatcher("customer/delete_customer.jsp").forward(request, response);
+    }
     private void createCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         int typeId = Integer.parseInt(request.getParameter("type_id"));
@@ -146,12 +149,7 @@ public class CustomerManageController extends HttpServlet {
         request.getRequestDispatcher("customer/update_customer.jsp").forward(request, response);
     }
 
-    private void showDeleteForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int id = Integer.parseInt(request.getParameter("id"));
-        Customer customer = customerManagement.getCusById(id);
-        request.setAttribute("customer", customer);
-        request.getRequestDispatcher("customer/delete_customer.jsp").forward(request, response);
-    }
+
     private void deleteCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         Customer customer = customerManagement.getCusById(id);

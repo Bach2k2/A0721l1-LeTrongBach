@@ -12,15 +12,19 @@
     <title>Delete A Customer</title>
 </head>
 <body>
-<form action="/customers" id="delete_customer">
+<span>
+    ${message}
+</span>
+<form action="/customers" id="delete_customer" >
     <label for="delete_customer">Wanna delete?</label>
+    <table border="1 px black">
     <tr>
         <td>Customer Id</td>
         <td><input type="text" disabled value="${customer.getId()}" name="id"/></td>
     </tr>
     <tr>
         <td>Type Customer Id</td>
-        <td>
+
             <c:choose>
             <c:when test="${customer.getTypeId()==1}">
         <td>Diamond</td>
@@ -38,7 +42,6 @@
             <td>Member</td>
         </c:otherwise>
         </c:choose>
-        </td>
     </tr>
     <tr>
         <td>Name</td>
@@ -53,10 +56,10 @@
         <td>
             <c:choose>
             <c:when test="${customer.getGender()==0}">
-        <td>Female</td>
+        Female
         </c:when>
         <c:otherwise>
-            <td>Male</td>
+            Male
         </c:otherwise>
         </c:choose></td>
 

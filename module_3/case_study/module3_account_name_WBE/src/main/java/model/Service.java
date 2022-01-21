@@ -7,18 +7,21 @@ public class Service {
     private double cost;
     private int maxPeople;
     private int rentType;
+    private int typeId;
     private String standard;
     private String description;
     private int poolArea;
     private int numOfFloor;
 
-    public Service(int serId, String serName, int area, double cost, int maxPeople, int rentType, String standard, String description, int poolArea, int numOfFloor) {
+
+    public Service(int serId, String serName, int area, double cost, int maxPeople, int rentType, int typeId, String standard, String description, int poolArea, int numOfFloor) {
         this.serId = serId;
         this.serName = serName;
         this.area = area;
         this.cost = cost;
         this.maxPeople = maxPeople;
         this.rentType = rentType;
+        this.typeId = typeId;
         this.standard = standard;
         this.description = description;
         this.poolArea = poolArea;
@@ -73,6 +76,14 @@ public class Service {
         this.rentType = rentType;
     }
 
+    public int getTypeId() {
+        return typeId;
+    }
+
+    public void setTypeId(int typeId) {
+        this.typeId = typeId;
+    }
+
     public String getStandard() {
         return standard;
     }
@@ -92,6 +103,7 @@ public class Service {
     public int getPoolArea() {
         return poolArea;
     }
+
 
     public void setPoolArea(int poolArea) {
         this.poolArea = poolArea;

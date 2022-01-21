@@ -47,11 +47,15 @@
                 <td>${customer.getEmail()}</td>
                 <td>${customer.getAddress()}</td>
                 <form action="/customers">
-                    <input type="hidden" name="id" value="${customer.getId()}">
+
                     <td>
+                        <input type="hidden" name="id" value="${customer.getId()}">
                         <button name="action" value="update">Update</button>
                     </td>
+                </form>
+                <form action="/customers">
                     <td>
+                        <input type="hidden" name="id" value="${customer.getId()}">
                         <button name="action" value="delete">Delete</button>
                     </td>
                 </form>

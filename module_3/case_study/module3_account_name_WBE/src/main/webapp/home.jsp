@@ -23,7 +23,7 @@
           <li><a href="home.jsp">Home</a></li>
           <li><a href="/customers">Customer</a></li>
           <li><a href="#">Employee</a></li>
-          <li><a href="#">Service</a></li>
+          <li><a href="/services">Service</a></li>
           <li><a href="#">Contract</a></li>
           <li style="float: right"><input type="text" placeholder="search" name="search"></li>
       </ul>
