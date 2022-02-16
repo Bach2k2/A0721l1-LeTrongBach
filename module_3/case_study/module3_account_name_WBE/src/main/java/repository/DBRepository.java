@@ -17,6 +17,11 @@ public class DBRepository {
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
+        try {
+            connection.setAutoCommit(false);
+        } catch (SQLException exception) {
+            exception.printStackTrace();
+        }
     }
 
     public Connection getAConnect() {

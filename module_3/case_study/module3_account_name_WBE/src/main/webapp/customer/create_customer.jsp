@@ -12,7 +12,7 @@
 </head>
 <body>
 <span>${message}</span>
-<form action="/customers">
+<form method="post">
     <table>
         <tr>
             <td>Customer Id</td>

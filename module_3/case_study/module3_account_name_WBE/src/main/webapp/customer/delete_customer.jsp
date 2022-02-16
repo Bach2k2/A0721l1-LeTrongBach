@@ -15,7 +15,7 @@
 <span>
     ${message}
 </span>
-<form action="/customers" id="delete_customer" >
+<form action="/customers" id="delete_customer" method="post" >
     <label for="delete_customer">Wanna delete?</label>
     <table border="1 px black">
     <tr>
@@ -78,7 +78,7 @@
     </tr>
     <tr>
         <td>Address</td>
-        <td><input type="text" disabled value="${customer.getAddress()}" name="address"/></td>
+        <td><input type="text" disabled value="${customer.getAddress()}" name="address" width="200px"/></td>
     </tr>
     <tr>
         <td><a href="/customers">Back to customer's list</a></td>

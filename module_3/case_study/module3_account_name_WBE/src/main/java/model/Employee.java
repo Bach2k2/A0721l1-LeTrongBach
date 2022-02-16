@@ -5,28 +5,43 @@ public class Employee {
     private String name;
     private String birthday;
     private String idCard;
-    private double price;
+    private double salary;
     private String phone;
     private String email;
     private String address;
     private int posId;
     private int eDId;
-    private int division;
+    private int divisionId;
     private String userName;
 
-    public Employee(int emId, String name, String birthday, String idCard, double price, String phone, String email, String address, int posId, int eDId, int division, String userName) {
+    public Employee(int emId, String name, String birthday, String idCard, double salary, String phone, String email, String address, int posId, int eDId, int divisionId, String userName) {
         this.emId = emId;
         this.name = name;
         this.birthday = birthday;
         this.idCard = idCard;
-        this.price = price;
+        this.salary = salary;
         this.phone = phone;
         this.email = email;
         this.address = address;
         this.posId = posId;
         this.eDId = eDId;
-        this.division = division;
+        this.divisionId = divisionId;
         this.userName = userName;
+    }
+
+    public Employee(int emId, String name, String birthday, String idCard, double salary, String phone, String email, String address, int posId, int eDId, int divisionId) {
+        this.emId = emId;
+        this.name = name;
+        this.birthday = birthday;
+        this.idCard = idCard;
+        this.salary = salary;
+        this.phone = phone;
+        this.email = email;
+        this.address = address;
+        this.posId = posId;
+        this.eDId = eDId;
+        this.divisionId = divisionId;
+        this.userName="";
     }
 
     public int getEmId() {
@@ -61,12 +76,12 @@ public class Employee {
         this.idCard = idCard;
     }
 
-    public double getPrice() {
-        return price;
+    public double getSalary() {
+        return salary;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
     public String getPhone() {
@@ -101,20 +116,20 @@ public class Employee {
         this.posId = posId;
     }
 
-    public int geteDId() {
+    public int getEDId() {
         return eDId;
     }
 
-    public void seteDId(int eDId) {
+    public void setEDId(int eDId) {
         this.eDId = eDId;
     }
 
-    public int getDivision() {
-        return division;
+    public int getDivisionId() {
+        return divisionId;
     }
 
-    public void setDivision(int division) {
-        this.division = division;
+    public void setDivisionId(int divisionId) {
+        this.divisionId = divisionId;
     }
 
     public String getUserName() {

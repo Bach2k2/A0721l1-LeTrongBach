@@ -15,4 +15,6 @@ public interface ISerRepository {
 
     boolean deleteService(Service service);
 
+    List<Service> searchByName(String name);
+
 }

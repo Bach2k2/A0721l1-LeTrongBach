@@ -11,8 +11,10 @@
     <title>Delete a service</title>
 </head>
 <body>
-<form action="/service" method="post">
-    <table>
+<form action="/services" method="post">
+    <h1>Delete A Service</h1>
+    <table border="1px solid black">
+        <legend>Are you sure</legend>
         <tr>
             <td>Service Id</td>
             <td><input type="text" name="id" value="${service.getSerId()}" disabled="disabled"></td>
@@ -51,15 +53,15 @@
         </tr>
         <tr>
             <td>pool Area</td>
-            <td><input type="text" name="pool_area" value="${service.getPoolArea}" disabled="disabled"></td>
+            <td><input type="text" name="pool_area" value="${service.getPoolArea()}" disabled="disabled"></td>
         </tr>
         <tr>
             <td>Floors</td>
-            <td><input type="text" name="floors" value="${service.getNumOfFloor}" disabled="disabled"></td>
+            <td><input type="text" name="floors" value="${service.getNumOfFloor()}" disabled="disabled"></td>
         </tr>
         <tr>
-            <td><a href="/customers">Back to service's list</a></td>
-            <td><input type="submit" value="create"></td>
+            <td><a href="/services">Back to service's list</a></td>
+            <td><input type="submit" value="delete"></td>
         </tr>
     </table>
 </form>

@@ -49,6 +49,7 @@ public class ServiceManageImpl implements IServiceManagement {
 
     @Override
     public List<Service> searchService(String name) {
-        return null;
+        List<Service> serviceList=serRepository.searchByName(name);
+        return serviceList;
     }
 }

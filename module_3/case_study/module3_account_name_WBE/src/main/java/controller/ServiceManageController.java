@@ -25,18 +25,18 @@ public class ServiceManageController extends HttpServlet {
         try {
             switch (action) {
                 case "create":
-                    createService(request,response);
+                    createService(request, response);
                     break;
                 case "update":
-                    updateService(request,response);
+                    updateService(request, response);
                     break;
                 case "delete":
-                   deleteService(request,response);
+                    deleteService(request, response);
                     break;
                 case "search":
+                    searchByName(request,response);
                     break;
                 default:
-
                     break;
             }
         } catch (ServletException ex) {
@@ -63,8 +63,7 @@ public class ServiceManageController extends HttpServlet {
                 case "delete":
                     showDeleteForm(request, response);
                     break;
-                case "search":
-                    break;
+
                 case "view":
                     break;
                 default:
@@ -96,21 +95,22 @@ public class ServiceManageController extends HttpServlet {
     private void showDeleteForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("/service/delete_service.jsp").forward(request, response);
     }
+
     private void createService(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int serId= Integer.parseInt(request.getParameter("id"));
-        String serName =request.getParameter("serName");
+        int serId = Integer.parseInt(request.getParameter("id"));
+        String serName = request.getParameter("serName");
         int area = Integer.parseInt(request.getParameter("area"));
         double deposit = Double.parseDouble(request.getParameter("deposit"));
         int maxPeople = Integer.parseInt(request.getParameter("max_people"));
         int rentType = Integer.parseInt(request.getParameter("rent_type_id"));
         int typeId = Integer.parseInt(request.getParameter("type_service"));
         String standard = request.getParameter("standard");
-        String description =request.getParameter("description");
+        String description = request.getParameter("description");
         int poolArea = Integer.parseInt(request.getParameter("pool_area"));
         int numOfFloor = Integer.parseInt(request.getParameter("floors"));
 
-        Service service=new Service(serId,serName,area,deposit,maxPeople,rentType,typeId,standard,description,poolArea,numOfFloor);
-        boolean check = serviceManage.createService(service)
+        Service service = new Service(serId, serName, area, deposit, maxPeople, rentType, typeId, standard, description, poolArea, numOfFloor);
+        boolean check = serviceManage.createService(service);
         if (check) {
             request.setAttribute("message", "Complete, created a service successfully");
         } else {
@@ -120,19 +120,19 @@ public class ServiceManageController extends HttpServlet {
     }
 
     private void updateService(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int serId= Integer.parseInt(request.getParameter("id"));
-        String serName =request.getParameter("serName");
+        int serId = Integer.parseInt(request.getParameter("id"));
+        String serName = request.getParameter("serName");
         int area = Integer.parseInt(request.getParameter("area"));
         double deposit = Double.parseDouble(request.getParameter("deposit"));
         int maxPeople = Integer.parseInt(request.getParameter("max_people"));
         int rentType = Integer.parseInt(request.getParameter("rent_type_id"));
         int typeId = Integer.parseInt(request.getParameter("type_service"));
         String standard = request.getParameter("standard");
-        String description =request.getParameter("description");
+        String description = request.getParameter("description");
         int poolArea = Integer.parseInt(request.getParameter("pool_area"));
         int numOfFloor = Integer.parseInt(request.getParameter("floors"));
 
-        Service service= serviceManage.getServiceById(serId);
+        Service service = serviceManage.getServiceById(serId);
 
         service.setSerName(serName);
         service.setArea(area);
@@ -144,7 +144,7 @@ public class ServiceManageController extends HttpServlet {
         service.setDescription(description);
         service.setPoolArea(poolArea);
         service.setNumOfFloor(numOfFloor);
-        boolean check=serviceManage.updateService(service);
+        boolean check = serviceManage.updateService(service);
         if (check) {
             request.setAttribute("message", "Complete, updated a service successfully");
         } else {
@@ -155,18 +155,21 @@ public class ServiceManageController extends HttpServlet {
 
 
     private void deleteService(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int serId= Integer.parseInt(request.getParameter("id"));
-        Service service= serviceManage.getServiceById(serId);
-        boolean check=serviceManage.deleteService(service);
-        if(check)
-        {
-            request.setAttribute("message","Successful");
-        }
-        else
-        {
-            request.setAttribute("message","Unsuccessful");
+        int serId = Integer.parseInt(request.getParameter("id"));
+        Service service = serviceManage.getServiceById(serId);
+        boolean check = serviceManage.deleteService(service);
+        if (check) {
+            request.setAttribute("message", "Successful");
+        } else {
+            request.setAttribute("message", "Unsuccessful");
         }
         request.getRequestDispatcher("service/delete_service.jsp").forward(request, response);
     }
 
+    private void searchByName(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        String name=request.getParameter("name");
+        List <Service> serviceList= serviceManage.searchService(name);
+        request.setAttribute("services",serviceList);
+        request.getRequestDispatcher("service/service_list.jsp").forward(request,response);
+    }
 }

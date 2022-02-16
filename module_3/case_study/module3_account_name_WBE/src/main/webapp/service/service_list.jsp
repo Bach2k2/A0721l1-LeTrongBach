@@ -16,7 +16,13 @@
 <div style="text-align: center">
     <span>
         <p><a href="/services?action=create">Create a new service</a></p>
-        <p><a href="/services?action=search">Search a service by name</a></p>
+        <form id="search" action="/services" method="post">
+            <label for="search">Search a service by name
+            </label>
+            <input type="hidden" name="action" value="search"/>
+            <input type="text" name="name"/>
+        </form>
+
     </span>
     <table border="1px solid black" style="border-collapse: collapse">
         <tr>
@@ -44,22 +50,21 @@
                 <td>${service.getTypeId()}</td>
                 <td>${service.getStandard()}</td>
                 <td>${service.getDescription()}</td>
-                <td>${service.getPoolArea}</td>
-                <td>${service.getNumOfFloor}</td>
-                <form action="/service">
+                <td>${service.getPoolArea()}</td>
+                <td>${service.getNumOfFloor()}</td>
+                <form action="/services">
 
                     <td>
-                        <input type="hidden" name="id" value="${customer.getId()}">
+                        <input type="hidden" name="id" value="${service.getSerId()}">
                         <button name="action" value="update">Update</button>
                     </td>
                 </form>
-                <form action="/service">
+                <form action="/services">
                     <td>
-                        <input type="hidden" name="id" value="${customer.getId()}">
+                        <input type="hidden" name="id" value="${service.getSerId()}">
                         <button name="action" value="delete">Delete</button>
                     </td>
                 </form>
-
             </tr>
         </c:forEach>
     </table>

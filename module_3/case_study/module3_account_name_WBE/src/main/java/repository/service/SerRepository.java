@@ -6,6 +6,7 @@ import repository.DBRepository;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -18,6 +19,7 @@ public class SerRepository implements ISerRepository {
             ",ma_kieu_thue=?,ma_loai_dich_vu=?,tieu_chuan_phong=?,mo_ta_tien_nghi_khac=?,dien_tich_ho_boi=?,so_tang=? where ma_dich_vu=?";
     private static String SELECT_SERVICE_BY_ID = "select * from dich_vu where ma_dich_vu=?";
     private static String DELETE_SERVICE = "delete from dich_vu where ma_dich_vu=?";
+    private final static  String SEARCH_BY_NAME="select * from dich_vu where ten_dich_vu like "+"%"+"?"+"%";
 
     @Override
     public List<Service> getServiceList() {
@@ -33,7 +35,7 @@ public class SerRepository implements ISerRepository {
                 int maxPeople = rs.getInt("so_nguoi_toi_da");
                 int rentType = rs.getInt("ma_kieu_thue");
                 int typeId = rs.getInt("ma_loai_dich_vu");
-                String standard = rs.getString("tieu_chuan");
+                String standard = rs.getString("tieu_chuan_phong");
                 String description = rs.getString("mo_ta_tien_nghi_khac");
                 int poolArea = rs.getInt("dien_tich_ho_boi");
                 int numOfFloor = rs.getInt("so_tang");
@@ -133,5 +135,35 @@ public class SerRepository implements ISerRepository {
         }
 
         return deleteRows;
+    }
+    public List<Service> searchByName(String name)
+    {
+        List<Service> serviceList=new ArrayList<>();
+        try {
+            PreparedStatement preparedStatement = dbRepository.getAConnect().prepareStatement(SEARCH_BY_NAME);
+            preparedStatement.setString(1, name);
+            ResultSet rs=preparedStatement.executeQuery();
+            while(rs.next())
+            {
+                int serId = rs.getInt("ma_dich_vu");
+                String serName = rs.getString("ten_dich_vu");
+                int area = rs.getInt("dien_tich");
+                double cost = rs.getDouble("chi_phi_thue");
+                int maxPeople = rs.getInt("so_nguoi_toi_da");
+                int rentType = rs.getInt("ma_kieu_thue");
+                int typeId = rs.getInt("ma_loai_dich_vu");
+                String standard = rs.getString("tieu_chuan_phong");
+                String description = rs.getString("mo_ta_tien_nghi_khac");
+                int poolArea = rs.getInt("dien_tich_ho_boi");
+                int numOfFloor = rs.getInt("so_tang");
+                Service service = new Service(serId, serName, area, cost, maxPeople, rentType, typeId, standard, description, poolArea, numOfFloor);
+                serviceList.add(service);
+            }
+            return serviceList;
+        }catch (SQLException ex)
+        {
+            ex.printStackTrace();
+        }
+        return serviceList;
     }
 }
