@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_4/ss1_spring_mvc_overview/thuc_hanh/customer-management" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_4/ss2_spring_controller/thuc_hanh/customer-management" vcs="Git" />
   </component>
 </project>
