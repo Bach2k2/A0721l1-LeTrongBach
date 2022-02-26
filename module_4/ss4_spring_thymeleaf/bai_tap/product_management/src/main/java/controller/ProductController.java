@@ -24,8 +24,7 @@ public class ProductController {
         return "index";
     }
 
-    GetMapping("/create")
-
+    @GetMapping("/create")
     public String create(Model model) {
         model.addAttribute("product", new Product());
         return "create";
