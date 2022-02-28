@@ -19,43 +19,14 @@ public class DeclaredForm {
     private String currentAddress;
     private String phoneNumber;
     private String email;
-    private Boolean[] symptom;
-    private Boolean[] history;
+    private Symptom[] symptom;
+    private History[] history;
 
-    public String get_14DaysAgo() {
-        return _14DaysAgo;
-    }
-
-    public void set_14DaysAgo(String _14DaysAgo) {
-        this._14DaysAgo = _14DaysAgo;
-    }
-
-    public DeclaredForm(String name, int yearBirth, String gender, String nationality, String identityCard, String transportName, String transportId, int seatNum, String departureDate, String returnDate, String _14DaysAgo, String city, String district, String ward, String currentAddress, String phoneNumber, String email, Boolean[] symptom, Boolean[] history) {
-        this.name = name;
-        this.yearBirth = yearBirth;
-        this.gender = gender;
-        this.nationality = nationality;
-        this.identityCard = identityCard;
-        this.transportName = transportName;
-        this.transportId = transportId;
-        this.seatNum = seatNum;
-        this.departureDate = departureDate;
-        this.returnDate = returnDate;
-        this._14DaysAgo = _14DaysAgo;
-        this.city = city;
-        this.district = district;
-        this.ward = ward;
-        this.currentAddress = currentAddress;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-        this.symptom = symptom;
-        this.history = history;
-    }
 
     public DeclaredForm() {
     }
 
-    public DeclaredForm(String name, int yearBirth, String gender, String nationality, String identityCard, String transportName, String transportId, int seatNum, String departureDate, String returnDate, String city, String district, String ward, String currentAddress, String phoneNumber, String email, Boolean[] symptom, Boolean[] history) {
+    public DeclaredForm(String name, int yearBirth, String gender, String nationality, String identityCard, String transportName, String transportId, int seatNum, String departureDate, String returnDate, String _14DaysAgo, String city, String district, String ward, String currentAddress, String phoneNumber, String email, Symptom[] symptom, History[] history) {
         this.name = name;
         this.yearBirth = yearBirth;
         this.gender = gender;
@@ -66,6 +37,7 @@ public class DeclaredForm {
         this.seatNum = seatNum;
         this.departureDate = departureDate;
         this.returnDate = returnDate;
+        this._14DaysAgo = _14DaysAgo;
         this.city = city;
         this.district = district;
         this.ward = ward;
@@ -204,19 +176,47 @@ public class DeclaredForm {
         this.email = email;
     }
 
-    public Boolean[] getSymptom() {
+    public String get_14DaysAgo() {
+        return _14DaysAgo;
+    }
+
+    public void set_14DaysAgo(String _14DaysAgo) {
+        this._14DaysAgo = _14DaysAgo;
+    }
+
+    public Symptom[] getSymptom() {
         return symptom;
     }
 
-    public void setSymptom(Boolean[] symptom) {
+    public void setSymptom(Symptom[] symptom) {
         this.symptom = symptom;
     }
 
-    public Boolean[] getHistory() {
+    public History[] getHistory() {
         return history;
     }
 
-    public void setHistory(Boolean[] history) {
+    public void setHistory(History[] history) {
         this.history = history;
+    }
+
+    public DeclaredForm(String name, int yearBirth, String gender, String nationality, String identityCard, String transportName, String transportId, int seatNum, String departureDate, String returnDate, String _14DaysAgo, String city, String district, String ward, String currentAddress, String phoneNumber, String email) {
+        this.name = name;
+        this.yearBirth = yearBirth;
+        this.gender = gender;
+        this.nationality = nationality;
+        this.identityCard = identityCard;
+        this.transportName = transportName;
+        this.transportId = transportId;
+        this.seatNum = seatNum;
+        this.departureDate = departureDate;
+        this.returnDate = returnDate;
+        this._14DaysAgo = _14DaysAgo;
+        this.city = city;
+        this.district = district;
+        this.ward = ward;
+        this.currentAddress = currentAddress;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
     }
 }

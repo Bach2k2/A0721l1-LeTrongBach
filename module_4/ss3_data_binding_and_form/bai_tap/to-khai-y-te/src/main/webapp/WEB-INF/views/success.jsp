@@ -12,5 +12,8 @@
 </head>
 <body>
 <h1> Success</h1>
+<label for="name"></label>
+<input name="name" id="name" value="${declaredForm.name}">
+
 </body>
 </html>
