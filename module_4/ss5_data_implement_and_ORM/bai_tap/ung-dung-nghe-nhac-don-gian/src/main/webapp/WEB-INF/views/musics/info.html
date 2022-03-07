@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Information</title>
+</head>
+<body>
+<div>
+    <a th:href="@{/musics}"> Back to music list</a>
+</div>
+<table>
+    <tr>
+       <td>Id:</td>
+        <td>
+            <input type="hidden" name="id" th:value="${music.id}"
+        </td>
+    </tr>
+    <tr>
+        <td>Name:</td>
+        <td>
+            <input type="hidden" name="name" th:value="${music.name}"
+        </td>
+    </tr>
+    <tr>
+        <td>Category:</td>
+        <td>
+            <input type="hidden" name="category" th:value="${music.category}"
+        </td>
+    </tr>
+    <tr>
+        <td>URL:</td>
+        <td>
+            <input type="url" name="url" th:value="${music.url}">
+        </td>
+    </tr>
+</table>
+</body>
+</html>

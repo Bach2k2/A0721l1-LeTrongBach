@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách nhạc của tui</title>
+</head>
+<body>
+<form action="/musics" method="post">
+    <table>
+        <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Category</td>
+            <td>URL</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="m : ${musics}">
+            <td th:text="${m.id}"> </td>
+            <td>
+                <a href="@{/musics/{id}(id=${m.id})}" th:text="${m.name}">
+                </a>
+            </td>
+            <td th:text="${m.category}"></td>
+            <td th:text="${m.url}"></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>
