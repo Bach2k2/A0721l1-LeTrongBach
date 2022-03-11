@@ -1,7 +1,8 @@
-package com.exercise.springcustomermanagement.service;
+package com.example.demo.service.customer;
 
-import com.exercise.springcustomermanagement.model.Customer;
-import com.exercise.springcustomermanagement.repository.ICustomerRepository;
+import com.example.demo.model.Customer;
+import com.example.demo.model.Province;
+import com.example.demo.repository.ICustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,9 +27,14 @@ public class CustomerService implements ICustomerService {
     public void save(Customer customer) {
         customerRepository.save(customer);
     }
-    
+
     @Override
     public void remove(Long id) {
         customerRepository.deleteById(id);
+    }
+
+    @Override
+    public Iterable<Customer> findAllByProvince(Province province) {
+        return customerRepository.findAllByProvince(province);
     }
 }

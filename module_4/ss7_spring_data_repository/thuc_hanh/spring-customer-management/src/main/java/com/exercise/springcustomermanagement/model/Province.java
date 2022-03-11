@@ -1,18 +1,22 @@
 package com.exercise.springcustomermanagement.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "provinces")
 public class Province {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
 
     public Province() {
 
     }
+
+    @OneToMany(targetEntity = Customer.class)
+    private List<Customer> customerList;
 
     public Province(Long id, String name) {
         this.id = id;

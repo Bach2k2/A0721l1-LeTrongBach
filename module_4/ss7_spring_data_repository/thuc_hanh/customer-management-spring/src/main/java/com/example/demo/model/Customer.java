@@ -1,30 +1,37 @@
-package com.exercise.springcustomermanagement.model;
-
-import org.springframework.context.annotation.Primary;
+package com.example.demo.model;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Table(name = "customers")
 public class Customer {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String firstName;
     private String lastName;
-
     @ManyToOne
-    @JoinColumn(name="province_id")
+    @JoinColumn(name = "province_id")
     private Province province;
+
 
     public Customer() {
     }
 
-    public Customer(Long id, String firstName, String lastName) {
-        this.id = id;
+    public Customer(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+    }
+
+    public Customer(String firstName, String lastName, Province province) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.province = province;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Customer[id=%d, firstName='%s', lastName='%s']", id, firstName, lastName);
     }
 
     public Long getId() {
@@ -51,10 +58,11 @@ public class Customer {
         this.lastName = lastName;
     }
 
-    public boolean equal(Customer customer)
-    {
-        if(this.getFirstName().equals(customer.firstName)&&this.lastName.equals(customer.lastName))
-            return true;
-        else return false;
+    public Province getProvince() {
+        return province;
+    }
+
+    public void setProvince(Province province) {
+        this.province = province;
     }
 }
