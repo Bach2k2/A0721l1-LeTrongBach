@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View infomation</title>
+</head>
+<body>
+<h1 th:text="${blog.header}"></h1>
+<h2>Accessed blog </h2>
+<h3>Hello:<span th:text="blog.owner"></span></h3>
+<li>
+    <th:block th:each="category : ${categories}">
+        <ul><a th:href="@{category/view_category}"><span th:text="${category.name}"></span></a></ul>
+    </th:block>
+</li>
+<h3 th:text="${blog.footer}"></h3>
+</body>
+</html>
