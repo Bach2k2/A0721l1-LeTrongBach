@@ -1,0 +1,52 @@
+package com.example.demo.service.customer;
+
+import com.example.demo.model.Customer;
+import com.example.demo.model.Province;
+import com.example.demo.repository.ICustomerRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import java.util.Optional;
+
+@Service
+public class CustomerServiceImpl implements ICustomerService {
+    private ICustomerRepository customerRepository;
+
+    @Override
+    public Iterable<Customer> findAll() {
+        return customerRepository.findAll();
+    }
+
+    @Override
+    public Optional<Customer> findById(Long id) {
+        return customerRepository.findById(id);
+    }
+
+    @Override
+    public void save(Customer customer) {
+        customerRepository.save(customer);
+    }
+
+    @Override
+    public void remove(Long id) {
+        customerRepository.deleteById(id);
+    }
+
+    @Override
+    public Iterable<Customer> findAllByProvince(Province province) {
+        return customerRepository.findAllByProvince(province);
+    }
+
+    @Override
+    public Page<Customer> findAll(Pageable pageable) {
+        return customerRepository.findAll(pageable);
+    }
+
+    @Override
+    public Page<Customer> findAllByFirstNameContaining(String firstName, Pageable pageable) {
+        return findAllByFirstNameContaining(firstName, pageable);
+    }
+
+
+}
