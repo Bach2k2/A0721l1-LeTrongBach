@@ -8,8 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class ProvinceServiceImpl implements IProvinceService {
-    // Autowire de tao bean -- @Repository
+public class ProvinceService implements IProvinceService {
     @Autowired
     private IProvinceRepository provinceRepository;
 

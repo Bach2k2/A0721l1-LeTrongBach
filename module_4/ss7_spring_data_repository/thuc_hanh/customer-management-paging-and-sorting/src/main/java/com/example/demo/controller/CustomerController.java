@@ -2,7 +2,6 @@ package com.example.demo.controller;
 
 import com.example.demo.model.Customer;
 import com.example.demo.model.Province;
-import com.example.demo.service.customer.CustomerServiceImpl;
 import com.example.demo.service.customer.ICustomerService;
 import com.example.demo.service.province.IProvinceService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +23,7 @@ public class CustomerController {
     @Autowired
     private IProvinceService provinceService;
 
+    //Error :404
     @ModelAttribute("provinces")
     public Iterable<Province> provinces() {
         return provinceService.findAll();

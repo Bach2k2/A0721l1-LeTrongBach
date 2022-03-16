@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class CustomerServiceImpl implements ICustomerService {
+public class CustomerService implements ICustomerService {
     @Autowired
     private ICustomerRepository customerRepository;
 
@@ -46,9 +46,7 @@ public class CustomerServiceImpl implements ICustomerService {
     }
 
     @Override
-    public Page<Customer> findAllByFirstNameContaining(String firstName, Pageable pageable) {
-        return findAllByFirstNameContaining(firstName, pageable);
+    public Page<Customer> findAllByFirstNameContaining(String firstname, Pageable pageable) {
+        return customerRepository.findAllByFirstNameContaining(firstname, pageable);
     }
-
-
 }
