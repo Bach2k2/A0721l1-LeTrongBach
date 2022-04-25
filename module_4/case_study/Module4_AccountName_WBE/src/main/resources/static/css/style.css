@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family: "Arial Black";
+
+}
+li{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+head{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 70px;
+}
+.logo{
+    flex:1;
+
+}
+.menu{
+    flex:3;
+}
+.other{
+    flex:1;
+}

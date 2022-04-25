@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create new customer</title>
+</head>
+<body>
+<div>
+    <a th:href="@{/customer}">
+        Back to customer list.
+    </a>
+</div>
+<div>
+    <span style="color: red" th:if="${message}" th:text="${message}"></span>
+</div>
+<form method="post" th:object="${customer}" th:action="@{/customer/create-customer}">
+    <table border="1px">
+
+        <tr>
+            <th>Customer name:</th>
+            <td><input type="text" th:field="*{name}"></td>
+        </tr>
+        <tr>
+            <th>Customer Birthday:</th>
+            <td><input type="date" th:field="*{birthday}"></td>
+        </tr>
+        <tr>
+            <th>Customer gender:</th>
+            <td>
+                <select th:field="*{gender}">
+                        <option th:value="${true}" th:text="Male"></option>
+                        <option th:value="${false}" th:text="Female"></option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Customer id card::</th>
+            <td><input type="text" th:field="*{id_card}"></td>
+        </tr>
+        <tr>
+            <th>Customer email:</th>
+            <td><input type="text" th:field="*{email}"></td>
+        </tr>
+        <tr>
+            <th>Customer phone:</th>
+            <td><input type="text" th:field="*{phone}"></td>
+        </tr>
+        <tr>
+            <th>Customer Address:</th>
+            <td><input type="text" th:field="*{address}"></td>
+        </tr>
+        <tr>
+            <th>Customer Type</th>
+            <td><select th:field="*{customerType}">
+                <option th:each="type :${custypes}" th:value="${type.id}" th:text="${type.type_name}"></option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td><input type="submit" value="Create"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
