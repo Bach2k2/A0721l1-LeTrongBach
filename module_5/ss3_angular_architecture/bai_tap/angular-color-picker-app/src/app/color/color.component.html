@@ -1,0 +1,4 @@
+<div ng-app>
+  <input type="color" ng-model="test" name="hi" id="color" [(ngModel)]="test"/>
+  <div class="hi" [ngStyle]="{'background-color': test}">{{ test }}</div>
+</div>

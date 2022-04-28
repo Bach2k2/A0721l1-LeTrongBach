@@ -1,0 +1,20 @@
+<h1>Simple Calculator</h1>
+<table>
+  <tr>
+    <td colspan="4"><input type="number" disabled name="result" width="100%" value="{{result}}"></td>
+  </tr>
+  <tr>
+ <!-- <td><input class="form-input" [value]="first" (change)="onFirstChange($event.target.value)"></td>-->
+    <td><input type="number" [(ngModel)]="first"></td>
+    <td>
+      <select [(ngModel)]="operator">
+        <option  value="+">+</option>
+        <option  value="-">-</option>
+        <option  value="x">x</option>
+        <option  value="%">:</option>
+      </select>
+    </td>
+    <td> <input type="number" [(ngModel)]="second"></td>
+    <td><input type="submit" value="=" (click)="calculate()"></td>
+  </tr>
+</table>
