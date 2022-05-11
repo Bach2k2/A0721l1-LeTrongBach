@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+    <meta charset="UTF-8">
+    <title>Tạo mới sách</title>
+</head>
+<body>
+<h1>Thêm mới sách</h1>
+<form th:action="@{/create_book}" th:object="${mybook}" method="post">
+    <table class="table table-bordered">
+        <tr>
+            <th>Mã sách</th>
+            <td><input type="text" th:field="*{bookId}"></td>
+
+        </tr>
+        <tr>
+            <th>Tên sách</th>
+            <td><input type="text" th:field="*{name}"></td>
+            <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</td>
+        </tr>
+        <tr>
+            <th>Tên nhà xuất bản</th>
+            <td><input type="text" th:field="*{publisherName}"></td>
+
+        </tr>
+        <tr>
+            <th>Số bản phát hành</th>
+
+        </tr>
+        <tr>
+            <th>Tên tác giả</th>
+            <td><input type="text" th:field="*{author}"></td>
+            <td th:if="${#fields.hasErrors('author')}" th:errors="*{author}">Name Error</td>
+        </tr>
+        <tr>
+            <th>Số trang</th>
+            <td><input type="text" th:field="*{pageNum}"></td>
+        </tr>
+        <tr>
+            <form th:action="@{/book_manage}" method="get">
+                <td>
+                    <button type="submit">Hủy</button>
+                </td>
+            </form>
+            <td>
+                <button type="submit">Thêm sách</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

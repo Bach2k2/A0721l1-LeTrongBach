@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+    <meta charset="UTF-8">
+    <title>Quản lý thư viện</title>
+</head>
+<body>
+<h3>Menu</h3>
+<ul>
+    <li><a th:href="@{/books}">Quản lý sách </a></li>
+    <li><a th:href="@{/magazines}">Quản lý tạp chí </a></li>
+    <li><a th:href="@{/newspaper}">Quản lý báo</a></li>
+</ul>
+</body>
+<footer th:replace="/layout :: footer"></footer>
+</html>

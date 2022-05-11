@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Service list</title>
+    <link th:replace="~{my-template :: add-bootstrap}">
+</head>
+<body>
+<div>
+    <a th:href="@{/service/create-service}">Create new service</a>
+</div>
+<h1>Service list</h1>
+<table class="table table-sm">
+    <tr>
+        <th>Service name</th>
+        <th>Area</th>
+        <th>Cost</th>
+        <th>Max people</th>
+
+        <th>Rent type</th>
+        <th>Service type</th>
+        <th>Standard room</th>
+        <th>Description other convenience</th>
+        <th>Pool area</th>
+        <th>Number of floor</th>
+
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    <th:block th:each="service: ${services}">
+        <tr>
+            <td th:text="${service.name}"></td>
+            <td th:text="${service.area}"></td>
+            <td th:text="${service.cost}"></td>
+            <td th:text="${service.max_people}"></td>
+
+            <td th:if="${service.rentType}" th:text="${service.rentType.rent_type_name}"></td>
+            <td th:if="${service.serviceType}" th:text="${service.serviceType.service_type_name}"></td>
+            <td th:text="${service.room_standard}"></td>
+            <td th:text="${service.description_other_convenience}"></td>
+            <td th:text="${service.pool_area}"></td>
+            <td th:text="${service.number_of_floor}"></td>
+            <td><a th:href="@{service/edit/__${service.getService_id()}__}">Edit</a></td>
+            <td><a th:href="@{service/delete/__${service.getService_id()}__}">Delete</a></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

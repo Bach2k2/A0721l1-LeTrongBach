@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Contract</title>
+    <link th:fragment="~{my-template :: add-bootstrap}">
+</head>
+<body>
+<div>
+    <a th:href="@{/contract}">
+        Back to contract list.
+    </a>
+</div>
+<div>
+    <span style="color: red" th:if="${message}" th:text="${message}"></span>
+</div>
+<form method="post" th:object="${contract}" th:action="@{/contract/edit}">
+    <input type="hidden" th:field="*{contract_id}">
+    <table class="table table-bordered">
+        <tr>
+            <th>Start date</th>
+            <td><input type="text" th:field="*{start_date}"></td>
+        </tr>
+        <tr>
+            <th>End date</th>
+            <td><input type="date" th:field="*{end_date}"></td>
+
+        <tr>
+            <th>Deposit</th>
+            <td><input type="text" th:field="*{deposit}"></td>
+        </tr>
+
+        <tr>
+            <th>Total Money</th>
+            <td><input type="text" th:field="*{total_money}"></td>
+        </tr>
+        <tr>
+            <th>Employee</th>
+            <td><input type="text" th:field="*{employee}"></td>
+        </tr>
+        <tr>
+            <th>Service:</th>
+            <td><input type="text" th:field="*{service}"></td>
+        </tr>
+        <tr>
+            <th>Customer:</th>
+            <td><input type="text" th:field="*{customer}"></td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td><input type="submit" value="Update contract"></td>
+        </tr>
+
+    </table>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <link rel="stylesheet" type="text/css" th:href="@{css/style.css}">
+</head>
+<body>
+
+<div>
+    <h1>Welcome!</h1>
+</div>
+<section>
+    <div class="logo">
+        <img th:src="@{images/image.jpg}" alt="">
+    </div>
+    <div class="menu">
+        <ul style="text-decoration: none" >
+            <li><a th:href="@{/homepage}">Home page</a></li>
+            <li><a th:href="@{/customer}">Customer page</a></li>
+            <li><a th:href="@{/service}"> Service page</a></li>
+            <li><a th:href="@{/employee}">Employee page</a></li>
+            <li><a th:href="@{/contract}">Contract page</a></li>
+        </ul>
+    </div>
+    <div class="other">
+        <ul>
+            <li><input type="text"><i class="fas fa-search"></i></li>
+            <li><a th:href="@{/login}"></a></i></li>
+        </ul>
+    </div>
+</section>
+<table>
+
+</table>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Contract list</title>
+    <link th:replace="~{my-template :: add-bootstrap}">
+</head>
+<body>
+
+<div>
+    <a th:href="@{/contract/create-contract}">Create new contract</a>
+</div>
+<h1>Contract list</h1>
+<table class="table table-sm">
+    <tr>
+        <th>Contract Start Date</th>
+        <th>Contract End Date</th>
+        <th>Deposit</th>
+        <th>Total Money</th>
+        <th>Employee</th>
+        <th>Service</th>
+        <th>Customer</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    <th:block th:each="contract: ${contracts}">
+        <tr>
+            <td th:text="${contract.start_date}"></td>
+            <td th:text="${contract.end_date}"></td>
+            <td th:text="${contract.deposit}"></td>
+            <td th:text="${contract.total_money}"></td>
+            <td th:if="${contract.employee}" th:text="${contract.employee.name}"></td>
+            <td th:if="${contract.service}" th:text="${contract.service.name}"></td>
+            <td th:if="${contract.customer}" th:text="${contract.customer.name}"></td>
+            <td><a th:href="@{employee/edit/__${contract.getContract_id()}__}">Edit</a></td>
+            <td><a th:href="@{employee/delete/__${contract.contract_id}__}">Delete</a></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

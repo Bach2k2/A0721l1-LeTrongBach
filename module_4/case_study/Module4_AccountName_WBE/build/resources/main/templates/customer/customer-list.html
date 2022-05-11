@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer list</title>
+    <link th:replace="~{my-template :: add-bootstrap}">
+</head>
+<body>
+
+<div>
+    <a th:href="@{/customer/create-customer}">Create new Customer</a>
+</div>
+<h1>Customer list</h1>
+<table class="table table-sm">
+    <tr>
+        <th>Name</th>
+        <th>Birthday</th>
+        <th>Gender:</th>
+        <th>Id Card:</th>
+
+        <th>Phone:</th>
+        <th>Email:</th>
+        <th>Address:</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    <th:block th:each="customer: ${customers}">
+        <tr>
+            <td th:text="${customer.name}"></td>
+            <td th:text="${customer.birthday}"></td>
+            <td th:if="${customer.gender}==true" th:text="Male"></td>
+            <td th:if="${customer.gender}==false" th:text="Female"></td>
+            <td th:text="${customer.id_card}"></td>
+            <td th:text="${'0'}+${customer.phone}"></td>
+            <td th:text="${customer.email}"></td>
+            <td th:text="${customer.address}"></td>
+            <td th:if="${customer.customerType}" th:text="${customer.customerType.getType_name()}" th:unless="${'Không có'}"></td>
+            <td><a th:href="@{customer/edit/__${customer.getCustomer_id()}__}">Edit</a></td>
+            <td><a th:href="@{customer/delete/__${customer.getCustomer_id()}__}">Delete</a></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

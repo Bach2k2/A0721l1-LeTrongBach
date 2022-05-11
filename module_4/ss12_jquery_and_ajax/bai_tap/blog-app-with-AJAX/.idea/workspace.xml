@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7eae8779-9ad1-485f-b338-087d1a0ede09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/AttachService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/ContractDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/CustomerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/Division.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/EducationDegree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/RentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/ServiceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/IGeneralService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/customer/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/customer/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/resources/templates/customer/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/code/exercise/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/code/exercise/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/code/exercise/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/code/exercise/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/code/exercise/repository/IBlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/code/exercise/repository/ICategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/code/exercise/service/IGeneralService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/code/exercise/service/blog/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/code/exercise/service/blog/IBlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/code/exercise/service/category/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/code/exercise/service/category/ICategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/blog-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/create-blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/edit-blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/category/category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss13_i18n/thuc_hanh/login-app-practice/src/main/java/com/doing/practice/configuration/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss13_i18n/thuc_hanh/login-app-practice/src/main/java/com/doing/practice/configuration/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss13_i18n/thuc_hanh/login-app-practice/src/main/java/com/doing/practice/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss13_i18n/thuc_hanh/login-app-practice/src/main/java/com/doing/practice/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss13_i18n/thuc_hanh/login-app-practice/src/main/resources/message.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss13_i18n/thuc_hanh/login-app-practice/src/main/resources/message_haw.properties.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss13_i18n/thuc_hanh/login-app-practice/src/main/resources/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss13_i18n/thuc_hanh/login-app-practice/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss13_i18n/thuc_hanh/login-app-practice/src/main/resources/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss13_i18n/thuc_hanh/login-app/src/main/java/com/code/practice/configuration/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss13_i18n/thuc_hanh/login-app/src/main/java/com/code/practice/configuration/AppInitialize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss13_i18n/thuc_hanh/login-app/src/main/java/com/code/practice/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss13_i18n/thuc_hanh/login-app/src/main/java/com/code/practice/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss14_spring_security/thuc_hanh/spring-security-practice/src/main/java/com/going/practice/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss14_spring_security/thuc_hanh/spring-security-practice/src/main/java/com/going/practice/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss14_spring_security/thuc_hanh/spring-security-practice/src/main/java/com/going/practice/security/SecurityInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss14_spring_security/thuc_hanh/spring-security-practice/src/main/resources/templates/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss14_spring_security/thuc_hanh/spring-security-practice/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss14_spring_security/thuc_hanh/spring-security-practice/src/main/resources/templates/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1_spring_mvc_overview/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1_spring_mvc_overview/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2_spring_controller/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2_spring_controller/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_data_implement_and_ORM/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_data_implement_and_ORM/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_info_music_app/src/main/java/com/example/exercise/model/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_info_music_app/src/main/java/com/example/exercise/model/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss9_aop_exception_handling/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_aop_exception_handling/thuc_hanh/customer-management" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="26h9zJ4EAK1RSbEAja3Nd0VwZt7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\A0721l1-LeTrongBach\module_4\ss12_jquery_and_ajax\bai_tap\blog-app-with-AJAX\src\main\resources\templates\" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ExerciseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="exercise.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.code.exercise.ExerciseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7eae8779-9ad1-485f-b338-087d1a0ede09" name="Default Changelist" comment="" />
+      <created>1647865211716</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647865211716</updated>
+      <workItem from="1647865216290" duration="845000" />
+      <workItem from="1647869197773" duration="2994000" />
+      <workItem from="1648205404315" duration="2908000" />
+      <workItem from="1648216932664" duration="640000" />
+      <workItem from="1648465399132" duration="443000" />
+      <workItem from="1648466781382" duration="8097000" />
+      <workItem from="1648638615217" duration="3675000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1648213862691">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1648213862691" />
+    <state x="300" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1647870201907">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="300" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1647870201907" />
+    <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1648638924587">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1648638924587" />
+    <state width="1323" height="200" key="GridCell.Tab.0.bottom" timestamp="1648473542450">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="200" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1648473542450" />
+    <state width="1323" height="200" key="GridCell.Tab.0.center" timestamp="1648473542450">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="200" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1648473542450" />
+    <state width="1323" height="200" key="GridCell.Tab.0.left" timestamp="1648473542450">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="200" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1648473542450" />
+    <state width="1323" height="200" key="GridCell.Tab.0.right" timestamp="1648473542450">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="200" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1648473542450" />
+    <state width="1323" height="200" key="GridCell.Tab.1.bottom" timestamp="1648473542450">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="200" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1648473542450" />
+    <state width="1323" height="200" key="GridCell.Tab.1.center" timestamp="1648473542450">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="200" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1648473542450" />
+    <state width="1323" height="200" key="GridCell.Tab.1.left" timestamp="1648473542450">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="200" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1648473542450" />
+    <state width="1323" height="200" key="GridCell.Tab.1.right" timestamp="1648473542450">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="200" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1648473542450" />
+    <state x="65" y="25" key="new project wizard" timestamp="1648639114879">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="25" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1648639114879" />
+    <state x="346" y="49" key="search.everywhere.popup" timestamp="1647872415326">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1647872415326" />
+  </component>
+</project>

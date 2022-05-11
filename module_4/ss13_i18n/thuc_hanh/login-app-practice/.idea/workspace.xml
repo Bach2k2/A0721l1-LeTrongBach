@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="55caadd3-a0dd-4114-927a-a1d78d56bf9d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study/Module4_AccountName_WBE/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/repository/IBlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/repository/ICategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/service/IGeneralService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/service/blog/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/service/blog/IBlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/service/category/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/service/category/ICategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/resources/templates/blog/blog-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/resources/templates/blog/create-blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/resources/templates/blog/edit-blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/resources/templates/category/category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/doing/practice/configuration/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/doing/practice/configuration/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/doing/practice/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/doing/practice/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/message.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/message_haw.properties.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../login-app/src/main/java/com/code/practice/configuration/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../login-app/src/main/java/com/code/practice/configuration/AppInitialize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../login-app/src/main/java/com/code/practice/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../login-app/src/main/java/com/code/practice/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss14_spring_security/thuc_hanh/spring-security-practice/src/main/java/com/going/practice/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss14_spring_security/thuc_hanh/spring-security-practice/src/main/java/com/going/practice/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss14_spring_security/thuc_hanh/spring-security-practice/src/main/java/com/going/practice/security/SecurityInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss14_spring_security/thuc_hanh/spring-security-practice/src/main/resources/templates/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss14_spring_security/thuc_hanh/spring-security-practice/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss14_spring_security/thuc_hanh/spring-security-practice/src/main/resources/templates/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1_spring_mvc_overview/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1_spring_mvc_overview/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2_spring_controller/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2_spring_controller/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_data_implement_and_ORM/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_data_implement_and_ORM/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_info_music_app/src/main/java/com/example/exercise/model/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_info_music_app/src/main/java/com/example/exercise/model/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss9_aop_exception_handling/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_aop_exception_handling/thuc_hanh/customer-management" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="270vddTxS3O4fYY5hU9MEYhV0Px" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="PracticeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="practice.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.doing.practice.PracticeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55caadd3-a0dd-4114-927a-a1d78d56bf9d" name="Default Changelist" comment="" />
+      <created>1648469906476</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648469906476</updated>
+      <workItem from="1648469913757" duration="3699000" />
+      <workItem from="1648638609689" duration="598000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1648474206918">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1648474206918" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1648474886089">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1648474886089" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1648474886089">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1648474886089" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1648474886089">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1648474886089" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1648474886089">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1648474886089" />
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1648474886089">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1648474886089" />
+    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1648474886089">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1648474886089" />
+    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1648474886089">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1648474886089" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1648474886089">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1648474886089" />
+  </component>
+</project>

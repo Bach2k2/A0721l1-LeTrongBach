@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Xóa sản phẩm</title>
+</head>
+<body>
+<form th:action="@{/delete}" method="post" th:object="${discount_packet}">
+    <h1>Bạn có muốn xóa chương trình khuyến mãi: <span th:text="${discount_packet.title}"></span> không?</h1>
+    <input type="hidden" th:field="*{id}">
+    <button type="submit">Xóa</button>
+</form>
+<form th:action="@{/packets}" method="get">
+    <button type="submit">Hủy</button>
+</form>
+
+</body>
+</html>

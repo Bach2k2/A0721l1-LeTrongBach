@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Customer</title>
+    <link th:fragment="~{my-template :: add-bootstrap}">
+</head>
+<body>
+<div>
+    <a th:href="@{/customer}">
+        Back to customer list.
+    </a>
+</div>
+<div>
+    <span style="color: red" th:if="${message}" th:text="${message}"></span>
+</div>
+<h1>Sure?</h1>
+<form method="post" th:action="@{/customer/delete}" th:object="${customer}">
+    <input type="hidden" th:field="*{customer_id}">
+    <table>
+        <tr>
+        <tr>
+            <th>Name:</th>
+            <td>
+                <input type="text" th:field="*{name}" disabled>
+            </td>
+        </tr>
+        <tr>
+            <th>Birthday:</th>
+            <td><input type="date" th:field="*{birthday}" disabled></td>
+        </tr>
+        <tr>
+            <th>Gender:</th>
+            <td>
+                <select name="gender" >
+                    <option th:value="${true}" th:text="Male" th:selected="${customer.gender}"></option>
+                    <option th:value="${false}" th:text="Female" th:selected="${!customer.gender}"></option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Id card</th>
+            <td><input type="text" th:field="*{id_card}" disabled></td>
+        </tr>
+        <tr>
+            <th>Email:</th>
+            <td><input type="text" th:field="*{email}" disabled></td>
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <td><input type="text" th:field="*{phone}" disabled></td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td><input type="text" th:field="*{address}" disabled></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Delete"></td>
+        </tr>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo mới câu hỏi</title>
+</head>
+<body>
+<div>
+    <span style="color: red" th:if="${message}" th:text="${message}"></span>
+</div>
+<form method="post" th:object="${myquestion}" th:action="@{/questions/create}">
+    <table class="table table-bordered">
+<!--        <tr>-->
+<!--            <th>STT</th>-->
+<!--            <td><input type="text" th:field="*{STT}"></td>-->
+<!--            <td th:if="${#fields.hasErrors('STT')}" th:errors="*{STT}">STT Error</td>-->
+<!--        </tr>-->
+        <tr>
+            <th>Tiêu đề</th>
+            <td><input type="text" th:field="*{title}"></td>
+            <td th:if="${#fields.hasErrors('title')}" th:errors="*{title}">Title Error</td>
+        </tr>
+      <tr>
+          <td>Nội dung</td>
+          <td><textarea th:field="*{question}" cols="9" rows="4"></textarea></td>
+          <td th:if="${#fields.hasErrors('question')}" th:errors="*{question}">Content Error</td>
+      </tr>
+
+        <tr>
+            <th>Loại câu</th>
+            <td><select th:field="*{questionType.name}">
+                <option th:each="type :${types}" th:value="${type.id}" th:text="${type.name}"></option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><input type="submit" th:action="@{/questions}" value="Hủy"></td>
+            <td><input type="submit" value="Create"></td>
+        </tr>
+    </table>
+</form>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee list</title>
+    <link th:replace="~{my-template :: add-bootstrap}">
+</head>
+<body>
+
+<div>
+    <a th:href="@{/employee/create-employee}">Create new employee</a>
+</div>
+<h1>Customer list</h1>
+<table class="table table-sm">
+    <tr>
+        <th>Name:</th>
+        <th>Birthday</th>
+        <th>Id Card</th>
+        <th>Salary</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Position</th>
+        <th>Education Degree</th>
+        <th>Division</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    <th:block th:each="employee: ${employees}">
+        <tr>
+            <td th:text="${employee.name}"></td>
+            <td th:text="${employee.dateOfBirth}"></td>
+            <td th:text="${employee.id_card}"></td>
+            <td th:text="${employee.salary}"></td>
+            <td th:text="${employee.phone}"></td>
+            <td th:text="${employee.email}"></td>
+            <td th:text="${employee.address}"></td>
+            <td th:if="${employee.position}" th:text="${employee.position.name}"></td>
+            <td th:if="${employee.educationDegree}" th:text="${employee.educationDegree.name}"></td>
+            <td th:if="${employee.division}" th:text="${employee.division.name}"></td>
+            <td><a th:href="@{employee/edit/__${employee.getEm_id()}__}">Edit</a></td>
+            <td><a th:href="@{employee/delete/__${employee.getEm_id()}__}">Delete</a></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

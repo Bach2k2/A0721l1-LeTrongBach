@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="25f4fc43-f5dc-4739-a9de-3f711e273068" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/controller/ContractController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/controller/SecurityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/controller/ServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/AttachService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/ContractDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/CustomerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/Division.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/EducationDegree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/RentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/ServiceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/repository/contract/ContractRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/repository/customer/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/repository/customer/CustomerTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/repository/employee/DivisionRepos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/repository/employee/EducationDegreeRepos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/repository/employee/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/repository/employee/PositionRepos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/repository/role/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/repository/service/RentTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/repository/service/ServiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/repository/service/ServiceTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/security/SecurityInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/IGeneralService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/contract/ContractService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/contract/IContractService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/customer/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/customer/CustomerTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/customer/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/employee/DivisionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/employee/EducationDegreeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/employee/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/employee/IEmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/employee/PostionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/role/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/service_object/ISerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/service_object/RentTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/service_object/SerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/service_object/ServiceTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/user/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/java/com/example/module4/service/user/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/authentication/403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/contract/contract-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/contract/create-contract.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/contract/delete-contract.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/contract/edit-contract.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/customer/create-customer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/customer/customer-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/customer/delete-customer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/customer/edit-customer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/employee/create-employee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/employee/delete-employee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/employee/edit-employee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/employee/employee-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/my-template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/security/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/security/login-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/security/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/service/create-service.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/service/delete-service.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/service/edit-service.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../case_study/Module4_AccountName_WBE/src/main/resources/templates/service/service-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exam/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exam/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exam/controller/MagazineController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exam/controller/NewspaperController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exam/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exam/model/Document.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exam/model/Magazine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exam/model/Newspaper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exam/repository/BookRepos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exam/repository/MagazineRepos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exam/repository/NewspaperRepos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exam/service/IGeneralService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exam/service/book/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exam/service/book/IBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exam/service/magazine/IMagazineService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exam/service/magazine/MagazineService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exam/service/newspaper/INewspaperService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exam/service/newspaper/NewspaperService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/book/book-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/book/create-book.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/book/delete-book.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/magazine/magazine-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/newspaper/newspaper-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/repository/IBlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/repository/ICategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/service/IGeneralService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/service/blog/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/service/blog/IBlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/service/category/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/java/com/code/exercise/service/category/ICategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/resources/templates/blog/blog-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/resources/templates/blog/create-blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/resources/templates/blog/edit-blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_jquery_and_ajax/bai_tap/blog-app-with-AJAX/src/main/resources/templates/category/category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss13_i18n/thuc_hanh/login-app-practice/src/main/java/com/doing/practice/configuration/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss13_i18n/thuc_hanh/login-app-practice/src/main/java/com/doing/practice/configuration/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss13_i18n/thuc_hanh/login-app-practice/src/main/java/com/doing/practice/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss13_i18n/thuc_hanh/login-app-practice/src/main/java/com/doing/practice/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss13_i18n/thuc_hanh/login-app-practice/src/main/resources/message.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss13_i18n/thuc_hanh/login-app-practice/src/main/resources/message_haw.properties.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss13_i18n/thuc_hanh/login-app-practice/src/main/resources/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss13_i18n/thuc_hanh/login-app-practice/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss13_i18n/thuc_hanh/login-app-practice/src/main/resources/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss13_i18n/thuc_hanh/login-app/src/main/java/com/code/practice/configuration/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss13_i18n/thuc_hanh/login-app/src/main/java/com/code/practice/configuration/AppInitialize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss13_i18n/thuc_hanh/login-app/src/main/java/com/code/practice/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss13_i18n/thuc_hanh/login-app/src/main/java/com/code/practice/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss14_spring_security/thuc_hanh/spring-security-practice/src/main/java/com/going/practice/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss14_spring_security/thuc_hanh/spring-security-practice/src/main/java/com/going/practice/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss14_spring_security/thuc_hanh/spring-security-practice/src/main/java/com/going/practice/security/SecurityInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss14_spring_security/thuc_hanh/spring-security-practice/src/main/resources/templates/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss14_spring_security/thuc_hanh/spring-security-practice/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss14_spring_security/thuc_hanh/spring-security-practice/src/main/resources/templates/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../test-module4/exam-module4-lan2/src/main/java/com/example/test/controller/DiscountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../test-module4/exam-module4-lan2/src/main/java/com/example/test/model/DiscountPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../test-module4/exam-module4-lan2/src/main/java/com/example/test/repository/PacketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../test-module4/exam-module4-lan2/src/main/java/com/example/test/service/IGeneralService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../test-module4/exam-module4-lan2/src/main/java/com/example/test/service/IPacketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../test-module4/exam-module4-lan2/src/main/java/com/example/test/service/PacketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../test-module4/exam-module4-lan2/src/main/java/com/example/test/text" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../test-module4/exam-module4-lan2/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../test-module4/exam-module4-lan2/src/main/resources/templates/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../test-module4/exam-module4-lan2/src/main/resources/templates/home-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi-module-4/src/main/java/com/example/demo/controller/QuestionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi-module-4/src/main/java/com/example/demo/model/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi-module-4/src/main/java/com/example/demo/model/QuestionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi-module-4/src/main/java/com/example/demo/repository/QuestionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi-module-4/src/main/java/com/example/demo/repository/QuestionTypeRepos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi-module-4/src/main/java/com/example/demo/service/IQuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi-module-4/src/main/java/com/example/demo/service/IQuestionTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi-module-4/src/main/java/com/example/demo/service/QuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi-module-4/src/main/java/com/example/demo/service/QuestionTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi-module-4/src/main/resources/templates/question/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi-module-4/src/main/resources/templates/question/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi-module-4/src/main/resources/templates/question/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi-module-4/src/main/resources/templates/question/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi-module-4/src/main/resources/templates/question/message.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss1_spring_mvc_overview/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1_spring_mvc_overview/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2_spring_controller/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2_spring_controller/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss5_data_implement_and_ORM/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss5_data_implement_and_ORM/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss8_spring_validation/bai_tap/validate_info_music_app/src/main/java/com/example/exercise/model/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss8_spring_validation/bai_tap/validate_info_music_app/src/main/java/com/example/exercise/model/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_aop_exception_handling/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss9_aop_exception_handling/thuc_hanh/customer-management" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="27oVdR2JIxjVWPCoBrJ1vn556Dh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\A0721l1-LeTrongBach\module_4\revision-module4\test-exam1-quan-ly-thu-vien\src\main\java\com\example\exam\service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\A0721l1-LeTrongBach\module_4\revision-module4\test-exam1-quan-ly-thu-vien\src\main\resources\templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ExamApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="exam.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.exam.ExamApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25f4fc43-f5dc-4739-a9de-3f711e273068" name="Default Changelist" comment="" />
+      <created>1649986512866</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649986512866</updated>
+      <workItem from="1649986523044" duration="12775000" />
+      <workItem from="1650010980783" duration="104000" />
+      <workItem from="1650014408120" duration="2290000" />
+      <workItem from="1650020662221" duration="2227000" />
+      <workItem from="1650025892373" duration="1980000" />
+      <workItem from="1650030462540" duration="593000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1649999162742">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1649999162742" />
+    <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1650021244732">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1650021244732" />
+    <state width="1323" height="32" key="GridCell.Tab.0.bottom" timestamp="1650025054955">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="32" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1650025054955" />
+    <state width="1323" height="32" key="GridCell.Tab.0.center" timestamp="1650025054955">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="32" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1650025054955" />
+    <state width="1323" height="32" key="GridCell.Tab.0.left" timestamp="1650025054955">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="32" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1650025054955" />
+    <state width="1323" height="32" key="GridCell.Tab.0.right" timestamp="1650025054955">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="32" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1650025054955" />
+    <state width="1323" height="32" key="GridCell.Tab.1.bottom" timestamp="1650025054959">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="32" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1650025054959" />
+    <state width="1323" height="32" key="GridCell.Tab.1.center" timestamp="1650025054959">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="32" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1650025054959" />
+    <state width="1323" height="32" key="GridCell.Tab.1.left" timestamp="1650025054955">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="32" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1650025054955" />
+    <state width="1323" height="32" key="GridCell.Tab.1.right" timestamp="1650025054959">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="32" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1650025054959" />
+    <state x="65" y="25" key="new project wizard" timestamp="1650021276842">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="25" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1650021276842" />
+  </component>
+</project>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+    <meta charset="UTF-8">
+    <title>Dánh sách các loại tạp chí được quản lý</title>
+</head>
+<body>
+<h1 style="text-align: center;">Danh sách tạp chí</h1>
+<table class="table table-striped">
+    <tr>
+        <th>Tên nhà xuất bản</th>
+        <th>Số bản phát hành</th>
+        <th>Số phát hành</th>
+        <th>Tháng xuất bản</th>
+    </tr>
+    <th:block th:each="m:${magazines}">
+        <tr>
+            <td th:text="${m.publisherName}"><a th:href="@{book-manage/view-book}"></a></td>
+            <td th:text="${m.releaseNum}"></td>
+            <td th:text="${m.issueNum}"></td>
+            <td th:text="${m.monthRelease}"></td>
+        </tr>
+    </th:block>
+</table>
+<footer th:replace="/layout:: footer"></footer>
+</body>
+</html>
