@@ -1,0 +1,52 @@
+<div class="jumbotron text-center" style="margin-bottom: 0">
+  <h1>Welcome to our website</h1>
+  <p><strong> Keep yourself on training and coding</strong></p>
+</div>
+
+<nav class="navbar navbar-expand-sm bg dark navbar-dark">
+  <a class="navbar-brand" href="#">TrainingCodeW8me</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  </button>
+
+  <div class="jasmine-incomplete" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="col-sm-8">
+  <h2>Angular Simple Form</h2>
+  <div class="row">
+    <div class="col-md-6 login-form-1">
+      <form [formGroup]="login" (ngSubmit)="loginUser()">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Your Account: *" formControlName="accountName">
+          <p *ngIf="login.get('accountName').hasError('required') && login.get('accountName').touched">Please fill in the account</p>
+          <p *ngIf="login.get('accountName').hasError('email') && login.get('email').touched">it's not an Email</p>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Your Password: *" formControlName="password">
+          <p *ngIf="login.get('password').hasError('required') && login.get('password').touched">Please fill in password</p>
+          <p *ngIf="login.get('password').hasError('minLength') && login.get('password').touched">Password has at least 6 characters</p>
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btnSubmit" value="Login" (click)="loginUser()">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom: 0">
+  <p><strong>Thank you @@</strong></p>
+</div>
+
