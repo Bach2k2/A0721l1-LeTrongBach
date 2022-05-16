@@ -1,0 +1,9 @@
+<h1 class="text-center">Bach's Dictionary Online</h1>
+<div>
+  <ul>
+    <li *ngFor="let w of wordsCollect;index as i">
+      <a [routerLink]="['../../dictionary/translate/',w.word]">{{w.word}}</a>
+    </li>
+  </ul>
+</div>
+
