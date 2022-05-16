@@ -1,0 +1,19 @@
+<h1> Danh sach san pham</h1>
+<table>
+  <thead>
+  <tr>
+    <th>STT</th>
+    <th>Ten</th>
+    <th>Gia</th>
+    <th>Mo ta</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let p of products; index as i">
+    <td>{{i+1}}</td>
+    <td>{{p.name}}</td>
+    <td>{{p.price}}</td>
+    <td>{{p.description}}</td>
+  </tr>
+  </tbody>
+</table>
