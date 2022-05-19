@@ -30,5 +30,13 @@
         "name": "Tot"
       }]
     }
-  ]
+  ],
+  "categories": [{
+    "id": 1,
+    "name": "tot"
+  },
+    {
+      "id": 2,
+      "name": "Chat luong cao"
+    }]
 }

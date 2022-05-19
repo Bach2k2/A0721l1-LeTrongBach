@@ -16,15 +16,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ProductListComponent,
-    ProductCreateComponent,
-    ProductEditComponent,
-    ProductDeleteComponent,
-    CategoryListComponent,
-    CategoryEditComponent,
-    CategoryDeleteComponent,
-    CategoryCreateComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
