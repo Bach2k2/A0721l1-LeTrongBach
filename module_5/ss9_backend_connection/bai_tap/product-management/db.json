@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+    "id":1,
+    "name": "LV",
+    "price": 230000,
+    "description": "MC",
+    "category": [{
+      "id": 1,
+      "name": "Tot"
+    }]
+  },
+    {
+      "id":2,
+      "name": "LV",
+      "price": 230000,
+      "description": "MC",
+      "category": [{
+        "id": 2,
+        "name": "Tot"
+      }]
+    },
+    {
+      "id":3,
+      "name": "LV",
+      "price": 230000,
+      "description": "MC",
+      "category": [{
+        "id": 1,
+        "name": "Tot"
+      }]
+    }
+  ]
+}

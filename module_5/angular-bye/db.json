@@ -1,0 +1,37 @@
+{
+  "dsBenhAn": [
+    {
+      "maBenhAn": "BA-001",
+      "maBenhNhan": "BV-435",
+      "tenBenhNhan": "Nguyễn Văn Tùng 4444",
+      "ngayNhapVien": "2019-08-07",
+      "ngayRaVien": "2019-09-07",
+      "lyDoNhapVien": "Viêm gan B",
+      "ppDieuTri": "Mổ",
+      "bacSi": "Trần Xuân Diệu",
+      "id": 1
+    },
+    {
+      "maBenhAn": "BA-002",
+      "maBenhNhan": "BV-999",
+      "tenBenhNhan": "hhhh ggg",
+      "ngayNhapVien": "",
+      "ngayRaVien": "2019-09-07",
+      "lyDoNhapVien": "gggg",
+      "ppDieuTri": "kkkk",
+      "bacSi": "jjjj",
+      "id": 2
+    },
+    {
+      "id": 4,
+      "maBenhAn": "BA-004",
+      "maBenhNhan": "BV-253",
+      "tenBenhNhan": "Đoàn Thi Diễm My",
+      "ngayNhapVien": "2019-03-12",
+      "ngayRaVien": "2019-08-10",
+      "lyDoNhapVien": "Ung thư gan ",
+      "ppDieuTri": "Xạ trị",
+      "bacSi": "Lê Văn Hào"
+    }
+  ]
+}

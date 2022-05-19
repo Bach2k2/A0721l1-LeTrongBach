@@ -1,0 +1,32 @@
+<h1>Danh sách bệnh án</h1>
+<div class>
+  <table class="table table-bordered">
+    <tr>
+      <th>STT</th>
+      <th>Mã bệnh án</th>
+      <th>Mã bệnh nhân</th>
+      <th>Tên bệnh nhân</th>
+      <th>Ngày nhập viện</th>
+      <th>Ngày ra viện</th>
+      <th>Lý do nhập viện</th>
+      <th>Phương pháp điều trị</th>
+      <th>Bác sĩ điều trị </th>
+      <th colspan="2">Tác vụ</th>
+    </tr>
+    <tr *ngFor="let b of dsBenhAn">
+      <td>{{b.id}}</td>
+      <td>{{b.maBenhAn}}</td>
+      <td>{{b.maBenhNhan}}</td>
+      <td>{{b.tenBenhNhan}}</td>
+      <td>{{b.ngayNhapVien}}</td>
+      <td>{{b.ngayRaVien}}</td>
+      <td>{{b.lyDoNhapVien}}</td>
+      <td>{{b.ppDieuTri}}</td>
+      <td>{{b.bacSi}}</td>
+      <td><button class="btn btn-primary" [routerLink]="['/edit',b.id]">Edit</button></td>
+      <td><button class="btn btn-danger"(click)="deleteConfirm(b.id)">Delete</button></td>
+    </tr>
+  </table>
+
+
+</div>

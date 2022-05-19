@@ -1,0 +1,57 @@
+<h1>Sửa thông tin </h1>
+<form class="container" [formGroup]="benhAnForm" *ngIf="benhAnForm" (ngSubmit)="updateBenhAn(id)">
+  <label class="w-100 form-group">Mã bẹnh án
+    <input class="form-control" type="text" formControlName="maBenhAn" disabled>
+  </label>
+  <label class="w-100 form-group">Mã bẹnh nhân
+    <input class="form-control" type="text" formControlName="maBenhNhan" disabled>
+  </label>
+  <label class="w-100 form-group">Tên bẹnh nhân
+    <input class="form-control" type="text" formControlName="tenBenhNhan">
+    <div class="text-danger"
+         *ngIf="this.benhAnForm.get('tenBenhNhan').hasError('required')&&(this.benhAnForm.get('tenBenhNhan').touched)">
+      <p>Không được để trống</p>
+    </div>
+    <div class="text-danger"
+         *ngIf="this.benhAnForm.get('tenBenhNhan').hasError('pattern')&&(this.benhAnForm.get('tenBenhNhan').touched)">
+      <p>Tên không chứa ký tự số</p>
+    </div>
+  </label>
+  <label class="w-100 form-group">Ngày nhập viện
+    <input class="form-control" type="date" formControlName="ngayNhapVien">
+    <div class="text-danger"
+         *ngIf="this.benhAnForm.get('ngayNhapVien').hasError('required')&&(this.benhAnForm.get('ngayNhapVien').dirty||this.benhAnForm.get('ngayNhapVien').touched)">
+      <p>Không được để trống</p>
+    </div>
+  </label>
+  <label class="w-100 form-group">Ngày ra viện
+    <input class="form-control" type="date" formControlName="ngayRaVien">
+    <div class="text-danger"
+         *ngIf="this.benhAnForm.get('ngayRaVien').hasError('required')&&(this.benhAnForm.get('ngayRaVien').dirty||this.benhAnForm.get('ngayRaVien').touched)">
+      <p>Không được để trống</p>
+    </div>
+  </label>
+  <label class="w-100 form-group">Lý do nhập viện
+    <textarea class="form-control" cols="15" rows="3" formControlName="lyDoNhapVien"></textarea>
+    <div class="text-danger"
+         *ngIf="this.benhAnForm.get('lyDoNhapVien').hasError('required')&&(this.benhAnForm.get('lyDoNhapVien').dirty||this.benhAnForm.get('lyDoNhapVien').touched)">
+      <p>Không được để trống</p>
+    </div>
+  </label>
+  <label class="w-100 form-group">Phương pháp điều trị
+    <textarea class="form-control" cols="15" rows="3" type="text" formControlName="ppDieuTri"></textarea>
+    <div class="text-danger"
+         *ngIf="this.benhAnForm.get('ppDieuTri').hasError('required')&&(this.benhAnForm.get('ppDieuTri').dirty||this.benhAnForm.get('ppDieuTri').touched)">
+      <p>Không được để trống</p>
+    </div>
+  </label>
+  <label class="w-100 form-group">Bác sĩ
+    <input class="form-control" type="text" formControlName="bacSi">
+    <div class="text-danger"
+         *ngIf="this.benhAnForm.get('bacSi').hasError('required')&&(this.benhAnForm.get('bacSi').dirty||this.benhAnForm.get('bacSi').touched)">
+      <p>Không được để trống</p>
+    </div>
+  </label>
+  <button class="btn btn-primary" type="submit">Sửa</button>
+  <button class="btn btn-primary" routerLink="/">Trở về danh sách</button>
+</form>
