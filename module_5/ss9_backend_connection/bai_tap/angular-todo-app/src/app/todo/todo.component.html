@@ -1,0 +1,13 @@
+<div class="col-md-8 offset-md-2">
+  <form class="col-md-8 offset-md-2" [formGroup]="inputForm">
+    <input type="text" class="form-control" formControlName="name">
+    <input type="button" class="btn btn-primary" value="Create" (click)="change()">
+  </form>
+  <ul *ngFor="let todo of todos; index as i">
+    <li (click)="toggleTodo(todo.id)"
+        [class.complete]="todo.exist">
+      {{todo.name}}
+    </li>
+    <input type="button" class="btn " value="Delete" (click)="deleteTodo(todo.id)">
+  </ul>
+</div>
